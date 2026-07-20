@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Tests
+.pytest_cache/
+
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Power BI temporaires
+*.pbix.autosave

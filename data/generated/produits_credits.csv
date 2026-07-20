@@ -1,0 +1,15 @@
+id_produit,code_produit,nom_produit,description,duree_min,duree_max,taux_min,taux_max,montant_min,montant_max,devise,statut,id_programme
+1,PROD_DECOUVERT_COURT,Découvert Garanti BOA,Ligne de découvert court terme pour la trésorerie courante,1,12,5.5,8.0,50000.0,5000000.0,MAD,ACTIF,1
+2,PROD_FACILITE_COURT,Facilité de Caisse Entreprise,Financement des décalages ponctuels de trésorerie,1,12,6.0,8.5,20000.0,2000000.0,MAD,ACTIF,2
+3,PROD_CAMPAGNE_AGRI,Crédit de Campagne Agricole,Financement saisonnier lié au cycle agricole marocain,3,12,5.0,7.5,50000.0,10000000.0,MAD,ACTIF,3
+4,PROD_INVEST_EQUIPEMENT,Crédit Moyen Long Terme Classique,Financement classique des équipements et des infrastructures,12,120,4.5,6.5,100000.0,50000000.0,MAD,ACTIF,4
+5,PROD_MAROC_PME_DEV,Ligne Maroc PME Invest,Crédit d'investissement conventionné avec l'agence Maroc PME,24,84,4.0,5.5,100000.0,20000000.0,MAD,ACTIF,5
+6,PROD_TAMWILCOM_GAR,Co-financement Tamwilcom,Crédit d'investissement garanti par la SNGFE (Tamwilcom),36,120,3.5,5.0,500000.0,30000000.0,MAD,ACTIF,6
+7,PROD_GREEN_INVEST,Financement Green Invest,Ligne verte de transition écologique et efficacité énergétique,36,120,3.0,4.8,500000.0,40000000.0,MAD,ACTIF,7
+8,PROD_FIN_IMPORT,Avance sur Marché Import,Financement de l'approvisionnement à l'international,1,6,4.5,6.8,100000.0,20000000.0,MAD,ACTIF,8
+9,PROD_FIN_EXPORT,Préfinancement à l'Exportation,Financement de la trésorerie pour couvrir la production exportable,1,9,4.2,6.5,100000.0,20000000.0,MAD,ACTIF,9
+10,PROD_CREDOC_CONF,Crédit Documentaire Confirmé,Garantie de paiement de transactions commerciales internationales,1,12,4.0,6.0,200000.0,100000000.0,MAD,ACTIF,10
+11,PROD_CAUTION_ADMIN,Caution Administrative en MAD,Engagement de signature pour répondre aux marchés publics,1,36,1.0,2.5,10000.0,10000000.0,MAD,ACTIF,11
+12,PROD_AVAL_EFFET,Aval d'Effets de Commerce,Garantie de paiement d'effets de commerce tirés,1,12,1.5,3.0,50000.0,50000000.0,MAD,ACTIF,12
+13,PROD_CAUTION_SOUM,Garantie de Soumission de Marché,Caution requise lors de l'appel d'offres,1,12,0.8,2.0,10000.0,5000000.0,MAD,ACTIF,13
+14,PROD_CAUTION_BONNE_FIN,Garantie de Bonne Fin de Marché,Caution de bon déroulement d'exécution de marché,6,60,1.0,2.2,50000.0,20000000.0,MAD,ACTIF,14

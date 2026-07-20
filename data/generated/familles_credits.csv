@@ -1,0 +1,5 @@
+id_famille,code_famille,nom_famille
+1,EXPLOITATION,Crédit d'exploitation
+2,INVESTISSEMENT,Crédit d'investissement
+3,TRADE_FINANCE,Trade Finance
+4,GARANTIES,Garanties et Engagements

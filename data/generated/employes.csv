@@ -1,0 +1,49 @@
+id_employe,matricule,nom,prenom,sexe,date_naissance,date_embauche,fonction,service,email_professionnel,telephone,statut,id_agence,agence_id,id_region,region_id,manager_id
+1,EMP000001,Alaoui,Tarik,M,1968-04-12,2005-09-01,Directeur Général,Direction Générale,tarik.alaoui@bankofafrica.ma,0646913810,Actif,,,,,
+2,EMP000002,Chraibi,Hamza,M,1973-11-24,2014-02-19,Directeur Régional,Direction Régionale,hamza.chraibi@bankofafrica.ma,0666629388,Actif,,,1.0,1.0,1.0
+3,EMP000003,Bennani,Mohamed,M,1975-04-17,2014-01-18,Directeur Régional,Direction Régionale,mohamed.bennani@bankofafrica.ma,0636687537,Actif,,,2.0,2.0,1.0
+4,EMP000004,El Ouali,Sara,F,1976-01-25,2011-12-14,Directeur Régional,Direction Régionale,sara.elouali@bankofafrica.ma,0655667651,Actif,,,3.0,3.0,1.0
+5,EMP000005,El Fassi,Salma,F,1977-02-03,2013-02-12,Directeur Régional,Direction Régionale,salma.elfassi@bankofafrica.ma,0656164955,Actif,,,4.0,4.0,1.0
+6,EMP000006,El Amri,Yasmina,F,1979-09-04,2013-02-18,Directeur Régional,Direction Régionale,yasmina.elamri@bankofafrica.ma,0649349722,Actif,,,5.0,5.0,1.0
+7,EMP000007,El Fassi,Nadia,F,1973-01-22,2011-05-03,Directeur Régional,Direction Régionale,nadia.elfassi@bankofafrica.ma,0641244663,Actif,,,6.0,6.0,1.0
+8,EMP000008,Amrani,Jalal,M,1979-11-27,2012-03-12,Directeur Régional,Direction Régionale,jalal.amrani@bankofafrica.ma,0657683626,Actif,,,7.0,7.0,1.0
+9,EMP000009,Hakimi,Karim,M,1981-10-21,2016-09-24,Directeur d'Agence,Agence Commerciale,karim.hakimi@bankofafrica.ma,0642857966,Actif,1.0,1.0,1.0,1.0,2.0
+10,EMP000010,Naciri,Rachid,M,1989-11-23,2019-11-11,Conseiller Entreprises,Agence Commerciale,rachid.naciri@bankofafrica.ma,0617507864,Actif,1.0,1.0,1.0,1.0,9.0
+11,EMP000011,Zouiten,Ahmed,M,1990-07-09,2018-04-19,Conseiller Entreprises,Agence Commerciale,ahmed.zouiten@bankofafrica.ma,0652235350,Actif,1.0,1.0,1.0,1.0,9.0
+12,EMP000012,Naciri,Anass,M,1998-08-05,2020-03-08,Chargé de Caisse,Caisse,anass.naciri@bankofafrica.ma,0685345555,Actif,1.0,1.0,1.0,1.0,9.0
+13,EMP000013,Kadiri,Nadia,F,1986-06-08,2016-09-16,Directeur d'Agence,Agence Commerciale,nadia.kadiri@bankofafrica.ma,0622201654,Actif,2.0,2.0,1.0,1.0,2.0
+14,EMP000014,Chraibi,Tarik,M,1995-03-26,2021-10-03,Conseiller Entreprises,Agence Commerciale,tarik.chraibi@bankofafrica.ma,0661642594,Actif,2.0,2.0,1.0,1.0,13.0
+15,EMP000015,El Ouali,Ilham,F,1993-05-18,2018-11-24,Conseiller Entreprises,Agence Commerciale,ilham.elouali@bankofafrica.ma,0625374874,Actif,2.0,2.0,1.0,1.0,13.0
+16,EMP000016,Tazi,Hind,F,1992-07-06,2020-01-24,Chargé de Caisse,Caisse,hind.tazi@bankofafrica.ma,0645351479,Actif,2.0,2.0,1.0,1.0,13.0
+17,EMP000017,Tazi,Khalid,M,1984-11-17,2016-03-12,Directeur d'Agence,Agence Commerciale,khalid.tazi@bankofafrica.ma,0631682744,Actif,3.0,3.0,2.0,2.0,3.0
+18,EMP000018,Slaoui,Fouad,M,1992-01-04,2020-05-08,Conseiller Entreprises,Agence Commerciale,fouad.slaoui@bankofafrica.ma,0617774584,Actif,3.0,3.0,2.0,2.0,17.0
+19,EMP000019,Bennani,Kamal,M,1986-12-16,2018-09-25,Conseiller Entreprises,Agence Commerciale,kamal.bennani@bankofafrica.ma,0626879290,Actif,3.0,3.0,2.0,2.0,17.0
+20,EMP000020,Alami,Anass,M,1990-05-17,2021-07-07,Chargé de Caisse,Caisse,anass.alami@bankofafrica.ma,0682383095,Actif,3.0,3.0,2.0,2.0,17.0
+21,EMP000021,Naciri,Amine,M,1985-08-17,2018-02-08,Directeur d'Agence,Agence Commerciale,amine.naciri@bankofafrica.ma,0640158366,Actif,4.0,4.0,2.0,2.0,3.0
+22,EMP000022,Alaoui,Saad,M,1994-09-08,2019-01-03,Conseiller Entreprises,Agence Commerciale,saad.alaoui@bankofafrica.ma,0694705205,Actif,4.0,4.0,2.0,2.0,21.0
+23,EMP000023,Bennani,Hamza,M,1985-06-03,2019-05-22,Conseiller Entreprises,Agence Commerciale,hamza.bennani@bankofafrica.ma,0675151231,Actif,4.0,4.0,2.0,2.0,21.0
+24,EMP000024,Chraibi,Hassan,M,1997-10-16,2019-08-26,Chargé de Caisse,Caisse,hassan.chraibi@bankofafrica.ma,0664634663,Actif,4.0,4.0,2.0,2.0,21.0
+25,EMP000025,Tazi,Tarik,M,1986-06-14,2018-08-28,Directeur d'Agence,Agence Commerciale,tarik.tazi@bankofafrica.ma,0617270733,Actif,5.0,5.0,3.0,3.0,4.0
+26,EMP000026,Naciri,Ahmed,M,1996-06-26,2018-04-07,Conseiller Entreprises,Agence Commerciale,ahmed.naciri@bankofafrica.ma,0635529407,Actif,5.0,5.0,3.0,3.0,25.0
+27,EMP000027,Kadiri,Salma,F,1987-05-15,2019-02-15,Conseiller Entreprises,Agence Commerciale,salma.kadiri@bankofafrica.ma,0683863413,Actif,5.0,5.0,3.0,3.0,25.0
+28,EMP000028,Guessous,Ahmed,M,1996-01-03,2019-03-14,Chargé de Caisse,Caisse,ahmed.guessous@bankofafrica.ma,0675181648,Actif,5.0,5.0,3.0,3.0,25.0
+29,EMP000029,Naciri,Ghita,F,1980-03-13,2015-07-09,Directeur d'Agence,Agence Commerciale,ghita.naciri@bankofafrica.ma,0671070189,Actif,6.0,6.0,4.0,4.0,5.0
+30,EMP000030,Hakimi,Zineb,F,1996-09-22,2021-03-07,Conseiller Entreprises,Agence Commerciale,zineb.hakimi@bankofafrica.ma,0649823450,Actif,6.0,6.0,4.0,4.0,29.0
+31,EMP000031,Daoudi,Ahmed,M,1996-09-02,2020-01-02,Conseiller Entreprises,Agence Commerciale,ahmed.daoudi@bankofafrica.ma,0688406989,Actif,6.0,6.0,4.0,4.0,29.0
+32,EMP000032,Tahiri,Leila,F,1990-01-17,2019-03-03,Chargé de Caisse,Caisse,leila.tahiri@bankofafrica.ma,0689864260,Actif,6.0,6.0,4.0,4.0,29.0
+33,EMP000033,Naciri,Hamza,M,1981-10-08,2015-10-03,Directeur d'Agence,Agence Commerciale,hamza.naciri@bankofafrica.ma,0666267415,Actif,7.0,7.0,5.0,5.0,6.0
+34,EMP000034,El Fassi,Latifa,F,1995-12-11,2019-05-13,Conseiller Entreprises,Agence Commerciale,latifa.elfassi@bankofafrica.ma,0627566185,Actif,7.0,7.0,5.0,5.0,33.0
+35,EMP000035,Slaoui,Asmaa,F,1986-01-15,2018-02-18,Conseiller Entreprises,Agence Commerciale,asmaa.slaoui@bankofafrica.ma,0638609087,Actif,7.0,7.0,5.0,5.0,33.0
+36,EMP000036,Mansouri,Salma,F,1989-04-12,2020-03-15,Chargé de Caisse,Caisse,salma.mansouri@bankofafrica.ma,0682909480,Actif,7.0,7.0,5.0,5.0,33.0
+37,EMP000037,Zouiten,Ilham,F,1988-01-22,2017-11-04,Directeur d'Agence,Agence Commerciale,ilham.zouiten@bankofafrica.ma,0628024248,Actif,8.0,8.0,6.0,6.0,7.0
+38,EMP000038,Tazi,Laila,F,1996-09-05,2020-05-20,Conseiller Entreprises,Agence Commerciale,laila.tazi@bankofafrica.ma,0638270233,Actif,8.0,8.0,6.0,6.0,37.0
+39,EMP000039,Bouaziz,Ghita,F,1995-05-17,2021-05-28,Conseiller Entreprises,Agence Commerciale,ghita.bouaziz@bankofafrica.ma,0616818112,Actif,8.0,8.0,6.0,6.0,37.0
+40,EMP000040,Sebbar,Mourad,M,1992-01-01,2020-03-21,Chargé de Caisse,Caisse,mourad.sebbar@bankofafrica.ma,0645159040,Actif,8.0,8.0,6.0,6.0,37.0
+41,EMP000041,Alami,Rachid,M,1986-09-01,2015-02-23,Directeur d'Agence,Agence Commerciale,rachid.alami@bankofafrica.ma,0630005727,Actif,9.0,9.0,7.0,7.0,8.0
+42,EMP000042,Daoudi,Adil,M,1993-03-14,2019-01-10,Conseiller Entreprises,Agence Commerciale,adil.daoudi@bankofafrica.ma,0658942697,Actif,9.0,9.0,7.0,7.0,41.0
+43,EMP000043,El Fassi,Adil,M,1995-04-22,2018-06-25,Conseiller Entreprises,Agence Commerciale,adil.elfassi@bankofafrica.ma,0685146293,Actif,9.0,9.0,7.0,7.0,41.0
+44,EMP000044,El Amri,Ilham,F,1990-04-28,2019-03-14,Chargé de Caisse,Caisse,ilham.elamri@bankofafrica.ma,0613326769,Actif,9.0,9.0,7.0,7.0,41.0
+45,EMP000045,Zouiten,Saad,M,1986-11-28,2016-05-06,Directeur d'Agence,Agence Commerciale,saad.zouiten@bankofafrica.ma,0624508349,Actif,10.0,10.0,7.0,7.0,8.0
+46,EMP000046,Jahidi,Yasmina,F,1988-04-27,2021-06-10,Conseiller Entreprises,Agence Commerciale,yasmina.jahidi@bankofafrica.ma,0640547349,Actif,10.0,10.0,7.0,7.0,45.0
+47,EMP000047,Bouaziz,Mohamed,M,1988-07-11,2020-02-25,Conseiller Entreprises,Agence Commerciale,mohamed.bouaziz@bankofafrica.ma,0647463522,Actif,10.0,10.0,7.0,7.0,45.0
+48,EMP000048,Naciri,Leila,F,1998-09-11,2019-02-09,Chargé de Caisse,Caisse,leila.naciri@bankofafrica.ma,0633966966,Actif,10.0,10.0,7.0,7.0,45.0
