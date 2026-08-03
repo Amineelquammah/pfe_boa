@@ -40,8 +40,8 @@ def validate_comptes(df_comptes: pd.DataFrame) -> bool:
         logger.error(f"[ERR_CPT_02] Nombre de comptes courants incorrect : {nb_courants} trouvé, attendu exactement 2000 (1 par entreprise).")
         errors += 1
         
-    # Unicité entreprise_id pour les comptes courants (exactement un par entreprise)
-    dup_ent_courant = courants["entreprise_id"].duplicated().sum()
+    # Unicité id_entreprise pour les comptes courants (exactement un par entreprise)
+    dup_ent_courant = courants["id_entreprise"].duplicated().sum()
     if dup_ent_courant > 0:
         logger.error(f"[ERR_CPT_03] Doublons d'entreprises sur les comptes courants détectés ({dup_ent_courant} doublon(s)).")
         errors += 1
@@ -52,7 +52,7 @@ def validate_comptes(df_comptes: pd.DataFrame) -> bool:
     dats = df_comptes[df_comptes["type_compte"] == "DAT"]
     courant_ids = set(courants["id_compte"])
     
-    invalid_dats = dats[~dats["compte_parent_id"].isin(courant_ids)]
+    invalid_dats = dats[~dats["id_compte_courant_parent"].isin(courant_ids)]
     if not invalid_dats.empty:
         logger.error(f"[ERR_CPT_04] DATs orphelins détectés (sans compte parent courant valide) : {invalid_dats['id_compte'].tolist()}.")
         errors += 1
@@ -61,12 +61,12 @@ def validate_comptes(df_comptes: pd.DataFrame) -> bool:
 
     # 4. Vérification de la cohérence de la filiation DAT -> Courant pour la même entreprise
     for _, dat_row in dats.iterrows():
-        parent_id = dat_row["compte_parent_id"]
+        parent_id = dat_row["id_compte_courant_parent"]
         parent_compte = courants[courants["id_compte"] == parent_id]
         if not parent_compte.empty:
-            parent_ent = parent_compte.iloc[0]["entreprise_id"]
-            if parent_ent != dat_row["entreprise_id"]:
-                logger.error(f"[ERR_CPT_05] Le DAT {dat_row['id_compte']} est lié à un compte parent appartenant à une autre entreprise ({parent_ent} vs {dat_row['entreprise_id']}).")
+            parent_ent = parent_compte.iloc[0]["id_entreprise"]
+            if parent_ent != dat_row["id_entreprise"]:
+                logger.error(f"[ERR_CPT_05] Le DAT {dat_row['id_compte']} est lié à un compte parent appartenant à une autre entreprise ({parent_ent} vs {dat_row['id_entreprise']}).")
                 errors += 1
                 
     if errors == 0:
@@ -83,10 +83,10 @@ def validate_comptes(df_comptes: pd.DataFrame) -> bool:
 
     # 6. Vérification de la cohérence de l'agence et du conseiller (héritage entreprise)
     for _, row in df_comptes.iterrows():
-        ent_id = row["entreprise_id"]
+        ent_id = row["id_entreprise"]
         if ent_id in ent_dict:
             ent_meta = ent_dict[ent_id]
-            if row["agence_id"] != ent_meta["id_agence"] or row["conseiller_id"] != ent_meta["id_conseiller"]:
+            if row["id_agence"] != ent_meta["id_agence"] or row["id_conseiller"] != ent_meta["id_conseiller"]:
                 logger.error(f"[ERR_CPT_07] Compte {row['id_compte']} possède un rattachement agence/conseiller incohérent avec l'entreprise {ent_id}.")
                 errors += 1
                 

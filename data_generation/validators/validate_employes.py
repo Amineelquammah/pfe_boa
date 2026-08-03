@@ -59,7 +59,7 @@ def validate_employes(df_employes: pd.DataFrame) -> bool:
     # 5. Vérification des structures par agence
     # Agences valides (1 à 10)
     for ag_id in range(1, 11):
-        df_ag = df_employes[df_employes["agence_id"] == ag_id]
+        df_ag = df_employes[df_employes["id_agence"] == ag_id]
         
         # Directeur d'Agence : exactement 1
         da_count = len(df_ag[df_ag["fonction"] == "Directeur d'Agence"])
@@ -81,7 +81,7 @@ def validate_employes(df_employes: pd.DataFrame) -> bool:
 
     # 6. Vérification au niveau régional (1 Directeur Régional par région de 1 à 7)
     for reg_id in range(1, 8):
-        df_reg = df_employes[(df_employes["region_id"] == reg_id) & (df_employes["fonction"] == "Directeur Régional")]
+        df_reg = df_employes[(df_employes["id_region"] == reg_id) & (df_employes["fonction"] == "Directeur Régional")]
         dr_count = len(df_reg)
         if dr_count != 1:
             logger.error(f"[ERR_EMP_08] Région {reg_id} possède {dr_count} Directeur(s) Régionaux, attendu 1.")

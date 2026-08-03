@@ -56,16 +56,16 @@ def validate_agences(df_agences: pd.DataFrame) -> bool:
     else:
         logger.info("Vérification unicité code_agence ok.")
 
-    # 4. Vérification de l'existence des region_id dans l'intervalle [1, 7]
-    invalid_regions = df_agences[~df_agences["region_id"].between(1, 7)]
+    # 4. Vérification de l'existence des id_region dans l'intervalle [1, 7]
+    invalid_regions = df_agences[~df_agences["id_region"].between(1, 7)]
     if not invalid_regions.empty:
-        logger.error(f"[ERR_AGE_04] region_id invalides détectés (non compris entre 1 et 7) : {invalid_regions['region_id'].tolist()}.")
+        logger.error(f"[ERR_AGE_04] id_region invalides détectés (non compris entre 1 et 7) : {invalid_regions['id_region'].tolist()}.")
         errors += 1
     else:
-        logger.info("Vérification de l'intégrité des region_id ok.")
+        logger.info("Vérification de l'intégrité des id_region ok.")
 
     # 5. Vérification de la répartition par région
-    actual_distribution = df_agences.groupby("region_id").size().to_dict()
+    actual_distribution = df_agences.groupby("id_region").size().to_dict()
     for reg_id, expected_count in EXPECTED_DISTRIBUTION.items():
         actual_count = actual_distribution.get(reg_id, 0)
         if actual_count != expected_count:

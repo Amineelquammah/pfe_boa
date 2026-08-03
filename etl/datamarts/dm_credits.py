@@ -54,7 +54,7 @@ def load_dm_credits() -> bool:
             mensualite_totale=("mensualite", "sum"),
             nombre_credits=("montant_octroye", "size"),
             jours_retard_max=("jours_retard", "max"),
-            nombre_credits_npl=("indicateur_NPL", "sum"),
+            nombre_credits_npl=("indicateur_npl", "sum"),
             taux_interet_moyen=("taux_interet", "mean")
         ).reset_index()
         

@@ -74,7 +74,7 @@ def generate_entreprises() -> pd.DataFrame:
     df_conseillers = df_employes[df_employes["fonction"] == "Conseiller Entreprises"]
     conseillers_by_agence: Dict[int, List[int]] = {}
     for ag_id in range(1, 11):
-        conseillers_by_agence[ag_id] = df_conseillers[df_conseillers["agence_id"] == ag_id]["id_employe"].tolist()
+        conseillers_by_agence[ag_id] = df_conseillers[df_conseillers["id_agence"] == ag_id]["id_employe"].tolist()
         
     entreprises: List[Dict[str, Any]] = []
     current_id = 1
@@ -139,10 +139,8 @@ def generate_entreprises() -> pd.DataFrame:
                 "raison_sociale": raison_sociale,
                 "forme_juridique": forme_juridique,
                 "secteur_activite": secteur,
-                "secteur": secteur,  # Alias
                 "segment": segment,
                 "chiffre_affaires": ca,
-                "chiffre_affaires_annuel": ca,  # Alias
                 "nombre_employes": employes_count,
                 "date_creation": date_creation,
                 "ville": ville_agence,
@@ -151,11 +149,7 @@ def generate_entreprises() -> pd.DataFrame:
                 "email": email,
                 "statut": "Actif",
                 "id_agence": ag_id,
-                "agence_id": ag_id,  # Alias
-                "id_region": region_id,
-                "region_id": region_id,  # Alias
-                "id_conseiller": conseiller_id,
-                "conseiller_id": conseiller_id  # Alias
+                "id_conseiller": conseiller_id
             }
             
             entreprises.append(ent)

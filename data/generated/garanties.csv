@@ -1,811 +1,811 @@
-id_garantie,numero_garantie,id_contrat,contrat_credit_id,type_garantie,valeur,valeur_initiale,valeur_actuelle,taux_couverture,date_affectation,date_mise_en_place,date_expiration,statut,organisme_garant,observations
-1,GAR_000001,1,1,Garantie sur matériel,5792210.57,6331345.84,5792210.57,2.6896,2021-11-20,2021-11-20,2025-08-28,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-2,GAR_000002,1,1,Garantie sur matériel,4965903.81,6053610.71,4965903.81,2.3059,2021-11-18,2021-11-18,2025-12-24,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-3,GAR_000003,2,2,Garantie Tamwilcom,308808.52,315265.41,308808.52,10293617.3333,2018-03-24,2018-03-24,2018-12-05,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-4,GAR_000004,3,3,Caution personnelle,286831.85,299286.74,286831.85,2.3589,2020-08-19,2020-08-19,2021-08-14,En cours de réalisation,None,Couverture standard Caution personnelle pour dossier TPE
-5,GAR_000005,4,4,Hypothèque,323327.07,338247.65,323327.07,32332707.0,2014-10-20,2014-10-20,2015-03-30,Active,None,Couverture standard Hypothèque pour dossier PME
-6,GAR_000006,4,4,Caution bancaire,265773.45,277195.26,265773.45,26577345.0,2014-10-17,2014-10-17,2015-01-26,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-7,GAR_000007,5,5,Nantissement,8187939.41,8147990.16,8187939.41,3.329,2020-08-21,2020-08-21,2027-04-03,Active,None,Couverture standard Nantissement pour dossier PME
-8,GAR_000008,6,6,Nantissement,10044501.77,9751735.1,10044501.77,0.0,2009-09-03,2009-09-03,2017-04-11,Libérée,None,Couverture standard Nantissement pour dossier PME
-9,GAR_000009,7,7,Hypothèque,16717180.94,17416849.72,16717180.94,185746454.8889,2017-12-21,2017-12-21,2022-01-19,Active,None,Couverture standard Hypothèque pour dossier PME
-10,GAR_000010,8,8,Caution personnelle,110755.99,108750.24,110755.99,0.0,2014-06-11,2014-06-11,2014-08-14,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-11,GAR_000011,10,10,Nantissement,7749325.19,8077865.35,7749325.19,1.3739,2023-09-05,2023-09-05,2033-11-11,Active,None,Couverture standard Nantissement pour dossier PME
-12,GAR_000012,11,11,Caution personnelle,514852.0,534411.59,514852.0,0.0,2020-09-17,2020-09-17,2021-11-27,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-13,GAR_000013,12,12,Caution personnelle,76314.33,79629.14,76314.33,0.0,2017-08-27,2017-08-27,2018-10-19,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-14,GAR_000014,13,13,Garantie Tamwilcom,539164.75,535497.62,539164.75,0.0,2008-02-14,2008-02-14,2009-10-14,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-15,GAR_000015,14,14,Nantissement,6808826.4,6526616.35,6808826.4,40051920.0,2014-06-26,2014-06-26,2022-01-20,Active,None,Couverture standard Nantissement pour dossier PME
-16,GAR_000016,15,15,Hypothèque,693967.95,684781.95,693967.95,23132265.0,2015-02-21,2015-02-21,2016-06-20,Active,None,Couverture standard Hypothèque pour dossier PME
-17,GAR_000017,16,16,Caution personnelle,42195.55,42382.61,42195.55,0.0,2011-04-06,2011-04-06,2011-09-11,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-18,GAR_000018,17,17,Garantie Tamwilcom,21119.1,21622.18,21119.1,211191.0,2006-02-07,2006-02-07,2008-05-06,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-19,GAR_000019,19,19,Caution personnelle,95329.67,91318.28,95329.67,9532967.0,2007-10-01,2007-10-01,2008-10-25,Active,None,Couverture standard Caution personnelle pour dossier TPE
-20,GAR_000020,20,20,Garantie de l'État,9524549.42,9513400.05,9524549.42,0.0,2017-03-11,2017-03-11,2024-11-12,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-21,GAR_000021,20,20,Hypothèque,13295568.28,13930933.32,13295568.28,0.0,2017-03-11,2017-03-11,2024-11-19,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-22,GAR_000022,21,21,Garantie de l'État,621581.36,636638.5,621581.36,62158136.0,2015-03-30,2015-03-30,2015-11-17,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-23,GAR_000023,21,21,Hypothèque,807952.93,848396.52,807952.93,80795293.0,2015-03-25,2015-03-25,2015-12-28,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-24,GAR_000024,21,21,Garantie sur fonds de commerce,799391.21,813176.01,799391.21,79939121.0,2015-03-30,2015-03-30,2015-10-27,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-25,GAR_000025,22,22,Nantissement,1017507.28,983954.66,1017507.28,0.0,2008-01-17,2008-01-17,2009-03-14,Libérée,None,Couverture standard Nantissement pour dossier PME
-26,GAR_000026,22,22,Garantie sur matériel,683604.96,754390.45,683604.96,0.0,2008-01-18,2008-01-18,2009-05-16,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-27,GAR_000027,23,23,Garantie sur créances,2327701.18,2746449.61,2327701.18,232770118.0,2020-02-20,2020-02-20,2021-04-25,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-28,GAR_000028,24,24,Nantissement,50817477.79,53362718.85,50817477.79,0.0,2006-10-05,2006-10-05,2007-09-28,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-29,GAR_000029,24,24,Garantie sur créances,32000177.95,32506598.82,32000177.95,0.0,2006-10-11,2006-10-11,2008-01-31,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-30,GAR_000030,26,26,Garantie sur créances,898557.35,1066076.56,898557.35,0.0,2012-07-07,2012-07-07,2013-03-29,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-31,GAR_000031,27,27,Garantie Tamwilcom,191463.0,191060.71,191463.0,9573150.0,2016-03-16,2016-03-16,2016-12-10,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-32,GAR_000032,28,28,Garantie sur créances,27101468.68,33266251.71,27101468.68,0.0,2009-10-26,2009-10-26,2010-08-29,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-33,GAR_000033,29,29,Garantie de l'État,9690001.4,9748002.25,9690001.4,0.0,2011-07-31,2011-07-31,2012-04-24,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-34,GAR_000034,32,32,Caution bancaire,166994.64,173481.2,166994.64,0.0,2018-11-08,2018-11-08,2020-01-05,Libérée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-35,GAR_000035,34,34,Garantie sur matériel,239413.56,258725.36,239413.56,0.0,2011-04-21,2011-04-21,2011-12-06,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-36,GAR_000036,35,35,Hypothèque,5488066.48,5399762.65,5488066.48,0.0,2015-09-25,2015-09-25,2016-11-30,Libérée,None,Couverture standard Hypothèque pour dossier PME
-37,GAR_000037,35,35,Garantie sur matériel,4348775.91,4567910.88,4348775.91,0.0,2015-09-24,2015-09-24,2017-03-04,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-38,GAR_000038,36,36,Caution bancaire,10021044.97,10006796.07,10021044.97,0.0,2017-08-24,2017-08-24,2018-09-01,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-39,GAR_000039,38,38,Nantissement,8565031.06,8562991.51,8565031.06,2.8095,2019-01-12,2019-01-12,2029-02-10,Active,None,Couverture standard Nantissement pour dossier PME
-40,GAR_000040,39,39,Caution personnelle,210238.13,215213.86,210238.13,0.0,2009-06-18,2009-06-18,2010-10-08,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-41,GAR_000041,41,41,Garantie de l'État,6021792.51,6285034.29,6021792.51,0.0,2017-09-05,2017-09-05,2024-07-16,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-42,GAR_000042,41,41,Garantie sur fonds de commerce,9118894.35,9276829.56,9118894.35,0.0,2017-08-31,2017-08-31,2024-08-31,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-43,GAR_000043,42,42,Garantie Tamwilcom,7393039.9,7258160.61,7393039.9,0.0,2014-11-18,2014-11-18,2022-11-22,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-44,GAR_000044,43,43,Hypothèque,5258951.57,5353586.63,5258951.57,3.4802,2020-02-10,2020-02-10,2027-02-04,Active,None,Couverture standard Hypothèque pour dossier PME
-45,GAR_000045,45,45,Garantie Tamwilcom,1860721.57,1839906.97,1860721.57,0.0,2009-10-09,2009-10-09,2015-02-20,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-46,GAR_000046,46,46,Nantissement,6730839.89,7002835.37,6730839.89,0.0,2010-04-20,2010-04-20,2015-10-31,Expirée,None,Couverture standard Nantissement pour dossier PME
-47,GAR_000047,47,47,Caution bancaire,9928762.49,9924478.28,9928762.49,141839464.1429,2013-01-26,2013-01-26,2016-06-07,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-48,GAR_000048,49,49,Caution bancaire,1284230.02,1306800.95,1284230.02,4939346.2308,2007-08-07,2007-08-07,2012-11-04,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-49,GAR_000049,49,49,Hypothèque,1859845.79,1928383.73,1859845.79,7153253.0385,2007-08-04,2007-08-04,2013-02-11,Active,None,Couverture standard Hypothèque pour dossier PME
-50,GAR_000050,50,50,Garantie sur matériel,6036295.31,6888278.35,6036295.31,0.0,2008-09-19,2008-09-19,2009-12-11,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-51,GAR_000051,51,51,Caution bancaire,4892854.84,4753282.37,4892854.84,0.0,2016-03-29,2016-03-29,2017-02-07,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-52,GAR_000052,52,52,Garantie Tamwilcom,130931.27,131739.71,130931.27,13093127.0,2018-04-04,2018-04-04,2019-03-04,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-53,GAR_000053,53,53,Nantissement,5521987.45,5529745.47,5521987.45,0.0,2007-09-22,2007-09-22,2008-04-08,Expirée,None,Couverture standard Nantissement pour dossier PME
-54,GAR_000054,54,54,Garantie de l'État,13186259.96,13658515.34,13186259.96,0.8836,2023-09-04,2023-09-04,2031-06-04,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-55,GAR_000055,56,56,Nantissement,632993.66,656783.26,632993.66,0.0,2021-08-05,2021-08-05,2021-11-13,Expirée,None,Couverture standard Nantissement pour dossier PME
-56,GAR_000056,57,57,Garantie Tamwilcom,234374.53,226392.69,234374.53,0.0,2023-07-04,2023-07-04,2024-08-22,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-57,GAR_000057,58,58,Caution personnelle,24909.64,24134.88,24909.64,415160.6667,2018-08-05,2018-08-05,2021-06-11,Active,None,Couverture standard Caution personnelle pour dossier TPE
-58,GAR_000058,59,59,Caution personnelle,223505.35,226577.04,223505.35,0.0,2008-03-30,2008-03-30,2009-05-11,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-59,GAR_000059,60,60,Garantie Tamwilcom,3917310.38,3784917.2,3917310.38,39173103.8,2018-05-21,2018-05-21,2022-08-05,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-60,GAR_000060,61,61,Aval,6556464.44,6676626.63,6556464.44,0.0,2015-08-02,2015-08-02,2020-12-18,Libérée,None,Couverture standard Aval pour dossier Grande Entreprise
-61,GAR_000061,61,61,Aval,6131678.06,6282571.86,6131678.06,0.0,2015-08-05,2015-08-05,2021-03-07,Expirée,None,Couverture standard Aval pour dossier Grande Entreprise
-62,GAR_000062,61,61,Garantie sur fonds de commerce,9817182.57,10029229.2,9817182.57,0.0,2015-08-06,2015-08-06,2020-11-26,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-63,GAR_000063,64,64,Garantie Tamwilcom,2443528.58,2376678.18,2443528.58,0.0,2011-03-11,2011-03-11,2015-02-12,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-64,GAR_000064,65,65,Caution bancaire,894530.03,878023.85,894530.03,89453003.0,2022-01-16,2022-01-16,2022-05-06,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-65,GAR_000065,66,66,Nantissement,28316939.99,27837619.81,28316939.99,0.0,2020-10-22,2020-10-22,2021-07-25,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-66,GAR_000066,68,68,Caution personnelle,556071.9,548173.12,556071.9,0.0,2018-07-01,2018-07-01,2019-06-01,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-67,GAR_000067,69,69,Garantie Tamwilcom,3749004.36,3931133.62,3749004.36,0.0,2017-10-02,2017-10-02,2018-08-02,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-68,GAR_000068,70,70,Garantie sur fonds de commerce,6096312.43,6278226.01,6096312.43,1.8266,2023-07-11,2023-07-11,2028-04-29,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-69,GAR_000069,72,72,Garantie Tamwilcom,101651.2,105866.28,101651.2,10165120.0,2015-08-14,2015-08-14,2016-04-29,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-70,GAR_000070,73,73,Caution bancaire,4381617.93,4229934.28,4381617.93,0.0,2007-08-30,2007-08-30,2010-04-30,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-71,GAR_000071,73,73,Hypothèque,4892446.19,5089642.72,4892446.19,0.0,2007-09-02,2007-09-02,2010-03-29,Expirée,None,Couverture standard Hypothèque pour dossier PME
-72,GAR_000072,74,74,Caution bancaire,629951.36,640648.53,629951.36,0.0,2015-03-08,2015-03-08,2015-11-28,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-73,GAR_000073,77,77,Caution bancaire,4721052.56,4728733.63,4721052.56,1.4604,2020-07-02,2020-07-02,2030-10-24,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-74,GAR_000074,79,79,Garantie Tamwilcom,467630.56,486919.26,467630.56,0.0,2013-06-12,2013-06-12,2014-03-15,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-75,GAR_000075,80,80,Garantie Tamwilcom,3753874.72,3801741.47,3753874.72,0.0,2006-02-04,2006-02-04,2008-01-20,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-76,GAR_000076,81,81,Garantie de l'État,4800924.71,5044231.74,4800924.71,0.0,2019-01-15,2019-01-15,2022-05-12,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-77,GAR_000077,81,81,Aval,5068738.93,5067935.61,5068738.93,0.0,2019-01-16,2019-01-16,2022-04-21,Libérée,None,Couverture standard Aval pour dossier Grande Entreprise
-78,GAR_000078,81,81,Nantissement,8579070.47,8241222.74,8579070.47,0.0,2019-01-14,2019-01-14,2022-02-07,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-79,GAR_000079,82,82,Caution personnelle,665922.96,650565.58,665922.96,0.0,2013-08-14,2013-08-14,2014-11-30,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-80,GAR_000080,83,83,Garantie Tamwilcom,1347112.62,1334712.73,1347112.62,0.0,2008-07-28,2008-07-28,2009-03-14,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-81,GAR_000081,84,84,Garantie sur matériel,972756.24,1011316.21,972756.24,48637812.0,2007-12-18,2007-12-18,2009-03-27,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-82,GAR_000082,85,85,Garantie Tamwilcom,46897.9,46563.09,46897.9,0.0,2019-12-18,2019-12-18,2021-03-28,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-83,GAR_000083,86,86,Nantissement,4976047.92,4995290.03,4976047.92,0.0,2013-11-26,2013-11-26,2017-06-29,Libérée,None,Couverture standard Nantissement pour dossier PME
-84,GAR_000084,87,87,Garantie sur matériel,44647.52,47914.8,44647.52,0.0,2014-12-26,2014-12-26,2015-06-21,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-85,GAR_000085,88,88,Nantissement,341189.0,336272.5,341189.0,34118900.0,2014-04-05,2014-04-05,2015-05-08,Active,None,Couverture standard Nantissement pour dossier PME
-86,GAR_000086,89,89,Caution personnelle,342703.92,349248.8,342703.92,0.0,2009-03-02,2009-03-02,2010-07-09,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-87,GAR_000087,90,90,Garantie sur matériel,1944734.26,2295294.21,1944734.26,0.0,2019-08-28,2019-08-28,2021-06-11,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-88,GAR_000088,92,92,Aval,4042807.93,4096880.85,4042807.93,3.4939,2017-09-07,2017-09-07,2026-01-10,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-89,GAR_000089,92,92,Garantie sur créances,3024567.53,3368828.25,3024567.53,2.6139,2017-09-09,2017-09-09,2025-09-30,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-90,GAR_000090,92,92,Nantissement,4830147.04,4972152.34,4830147.04,4.1743,2017-09-03,2017-09-03,2025-10-22,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-91,GAR_000091,93,93,Caution bancaire,2741853.27,2863730.59,2741853.27,0.0,2013-01-02,2013-01-02,2013-05-12,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-92,GAR_000092,94,94,Garantie sur fonds de commerce,15435853.44,15261134.05,15435853.44,0.0,2016-01-15,2016-01-15,2020-12-18,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-93,GAR_000093,94,94,Garantie de l'État,11771118.15,11459543.57,11771118.15,0.0,2016-01-15,2016-01-15,2020-12-28,Libérée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-94,GAR_000094,94,94,Garantie sur fonds de commerce,15730997.35,15034500.78,15730997.35,0.0,2016-01-12,2016-01-12,2020-09-08,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-95,GAR_000095,96,96,Caution personnelle,895771.06,871866.28,895771.06,0.0,2014-05-01,2014-05-01,2015-02-24,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-96,GAR_000096,97,97,Hypothèque,590471.21,599907.45,590471.21,59047121.0,2012-08-29,2012-08-29,2013-02-20,Active,None,Couverture standard Hypothèque pour dossier PME
-97,GAR_000097,97,97,Nantissement,596985.33,571497.91,596985.33,59698533.0,2012-08-24,2012-08-24,2013-01-27,Active,None,Couverture standard Nantissement pour dossier PME
-98,GAR_000098,98,98,Garantie sur matériel,526034.98,532534.64,526034.98,6.8222,2017-05-15,2017-05-15,2025-11-30,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-99,GAR_000099,99,99,Nantissement,15637710.78,16177644.53,15637710.78,1563771078.0,2009-10-21,2009-10-21,2010-05-29,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-100,GAR_000100,100,100,Caution personnelle,116232.03,121294.77,116232.03,0.0,2011-03-07,2011-03-07,2012-05-01,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-101,GAR_000101,102,102,Nantissement,6107743.42,5924089.55,6107743.42,0.0,2021-06-20,2021-06-20,2024-10-22,Expirée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-102,GAR_000102,103,103,Garantie Tamwilcom,94644.56,96844.4,94644.56,0.0,2008-01-23,2008-01-23,2008-12-10,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-103,GAR_000103,104,104,Garantie Tamwilcom,742531.6,712292.34,742531.6,24751053.3333,2009-10-07,2009-10-07,2010-11-16,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-104,GAR_000104,105,105,Garantie sur créances,18745338.29,19671824.75,18745338.29,89263515.6667,2014-07-09,2014-07-09,2020-04-21,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-105,GAR_000105,106,106,Hypothèque,12811670.72,13460054.6,12811670.72,0.0,2013-07-27,2013-07-27,2014-05-27,Libérée,None,Couverture standard Hypothèque pour dossier PME
-106,GAR_000106,107,107,Caution personnelle,832506.92,856807.02,832506.92,27750230.6667,2014-11-20,2014-11-20,2015-12-23,Active,None,Couverture standard Caution personnelle pour dossier TPE
-107,GAR_000107,108,108,Caution personnelle,37510.95,36075.82,37510.95,0.0,2009-08-07,2009-08-07,2011-01-18,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-108,GAR_000108,109,109,Caution bancaire,2075902.19,2071298.2,2075902.19,103795109.5,2012-08-27,2012-08-27,2013-04-25,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-109,GAR_000109,109,109,Garantie Tamwilcom,1984615.71,2076030.6,1984615.71,99230785.5,2012-08-25,2012-08-25,2013-03-22,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-110,GAR_000110,110,110,Hypothèque,461093.82,484779.27,461093.82,0.0,2013-10-31,2013-10-31,2014-05-09,Expirée,None,Couverture standard Hypothèque pour dossier PME
-111,GAR_000111,110,110,Nantissement,484497.25,486017.86,484497.25,0.0,2013-11-07,2013-11-07,2014-01-10,Libérée,None,Couverture standard Nantissement pour dossier PME
-112,GAR_000112,113,113,Caution personnelle,334033.88,343047.86,334033.88,33403388.0,2008-10-31,2008-10-31,2009-09-27,Active,None,Couverture standard Caution personnelle pour dossier TPE
-113,GAR_000113,114,114,Garantie Tamwilcom,86697.48,87387.25,86697.48,2889916.0,2009-11-01,2009-11-01,2010-10-10,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-114,GAR_000114,115,115,Caution personnelle,114823.81,114835.44,114823.81,2870595.25,2019-08-12,2019-08-12,2020-09-21,Active,None,Couverture standard Caution personnelle pour dossier TPE
-115,GAR_000115,118,118,Hypothèque,439663.32,426281.39,439663.32,21983166.0,2009-10-07,2009-10-07,2010-10-14,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-116,GAR_000116,118,118,Nantissement,489213.95,480975.5,489213.95,24460697.5,2009-10-10,2009-10-10,2010-12-18,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-117,GAR_000117,118,118,Garantie sur fonds de commerce,397785.33,401778.78,397785.33,19889266.5,2009-10-10,2009-10-10,2011-01-30,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-118,GAR_000118,119,119,Caution bancaire,8278894.6,8102325.45,8278894.6,165577892.0,2008-07-02,2008-07-02,2013-05-01,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-119,GAR_000119,120,120,Garantie Tamwilcom,184863.06,183593.91,184863.06,0.0,2019-07-08,2019-07-08,2020-08-01,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-120,GAR_000120,121,121,Garantie Tamwilcom,934639.68,890298.45,934639.68,0.0,2015-10-17,2015-10-17,2016-10-21,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-121,GAR_000121,124,124,Hypothèque,670616.19,667623.29,670616.19,67061619.0,2012-05-28,2012-05-28,2013-04-17,Active,None,Couverture standard Hypothèque pour dossier PME
-122,GAR_000122,126,126,Nantissement,9070281.96,9303837.86,9070281.96,0.0,2017-02-05,2017-02-05,2023-07-03,Expirée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-123,GAR_000123,126,126,Nantissement,9994175.11,10516368.24,9994175.11,0.0,2017-02-01,2017-02-01,2023-06-26,Expirée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-124,GAR_000124,126,126,Garantie sur créances,7934820.23,8340622.81,7934820.23,0.0,2017-02-06,2017-02-06,2023-08-30,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-125,GAR_000125,128,128,Caution personnelle,476955.98,454518.46,476955.98,11923899.5,2008-02-18,2008-02-18,2009-07-21,Active,None,Couverture standard Caution personnelle pour dossier TPE
-126,GAR_000126,130,130,Caution personnelle,70727.56,71716.62,70727.56,1414551.2,2008-10-24,2008-10-24,2010-01-11,Active,None,Couverture standard Caution personnelle pour dossier TPE
-127,GAR_000127,131,131,Garantie de l'État,2947031.79,3032652.0,2947031.79,9823439.3,2008-04-12,2008-04-12,2017-06-03,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-128,GAR_000128,131,131,Hypothèque,5154101.68,5036054.23,5154101.68,17180338.9333,2008-04-11,2008-04-11,2017-05-15,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-129,GAR_000129,131,131,Hypothèque,3970809.13,3953776.34,3970809.13,13236030.4333,2008-04-10,2008-04-10,2017-05-25,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-130,GAR_000130,132,132,Garantie sur matériel,30413.26,33302.14,30413.26,0.0,2015-05-08,2015-05-08,2016-03-01,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-131,GAR_000131,133,133,Nantissement,11575860.04,11099739.94,11575860.04,0.0,2009-03-02,2009-03-02,2013-05-31,Libérée,None,Couverture standard Nantissement pour dossier PME
-132,GAR_000132,134,134,Garantie sur matériel,4947219.85,6097164.71,4947219.85,0.0,2015-08-18,2015-08-18,2015-12-31,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-133,GAR_000133,135,135,Garantie Tamwilcom,102242.4,106577.74,102242.4,0.0,2007-06-07,2007-06-07,2008-01-02,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-134,GAR_000134,136,136,Garantie sur matériel,1211781.6,1429301.98,1211781.6,60589080.0,2015-07-17,2015-07-17,2016-04-30,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-135,GAR_000135,137,137,Nantissement,13240640.97,13369372.21,13240640.97,1324064097.0,2017-10-22,2017-10-22,2018-09-03,Active,None,Couverture standard Nantissement pour dossier PME
-136,GAR_000136,139,139,Garantie Tamwilcom,8638562.99,8263271.01,8638562.99,2.1956,2022-09-14,2022-09-14,2026-06-03,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-137,GAR_000137,142,142,Caution personnelle,319623.4,328634.62,319623.4,0.0,2013-10-30,2013-10-30,2015-02-20,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-138,GAR_000138,143,143,Garantie Tamwilcom,142880.6,139328.69,142880.6,2857612.0,2019-05-26,2019-05-26,2020-06-23,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-139,GAR_000139,144,144,Caution bancaire,8870491.29,8531857.56,8870491.29,3.8389,2017-09-23,2017-09-23,2027-04-17,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-140,GAR_000140,145,145,Garantie Tamwilcom,652253.72,671235.14,652253.72,21741790.6667,2014-01-03,2014-01-03,2015-02-17,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-141,GAR_000141,146,146,Garantie Tamwilcom,279785.71,270156.11,279785.71,0.0,2014-03-05,2014-03-05,2015-01-09,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-142,GAR_000142,147,147,Garantie Tamwilcom,29298.94,28673.52,29298.94,0.0,2014-06-26,2014-06-26,2015-09-21,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-143,GAR_000143,149,149,Caution personnelle,430350.23,410121.81,430350.23,0.0,2021-07-25,2021-07-25,2024-05-25,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-144,GAR_000144,151,151,Garantie Tamwilcom,1726519.43,1733220.98,1726519.43,0.0,2016-08-26,2016-08-26,2024-10-22,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-145,GAR_000145,152,152,Garantie Tamwilcom,6513908.42,6668372.51,6513908.42,0.0,2014-09-08,2014-09-08,2021-08-26,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-146,GAR_000146,153,153,Garantie sur créances,603436.79,636316.14,603436.79,0.0,2009-05-20,2009-05-20,2010-09-07,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-147,GAR_000147,153,153,Garantie sur fonds de commerce,829453.03,821447.28,829453.03,0.0,2009-05-26,2009-05-26,2010-06-05,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-148,GAR_000148,153,153,Garantie sur créances,433534.14,491561.27,433534.14,0.0,2009-05-27,2009-05-27,2010-05-27,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-149,GAR_000149,156,156,Garantie Tamwilcom,169059.27,164825.42,169059.27,4.173,2007-09-04,2007-09-04,2009-02-21,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-150,GAR_000150,158,158,Nantissement,6066616.32,5844895.05,6066616.32,0.0,2010-02-20,2010-02-20,2015-05-29,Libérée,None,Couverture standard Nantissement pour dossier PME
-151,GAR_000151,159,159,Garantie Tamwilcom,294459.25,280748.72,294459.25,9815308.3333,2021-09-01,2021-09-01,2022-08-02,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-152,GAR_000152,160,160,Garantie Tamwilcom,159372.35,156851.91,159372.35,0.0,2010-09-19,2010-09-19,2011-05-02,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-153,GAR_000153,161,161,Garantie sur fonds de commerce,860677.57,883484.15,860677.57,86067757.0,2017-04-06,2017-04-06,2017-12-27,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-154,GAR_000154,161,161,Garantie sur créances,476025.28,562706.2,476025.28,47602528.0,2017-04-08,2017-04-08,2018-02-07,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-155,GAR_000155,162,162,Caution bancaire,3263719.05,3115927.0,3263719.05,0.0,2009-09-19,2009-09-19,2014-05-15,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-156,GAR_000156,163,163,Nantissement,5541914.63,5521107.93,5541914.63,110838292.6,2020-07-04,2020-07-04,2021-10-17,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-157,GAR_000157,164,164,Caution bancaire,6125710.89,6287655.69,6125710.89,0.0,2019-06-30,2019-06-30,2019-12-06,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-158,GAR_000158,166,166,Garantie Tamwilcom,367719.96,368498.36,367719.96,0.0,2013-10-06,2013-10-06,2014-05-02,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-159,GAR_000159,167,167,Caution personnelle,45218.81,45851.05,45218.81,0.0,2014-01-12,2014-01-12,2014-04-14,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-160,GAR_000160,168,168,Aval,25390119.55,25901193.35,25390119.55,79344123.5938,2010-09-14,2010-09-14,2019-12-09,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-161,GAR_000161,169,169,Garantie sur matériel,2452818.92,2476996.1,2452818.92,0.0,2006-12-01,2006-12-01,2010-10-09,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-162,GAR_000162,169,169,Caution bancaire,1883661.8,1842733.45,1883661.8,0.0,2006-11-26,2006-11-26,2010-07-05,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-163,GAR_000163,170,170,Nantissement,3375500.88,3245881.93,3375500.88,84387522.0,2007-02-24,2007-02-24,2011-01-08,Active,None,Couverture standard Nantissement pour dossier PME
-164,GAR_000164,170,170,Nantissement,4624898.1,4437415.67,4624898.1,115622452.5,2007-02-21,2007-02-21,2011-01-03,Active,None,Couverture standard Nantissement pour dossier PME
-165,GAR_000165,171,171,Nantissement,11999742.04,11554269.5,11999742.04,171424886.2857,2009-05-31,2009-05-31,2014-08-11,Active,None,Couverture standard Nantissement pour dossier PME
-166,GAR_000166,172,172,Garantie Tamwilcom,1480869.33,1436960.73,1480869.33,148086933.0,2015-11-16,2015-11-16,2020-08-21,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-167,GAR_000167,173,173,Caution personnelle,156248.98,153689.54,156248.98,15624898.0,2019-09-27,2019-09-27,2020-04-08,Active,None,Couverture standard Caution personnelle pour dossier TPE
-168,GAR_000168,174,174,Garantie Tamwilcom,112174.36,115706.91,112174.36,0.0,2011-05-11,2011-05-11,2012-08-23,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-169,GAR_000169,175,175,Caution personnelle,534609.48,524045.57,534609.48,0.0,2016-03-18,2016-03-18,2017-04-27,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-170,GAR_000170,176,176,Caution personnelle,502854.58,528141.9,502854.58,8380909.6667,2017-06-08,2017-06-08,2018-07-05,Active,None,Couverture standard Caution personnelle pour dossier TPE
-171,GAR_000171,177,177,Garantie Tamwilcom,289680.83,293598.19,289680.83,28968083.0,2022-10-06,2022-10-06,2023-06-18,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-172,GAR_000172,178,178,Garantie sur matériel,1247691.7,1282343.61,1247691.7,0.0,2014-10-10,2014-10-10,2014-12-22,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-173,GAR_000173,179,179,Caution personnelle,330879.33,336960.18,330879.33,33087933.0,2013-10-09,2013-10-09,2014-08-03,Active,None,Couverture standard Caution personnelle pour dossier TPE
-174,GAR_000174,180,180,Garantie sur matériel,4701360.08,5497670.19,4701360.08,1.0585,2021-03-28,2021-03-28,2031-05-20,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-175,GAR_000175,181,181,Nantissement,2645993.88,2577182.55,2645993.88,0.0,2010-08-19,2010-08-19,2011-03-01,Libérée,None,Couverture standard Nantissement pour dossier PME
-176,GAR_000176,182,182,Garantie Tamwilcom,1304106.84,1304966.65,1304106.84,0.0,2010-10-29,2010-10-29,2011-10-15,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-177,GAR_000177,183,183,Caution bancaire,2938048.07,3064321.23,2938048.07,29380480.7,2021-12-06,2021-12-06,2024-05-25,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-178,GAR_000178,184,184,Caution personnelle,560603.57,566189.83,560603.57,11212071.4,2016-08-07,2016-08-07,2019-10-12,Active,None,Couverture standard Caution personnelle pour dossier TPE
-179,GAR_000179,185,185,Garantie Tamwilcom,446674.45,465299.31,446674.45,0.0,2016-09-30,2016-09-30,2017-04-24,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-180,GAR_000180,186,186,Garantie sur matériel,1381120.48,1498187.53,1381120.48,0.0,2013-08-24,2013-08-24,2014-01-18,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-181,GAR_000181,188,188,Caution personnelle,170680.09,164934.02,170680.09,0.0,2008-10-14,2008-10-14,2012-01-28,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-182,GAR_000182,189,189,Caution personnelle,727786.35,695147.02,727786.35,0.0,2007-05-12,2007-05-12,2010-04-02,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-183,GAR_000183,190,190,Nantissement,10440962.25,10435201.11,10440962.25,0.0,2011-08-26,2011-08-26,2021-05-16,Expirée,None,Couverture standard Nantissement pour dossier PME
-184,GAR_000184,191,191,Hypothèque,24249124.36,24970747.5,24249124.36,2.1826,2021-05-11,2021-05-11,2028-06-20,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-185,GAR_000185,192,192,Caution personnelle,56459.81,54267.21,56459.81,2822990.5,2016-05-10,2016-05-10,2017-05-26,Active,None,Couverture standard Caution personnelle pour dossier TPE
-186,GAR_000186,194,194,Caution bancaire,200748.61,204865.87,200748.61,0.0,2013-12-19,2013-12-19,2015-03-11,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-187,GAR_000187,195,195,Garantie sur créances,9752909.09,11507220.24,9752909.09,0.0,2015-04-08,2015-04-08,2024-08-16,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-188,GAR_000188,195,195,Garantie sur fonds de commerce,15167334.82,14477162.73,15167334.82,0.0,2015-04-14,2015-04-14,2024-10-25,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-189,GAR_000189,197,197,Nantissement,15835992.58,15253509.11,15835992.58,395899814.5,2007-02-03,2007-02-03,2008-06-14,Active,None,Couverture standard Nantissement pour dossier PME
-190,GAR_000190,198,198,Garantie Tamwilcom,1871509.95,1848836.58,1871509.95,0.0,2020-02-25,2020-02-25,2020-08-28,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-191,GAR_000191,199,199,Nantissement,13988294.11,14555496.11,13988294.11,0.0,2019-11-03,2019-11-03,2025-02-10,Libérée,None,Couverture standard Nantissement pour dossier PME
-192,GAR_000192,202,202,Garantie sur matériel,2740440.94,3385872.77,2740440.94,0.0,2015-02-05,2015-02-05,2016-01-10,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-193,GAR_000193,204,204,Nantissement,13338317.59,13171716.17,13338317.59,666915879.5,2021-06-14,2021-06-14,2022-06-06,Active,None,Couverture standard Nantissement pour dossier PME
-194,GAR_000194,205,205,Caution personnelle,695339.27,705617.53,695339.27,0.0,2011-11-25,2011-11-25,2014-09-20,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-195,GAR_000195,206,206,Nantissement,5339630.51,5194594.38,5339630.51,0.0,2015-05-16,2015-05-16,2015-10-14,Expirée,None,Couverture standard Nantissement pour dossier PME
-196,GAR_000196,207,207,Caution personnelle,285799.09,294007.07,285799.09,0.0,2012-08-24,2012-08-24,2013-07-03,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-197,GAR_000197,208,208,Caution bancaire,260037.79,269516.46,260037.79,13001889.5,2008-04-11,2008-04-11,2008-12-03,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-198,GAR_000198,209,209,Nantissement,1384280.52,1429705.24,1384280.52,3549437.2308,2010-10-04,2010-10-04,2019-10-11,Active,None,Couverture standard Nantissement pour dossier PME
-199,GAR_000199,209,209,Garantie Tamwilcom,1169663.22,1128334.2,1169663.22,2999136.4615,2010-10-06,2010-10-06,2020-02-18,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-200,GAR_000200,211,211,Caution bancaire,27578.79,27277.71,27578.79,306431.0,2016-02-26,2016-02-26,2018-08-16,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-201,GAR_000201,211,211,Garantie Tamwilcom,34240.78,32656.76,34240.78,380453.1111,2016-02-27,2016-02-27,2018-10-14,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-202,GAR_000202,213,213,Garantie sur fonds de commerce,33855714.79,32888991.34,33855714.79,0.0,2010-08-09,2010-08-09,2011-11-17,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-203,GAR_000203,214,214,Nantissement,18386038.32,19187259.97,18386038.32,0.0,2020-07-24,2020-07-24,2024-06-18,Libérée,None,Couverture standard Nantissement pour dossier PME
-204,GAR_000204,215,215,Hypothèque,848336.72,851318.61,848336.72,0.0,2023-09-14,2023-09-14,2024-12-21,Expirée,None,Couverture standard Hypothèque pour dossier PME
-205,GAR_000205,215,215,Caution bancaire,579867.44,601319.54,579867.44,0.0,2023-09-11,2023-09-11,2025-02-03,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-206,GAR_000206,216,216,Caution personnelle,118899.11,114962.49,118899.11,0.0,2010-07-26,2010-07-26,2011-05-06,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-207,GAR_000207,217,217,Nantissement,8923738.32,8716677.42,8923738.32,297457944.0,2017-04-01,2017-04-01,2019-01-14,Active,None,Couverture standard Nantissement pour dossier PME
-208,GAR_000208,218,218,Caution personnelle,45453.16,46455.96,45453.16,2272658.0,2021-08-31,2021-08-31,2022-03-29,Active,None,Couverture standard Caution personnelle pour dossier TPE
-209,GAR_000209,219,219,Garantie Tamwilcom,687866.2,672787.79,687866.2,0.0,2018-06-07,2018-06-07,2020-04-24,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-210,GAR_000210,222,222,Garantie sur matériel,100621.69,101515.89,100621.69,0.0,2010-12-04,2010-12-04,2011-12-25,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-211,GAR_000211,223,223,Caution personnelle,40725.36,40037.24,40725.36,0.0,2018-11-08,2018-11-08,2019-04-03,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-212,GAR_000212,224,224,Nantissement,39022890.52,40237549.4,39022890.52,0.0,2013-04-26,2013-04-26,2014-02-17,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-213,GAR_000213,225,225,Garantie de l'État,528572.86,508333.74,528572.86,0.0,2013-08-24,2013-08-24,2018-11-29,Libérée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-214,GAR_000214,225,225,Nantissement,736770.51,767351.71,736770.51,0.0,2013-08-23,2013-08-23,2018-12-26,Expirée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-215,GAR_000215,225,225,Aval,612403.94,643170.73,612403.94,0.0,2013-08-26,2013-08-26,2019-01-04,Expirée,None,Couverture standard Aval pour dossier Grande Entreprise
-216,GAR_000216,226,226,Caution personnelle,644520.96,675257.15,644520.96,0.0,2019-05-06,2019-05-06,2021-05-14,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-217,GAR_000217,227,227,Garantie Tamwilcom,2096101.46,2199860.68,2096101.46,0.0,2017-12-19,2017-12-19,2018-05-20,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-218,GAR_000218,228,228,Hypothèque,12323516.93,11786047.05,12323516.93,0.0,2007-09-04,2007-09-04,2008-08-12,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-219,GAR_000219,229,229,Garantie Tamwilcom,431904.78,436564.22,431904.78,43190478.0,2011-12-17,2011-12-17,2012-06-04,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-220,GAR_000220,231,231,Caution bancaire,1394002.17,1392513.33,1394002.17,15488913.0,2012-08-21,2012-08-21,2019-02-19,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-221,GAR_000221,233,233,Hypothèque,3267481.03,3193157.09,3267481.03,0.0,2007-06-06,2007-06-06,2008-02-03,Expirée,None,Couverture standard Hypothèque pour dossier PME
-222,GAR_000222,233,233,Hypothèque,3044753.52,3103705.18,3044753.52,0.0,2007-06-05,2007-06-05,2008-02-15,Expirée,None,Couverture standard Hypothèque pour dossier PME
-223,GAR_000223,234,234,Garantie Tamwilcom,2430142.31,2325629.93,2430142.31,121507115.5,2015-08-06,2015-08-06,2016-05-18,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-224,GAR_000224,235,235,Garantie sur matériel,2149995.05,2601979.16,2149995.05,5243890.3659,2015-11-08,2015-11-08,2022-01-13,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-225,GAR_000225,235,235,Hypothèque,3029099.96,2945496.75,3029099.96,7388048.6829,2015-11-05,2015-11-05,2022-01-14,Active,None,Couverture standard Hypothèque pour dossier PME
-226,GAR_000226,236,236,Garantie sur matériel,9277364.22,9482610.96,9277364.22,1.0775,2023-06-02,2023-06-02,2031-02-20,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-227,GAR_000227,237,237,Caution bancaire,5057144.02,5282629.05,5057144.02,0.0,2017-04-23,2017-04-23,2018-02-03,Libérée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-228,GAR_000228,237,237,Caution bancaire,5698890.5,5609403.43,5698890.5,0.0,2017-04-28,2017-04-28,2018-03-08,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-229,GAR_000229,238,238,Hypothèque,1398532.62,1372088.31,1398532.62,69926631.0,2013-09-30,2013-09-30,2014-03-31,Active,None,Couverture standard Hypothèque pour dossier PME
-230,GAR_000230,238,238,Garantie sur matériel,731282.4,767273.37,731282.4,36564120.0,2013-09-24,2013-09-24,2014-04-21,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-231,GAR_000231,239,239,Nantissement,5371075.47,5189655.93,5371075.47,537107547.0,2006-04-16,2006-04-16,2007-01-18,Active,None,Couverture standard Nantissement pour dossier PME
-232,GAR_000232,240,240,Garantie sur matériel,939131.42,1034753.63,939131.42,0.0,2017-02-19,2017-02-19,2017-12-25,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-233,GAR_000233,241,241,Garantie sur fonds de commerce,20698249.9,19829194.41,20698249.9,517456247.5,2016-03-05,2016-03-05,2017-05-16,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-234,GAR_000234,242,242,Hypothèque,12057097.96,11838033.37,12057097.96,0.0,2007-07-26,2007-07-26,2017-08-25,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-235,GAR_000235,242,242,Garantie sur fonds de commerce,10003606.74,9913186.54,10003606.74,0.0,2007-07-25,2007-07-25,2017-11-24,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-236,GAR_000236,242,242,Aval,8266398.94,8246602.64,8266398.94,0.0,2007-07-20,2007-07-20,2017-12-14,Libérée,None,Couverture standard Aval pour dossier Grande Entreprise
-237,GAR_000237,244,244,Caution personnelle,62521.03,59637.46,62521.03,0.0,2007-11-12,2007-11-12,2008-08-23,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-238,GAR_000238,245,245,Caution personnelle,621210.29,630561.2,621210.29,0.0,2018-07-04,2018-07-04,2019-07-03,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-239,GAR_000239,246,246,Caution bancaire,6786713.09,6855028.74,6786713.09,0.0,2010-06-22,2010-06-22,2020-06-21,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-240,GAR_000240,247,247,Garantie Tamwilcom,1944400.58,2003623.78,1944400.58,194440058.0,2009-11-09,2009-11-09,2010-09-21,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-241,GAR_000241,248,248,Aval,17374669.83,17348469.89,17374669.83,868733491.5,2018-11-14,2018-11-14,2019-12-31,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-242,GAR_000242,248,248,Garantie de l'État,15456147.58,15362151.59,15456147.58,772807379.0,2018-11-15,2018-11-15,2019-10-02,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-243,GAR_000243,249,249,Hypothèque,9986272.95,9879944.86,9986272.95,0.0,2017-07-24,2017-07-24,2018-04-29,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-244,GAR_000244,249,249,Garantie de l'État,6879420.43,6711306.19,6879420.43,0.0,2017-07-19,2017-07-19,2018-05-09,Libérée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-245,GAR_000245,249,249,Garantie sur créances,6816837.78,8486554.67,6816837.78,0.0,2017-07-19,2017-07-19,2018-02-20,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-246,GAR_000246,250,250,Nantissement,12828615.57,12465850.38,12828615.57,2.7786,2021-02-28,2021-02-28,2027-11-21,Active,None,Couverture standard Nantissement pour dossier PME
-247,GAR_000247,251,251,Hypothèque,4198426.65,4328246.84,4198426.65,209921332.5,2022-01-31,2022-01-31,2023-08-29,Active,None,Couverture standard Hypothèque pour dossier PME
-248,GAR_000248,253,253,Caution personnelle,559252.32,582085.73,559252.32,55925232.0,2022-06-29,2022-06-29,2023-12-11,Active,None,Couverture standard Caution personnelle pour dossier TPE
-249,GAR_000249,254,254,Nantissement,11848187.64,12396643.64,11848187.64,0.0,2021-10-27,2021-10-27,2022-04-04,Expirée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-250,GAR_000250,254,254,Garantie de l'État,7581963.66,7932746.96,7581963.66,0.0,2021-10-27,2021-10-27,2022-04-05,Libérée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-251,GAR_000251,256,256,Garantie sur matériel,3632741.32,3991530.86,3632741.32,0.0,2015-02-05,2015-02-05,2015-12-26,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-252,GAR_000252,256,256,Nantissement,5557631.02,5707802.41,5557631.02,0.0,2015-02-09,2015-02-09,2015-09-06,Expirée,None,Couverture standard Nantissement pour dossier PME
-253,GAR_000253,257,257,Caution bancaire,2453040.04,2388098.31,2453040.04,0.0,2015-06-07,2015-06-07,2016-02-14,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-254,GAR_000254,259,259,Caution personnelle,618031.79,631221.18,618031.79,0.0,2017-02-28,2017-02-28,2018-03-04,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-255,GAR_000255,261,261,Garantie Tamwilcom,692316.86,659877.94,692316.86,0.0,2008-01-06,2008-01-06,2008-07-19,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-256,GAR_000256,261,261,Nantissement,1132945.8,1173720.39,1132945.8,0.0,2008-01-07,2008-01-07,2008-06-18,Expirée,None,Couverture standard Nantissement pour dossier PME
-257,GAR_000257,262,262,Nantissement,691853.52,703330.2,691853.52,69185352.0,2010-01-01,2010-01-01,2010-06-16,Active,None,Couverture standard Nantissement pour dossier PME
-258,GAR_000258,263,263,Nantissement,4904157.67,5092774.02,4904157.67,11.6481,2016-11-10,2016-11-10,2025-05-12,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-259,GAR_000259,263,263,Garantie de l'État,3759990.96,3772024.56,3759990.96,8.9305,2016-11-07,2016-11-07,2025-06-19,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-260,GAR_000260,264,264,Garantie sur créances,34096995.74,42162934.67,34096995.74,3409699574.0,2010-02-08,2010-02-08,2010-11-30,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-261,GAR_000261,266,266,Garantie sur matériel,70312.91,87628.86,70312.91,0.0,2008-10-19,2008-10-19,2009-07-01,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-262,GAR_000262,266,266,Nantissement,92797.86,92407.3,92797.86,0.0,2008-10-19,2008-10-19,2009-05-03,Libérée,None,Couverture standard Nantissement pour dossier PME
-263,GAR_000263,268,268,Garantie Tamwilcom,215356.0,215659.77,215356.0,7178533.3333,2014-04-03,2014-04-03,2015-09-28,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-264,GAR_000264,271,271,Nantissement,8101003.12,8247008.93,8101003.12,135016718.6667,2022-07-01,2022-07-01,2023-10-11,Active,None,Couverture standard Nantissement pour dossier PME
-265,GAR_000265,272,272,Caution personnelle,276695.45,268656.06,276695.45,0.0,2007-08-22,2007-08-22,2008-09-05,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-266,GAR_000266,273,273,Nantissement,5092046.66,5320566.82,5092046.66,29953215.6471,2012-11-30,2012-11-30,2017-06-20,Active,None,Couverture standard Nantissement pour dossier PME
-267,GAR_000267,274,274,Caution bancaire,11831812.3,11445417.12,11831812.3,15.2165,2016-10-07,2016-10-07,2025-11-15,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-268,GAR_000268,275,275,Caution personnelle,110462.89,111797.21,110462.89,0.0,2008-01-06,2008-01-06,2008-12-10,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-269,GAR_000269,276,276,Caution personnelle,168408.74,169959.38,168408.74,0.0,2007-08-05,2007-08-05,2008-08-18,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-270,GAR_000270,277,277,Caution personnelle,754628.7,749542.24,754628.7,25154290.0,2018-07-02,2018-07-02,2019-03-26,Active,None,Couverture standard Caution personnelle pour dossier TPE
-271,GAR_000271,280,280,Nantissement,16795454.37,16504088.74,16795454.37,67181817.48,2015-03-30,2015-03-30,2021-08-09,Active,None,Couverture standard Nantissement pour dossier PME
-272,GAR_000272,281,281,Garantie de l'État,7162141.34,7503343.52,7162141.34,0.0,2014-08-08,2014-08-08,2019-06-21,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-273,GAR_000273,281,281,Hypothèque,10777530.19,11262068.85,10777530.19,0.0,2014-08-05,2014-08-05,2019-06-29,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-274,GAR_000274,282,282,Garantie Tamwilcom,7318518.93,7176842.62,7318518.93,0.0,2012-05-12,2012-05-12,2013-05-18,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-275,GAR_000275,283,283,Garantie de l'État,6268050.87,6571281.06,6268050.87,0.0,2018-03-11,2018-03-11,2020-10-17,Libérée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-276,GAR_000276,283,283,Garantie sur créances,7329496.02,7647023.53,7329496.02,0.0,2018-03-12,2018-03-12,2020-10-27,Libérée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-277,GAR_000277,284,284,Garantie Tamwilcom,12041.86,12583.97,12041.86,0.0,2019-03-10,2019-03-10,2019-06-01,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-278,GAR_000278,286,286,Garantie Tamwilcom,293747.75,294519.35,293747.75,9791591.6667,2019-03-07,2019-03-07,2020-05-29,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-279,GAR_000279,287,287,Garantie Tamwilcom,145301.88,141199.2,145301.88,14530188.0,2020-01-31,2020-01-31,2020-12-30,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-280,GAR_000280,288,288,Caution personnelle,52853.66,50638.92,52853.66,0.0,2013-08-06,2013-08-06,2013-12-06,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-281,GAR_000281,289,289,Hypothèque,3156514.96,3092191.52,3156514.96,315651496.0,2010-12-09,2010-12-09,2011-05-15,Active,None,Couverture standard Hypothèque pour dossier PME
-282,GAR_000282,290,290,Garantie Tamwilcom,79651.07,83222.93,79651.07,0.0,2019-10-16,2019-10-16,2020-05-13,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-283,GAR_000283,291,291,Nantissement,10322559.41,9887221.9,10322559.41,22939020.9111,2017-08-30,2017-08-30,2024-09-23,Active,None,Couverture standard Nantissement pour dossier PME
-284,GAR_000284,292,292,Garantie Tamwilcom,109887.26,107886.56,109887.26,0.0,2021-06-29,2021-06-29,2022-06-18,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-285,GAR_000285,294,294,Garantie Tamwilcom,11012333.9,11477612.08,11012333.9,0.9928,2022-08-22,2022-08-22,2032-11-07,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-286,GAR_000286,295,295,Garantie Tamwilcom,71498.94,75093.53,71498.94,0.0,2016-08-10,2016-08-10,2017-05-27,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-287,GAR_000287,297,297,Garantie sur matériel,812615.37,876498.5,812615.37,81261537.0,2021-04-25,2021-04-25,2021-12-28,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-288,GAR_000288,298,298,Caution personnelle,771522.82,741978.49,771522.82,4538369.5294,2018-04-22,2018-04-22,2021-07-29,Active,None,Couverture standard Caution personnelle pour dossier TPE
-289,GAR_000289,299,299,Caution bancaire,6496196.05,6835274.38,6496196.05,0.0,2008-03-20,2008-03-20,2014-02-05,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-290,GAR_000290,299,299,Hypothèque,9007936.26,9179408.88,9007936.26,0.0,2008-03-23,2008-03-23,2013-12-04,Libérée,None,Couverture standard Hypothèque pour dossier PME
-291,GAR_000291,302,302,Caution personnelle,638699.94,615023.55,638699.94,31934997.0,2013-09-17,2013-09-17,2014-09-06,Active,None,Couverture standard Caution personnelle pour dossier TPE
-292,GAR_000292,303,303,Hypothèque,125646150.79,128498404.24,125646150.79,0.0,2009-06-20,2009-06-20,2010-08-01,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-293,GAR_000293,304,304,Garantie de l'État,6102581.6,6150014.16,6102581.6,29059912.381,2008-04-30,2008-04-30,2012-01-20,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-294,GAR_000294,304,304,Nantissement,7156577.11,7042503.03,7156577.11,34078938.619,2008-04-30,2008-04-30,2012-04-15,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-295,GAR_000295,304,304,Garantie sur fonds de commerce,7641278.98,7490473.51,7641278.98,36387042.7619,2008-05-01,2008-05-01,2012-02-26,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-296,GAR_000296,305,305,Caution bancaire,2490078.21,2613839.95,2490078.21,0.0,2014-05-17,2014-05-17,2014-10-10,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-297,GAR_000297,306,306,Caution bancaire,799773.65,776707.97,799773.65,0.0,2015-01-01,2015-01-01,2015-06-06,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-298,GAR_000298,306,306,Garantie Tamwilcom,663035.87,670687.28,663035.87,0.0,2014-12-31,2014-12-31,2015-06-30,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-299,GAR_000299,307,307,Hypothèque,12167360.09,11734301.91,12167360.09,608368004.5,2007-07-30,2007-07-30,2008-08-30,Active,None,Couverture standard Hypothèque pour dossier PME
-300,GAR_000300,308,308,Nantissement,6531676.28,6334184.42,6531676.28,130633525.6,2017-02-06,2017-02-06,2020-02-12,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-301,GAR_000301,308,308,Aval,4820294.44,4604021.06,4820294.44,96405888.8,2017-02-04,2017-02-04,2019-11-09,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-302,GAR_000302,310,310,Nantissement,12701106.27,13012395.97,12701106.27,0.0,2006-09-21,2006-09-21,2016-09-14,Expirée,None,Couverture standard Nantissement pour dossier PME
-303,GAR_000303,311,311,Caution personnelle,177118.34,177444.75,177118.34,0.0,2013-12-24,2013-12-24,2014-09-07,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-304,GAR_000304,312,312,Garantie Tamwilcom,50544.44,49841.26,50544.44,0.0,2007-11-04,2007-11-04,2008-06-24,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-305,GAR_000305,313,313,Caution personnelle,67266.95,65837.62,67266.95,1681673.75,2008-01-26,2008-01-26,2009-01-22,Active,None,Couverture standard Caution personnelle pour dossier TPE
-306,GAR_000306,314,314,Garantie de l'État,953958.31,964261.94,953958.31,0.0,2021-09-22,2021-09-22,2022-01-07,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-307,GAR_000307,314,314,Hypothèque,1062647.19,1084779.88,1062647.19,0.0,2021-09-21,2021-09-21,2022-02-15,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-308,GAR_000308,315,315,Garantie sur créances,13324577.6,15673991.66,13324577.6,1.763,2020-11-07,2020-11-07,2028-01-31,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-309,GAR_000309,316,316,Caution personnelle,71555.77,68242.17,71555.77,0.0,2011-03-02,2011-03-02,2012-03-21,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-310,GAR_000310,317,317,Caution personnelle,51283.1,49538.15,51283.1,1282077.5,2008-01-19,2008-01-19,2009-04-11,Active,None,Couverture standard Caution personnelle pour dossier TPE
-311,GAR_000311,318,318,Caution personnelle,313106.8,327737.12,313106.8,0.0,2015-08-31,2015-08-31,2016-06-19,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-312,GAR_000312,320,320,Aval,7921156.88,8276713.58,7921156.88,0.5149,2020-08-13,2020-08-13,2028-02-20,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-313,GAR_000313,320,320,Garantie sur créances,7577573.24,8909805.75,7577573.24,0.4926,2020-08-07,2020-08-07,2028-02-06,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-314,GAR_000314,320,320,Hypothèque,14615770.65,15383066.76,14615770.65,0.95,2020-08-08,2020-08-08,2028-02-20,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-315,GAR_000315,321,321,Garantie Tamwilcom,399434.24,404471.2,399434.24,13314474.6667,2021-05-13,2021-05-13,2022-06-02,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-316,GAR_000316,323,323,Hypothèque,3169075.28,3245774.2,3169075.28,7.4514,2015-02-23,2015-02-23,2018-10-01,En cours de réalisation,None,Couverture standard Hypothèque pour dossier PME
-317,GAR_000317,323,323,Nantissement,4238551.51,4349457.44,4238551.51,9.9661,2015-02-25,2015-02-25,2018-08-19,Active,None,Couverture standard Nantissement pour dossier PME
-318,GAR_000318,324,324,Nantissement,2107284.27,2051463.92,2107284.27,210728427.0,2011-03-13,2011-03-13,2011-09-13,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-319,GAR_000319,324,324,Hypothèque,1754899.31,1711987.84,1754899.31,175489931.0,2011-03-17,2011-03-17,2011-10-21,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-320,GAR_000320,325,325,Garantie Tamwilcom,67297.35,66435.72,67297.35,6729735.0,2020-10-11,2020-10-11,2021-11-13,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-321,GAR_000321,326,326,Caution bancaire,2105971.69,2122193.62,2105971.69,3.7487,2022-02-09,2022-02-09,2026-01-24,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-322,GAR_000322,327,327,Caution bancaire,13085494.46,13171709.34,13085494.46,118959040.5455,2018-04-17,2018-04-17,2021-05-16,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-323,GAR_000323,328,328,Caution bancaire,1666539.43,1590587.17,1666539.43,83326971.5,2021-01-05,2021-01-05,2021-11-17,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-324,GAR_000324,329,329,Nantissement,19283131.13,18520975.72,19283131.13,0.0,2005-12-20,2005-12-20,2013-02-18,Libérée,None,Couverture standard Nantissement pour dossier PME
-325,GAR_000325,330,330,Garantie sur matériel,12350441.47,12743818.65,12350441.47,3.9953,2020-07-08,2020-07-08,2026-02-18,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-326,GAR_000326,331,331,Nantissement,16839775.05,17257159.83,16839775.05,1.7643,2022-02-15,2022-02-15,2031-03-11,Active,None,Couverture standard Nantissement pour dossier PME
-327,GAR_000327,332,332,Nantissement,3684837.76,3602116.59,3684837.76,0.0,2008-07-01,2008-07-01,2016-07-28,Libérée,None,Couverture standard Nantissement pour dossier PME
-328,GAR_000328,333,333,Caution bancaire,3321534.45,3416315.74,3321534.45,6039153.5455,2008-11-02,2008-11-02,2017-02-15,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-329,GAR_000329,334,334,Garantie sur matériel,5879195.88,6443761.39,5879195.88,5.2266,2021-05-01,2021-05-01,2025-08-12,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-330,GAR_000330,335,335,Garantie Tamwilcom,8189107.86,8060204.18,8189107.86,0.0,2010-08-27,2010-08-27,2011-10-03,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-331,GAR_000331,336,336,Garantie sur matériel,713902.29,725172.29,713902.29,35695114.5,2010-03-18,2010-03-18,2010-10-23,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-332,GAR_000332,337,337,Nantissement,1130918.0,1134552.87,1130918.0,0.0,2017-06-18,2017-06-18,2018-01-29,Libérée,None,Couverture standard Nantissement pour dossier PME
-333,GAR_000333,338,338,Nantissement,550221.7,566283.53,550221.7,0.0,2007-02-22,2007-02-22,2007-07-11,Expirée,None,Couverture standard Nantissement pour dossier PME
-334,GAR_000334,339,339,Caution personnelle,230973.38,235219.68,230973.38,4619467.6,2008-12-16,2008-12-16,2011-06-06,Active,None,Couverture standard Caution personnelle pour dossier TPE
-335,GAR_000335,340,340,Garantie Tamwilcom,182877.44,177608.58,182877.44,18287744.0,2020-06-02,2020-06-02,2020-11-27,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-336,GAR_000336,343,343,Garantie sur matériel,3761042.96,3904636.97,3761042.96,376104296.0,2007-07-22,2007-07-22,2008-02-08,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-337,GAR_000337,344,344,Aval,8573960.48,8175300.92,8573960.48,0.0,2015-12-04,2015-12-04,2023-08-26,Libérée,None,Couverture standard Aval pour dossier Grande Entreprise
-338,GAR_000338,344,344,Garantie sur fonds de commerce,10583438.38,10969092.3,10583438.38,0.0,2015-12-02,2015-12-02,2023-12-01,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-339,GAR_000339,346,346,Garantie sur fonds de commerce,2117165.17,2181455.66,2117165.17,42343303.4,2019-02-16,2019-02-16,2022-09-17,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-340,GAR_000340,346,346,Garantie sur créances,1020750.66,1160491.8,1020750.66,20415013.2,2019-02-19,2019-02-19,2022-09-22,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-341,GAR_000341,346,346,Garantie sur fonds de commerce,2289759.48,2244988.72,2289759.48,45795189.6,2019-02-18,2019-02-18,2022-11-17,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-342,GAR_000342,349,349,Caution personnelle,392872.92,380007.37,392872.92,19643646.0,2022-03-02,2022-03-02,2022-09-26,Active,None,Couverture standard Caution personnelle pour dossier TPE
-343,GAR_000343,350,350,Garantie sur matériel,701388.04,858865.38,701388.04,0.0,2009-05-28,2009-05-28,2009-11-16,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-344,GAR_000344,353,353,Garantie Tamwilcom,92105.22,96925.63,92105.22,0.0,2013-10-23,2013-10-23,2014-07-22,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-345,GAR_000345,354,354,Garantie sur matériel,216978.18,238711.95,216978.18,0.0,2015-04-30,2015-04-30,2015-08-11,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-346,GAR_000346,356,356,Garantie Tamwilcom,103293.19,106385.38,103293.19,0.0,2010-04-01,2010-04-01,2011-01-15,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-347,GAR_000347,357,357,Garantie Tamwilcom,4337578.53,4522374.32,4337578.53,1.4242,2023-06-25,2023-06-25,2026-10-26,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-348,GAR_000348,360,360,Garantie sur fonds de commerce,85299.74,87433.71,85299.74,448946.0,2006-05-10,2006-05-10,2009-11-06,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-349,GAR_000349,360,360,Aval,67279.18,69302.88,67279.18,354100.9474,2006-05-08,2006-05-08,2009-10-08,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-350,GAR_000350,360,360,Nantissement,88162.89,83996.4,88162.89,464015.2105,2006-05-10,2006-05-10,2009-11-07,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-351,GAR_000351,361,361,Caution personnelle,12942.29,12745.76,12942.29,323557.25,2007-10-28,2007-10-28,2008-08-23,Active,None,Couverture standard Caution personnelle pour dossier TPE
-352,GAR_000352,363,363,Garantie sur fonds de commerce,22236074.16,21185759.18,22236074.16,0.0,2019-08-19,2019-08-19,2020-04-04,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-353,GAR_000353,363,363,Aval,17120787.4,17757305.44,17120787.4,0.0,2019-08-14,2019-08-14,2020-03-11,Expirée,None,Couverture standard Aval pour dossier Grande Entreprise
-354,GAR_000354,364,364,Caution personnelle,17988.28,17396.4,17988.28,0.9452,2014-05-08,2014-05-08,2014-11-06,Active,None,Couverture standard Caution personnelle pour dossier TPE
-355,GAR_000355,365,365,Hypothèque,9686381.25,9351478.57,9686381.25,0.0,2007-06-20,2007-06-20,2009-03-18,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-356,GAR_000356,366,366,Aval,4360809.88,4408882.7,4360809.88,0.0,2009-10-31,2009-10-31,2016-05-22,Libérée,None,Couverture standard Aval pour dossier Grande Entreprise
-357,GAR_000357,366,366,Garantie sur fonds de commerce,7206808.13,7361284.79,7206808.13,0.0,2009-10-29,2009-10-29,2016-10-09,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-358,GAR_000358,367,367,Caution personnelle,28027.59,28601.56,28027.59,0.0,2010-05-26,2010-05-26,2010-10-31,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-359,GAR_000359,368,368,Garantie de l'État,10766576.12,10434633.35,10766576.12,2.2654,2016-05-03,2016-05-03,2026-10-16,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-360,GAR_000360,368,368,Garantie sur fonds de commerce,17740412.73,17340187.52,17740412.73,3.7328,2016-04-30,2016-04-30,2026-06-23,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-361,GAR_000361,369,369,Caution personnelle,78364.85,79377.08,78364.85,0.0,2011-04-30,2011-04-30,2012-06-05,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-362,GAR_000362,373,373,Caution personnelle,290360.43,286127.98,290360.43,0.0,2007-06-22,2007-06-22,2008-02-15,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-363,GAR_000363,374,374,Garantie Tamwilcom,8837104.42,8922229.73,8837104.42,0.0,2012-12-09,2012-12-09,2017-12-21,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-364,GAR_000364,375,375,Caution personnelle,656883.56,630731.21,656883.56,0.0,2017-08-28,2017-08-28,2018-12-16,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-365,GAR_000365,377,377,Garantie sur fonds de commerce,1864991.72,1857875.52,1864991.72,186499172.0,2008-12-29,2008-12-29,2009-05-03,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-366,GAR_000366,377,377,Nantissement,1567891.79,1576540.34,1567891.79,156789179.0,2008-12-23,2008-12-23,2009-06-22,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-367,GAR_000367,377,377,Hypothèque,1759713.08,1681708.55,1759713.08,175971308.0,2008-12-23,2008-12-23,2009-08-21,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-368,GAR_000368,378,378,Garantie Tamwilcom,250633.0,241251.99,250633.0,0.0,2008-02-07,2008-02-07,2009-01-04,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-369,GAR_000369,381,381,Garantie sur fonds de commerce,5769962.13,5678676.9,5769962.13,0.0,2018-11-27,2018-11-27,2019-06-07,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-370,GAR_000370,382,382,Garantie Tamwilcom,193166.68,194274.93,193166.68,0.0,2014-01-21,2014-01-21,2014-11-18,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-371,GAR_000371,383,383,Caution personnelle,51228.62,48838.28,51228.62,0.0,2014-08-07,2014-08-07,2014-10-07,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-372,GAR_000372,385,385,Nantissement,7367141.1,7498256.75,7367141.1,245571370.0,2008-01-18,2008-01-18,2009-03-08,Active,None,Couverture standard Nantissement pour dossier PME
-373,GAR_000373,387,387,Garantie de l'État,46957952.06,46629493.26,46957952.06,0.0,2021-04-16,2021-04-16,2023-01-10,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-374,GAR_000374,390,390,Hypothèque,9356931.8,9336682.49,9356931.8,0.0,2017-07-08,2017-07-08,2018-05-16,Libérée,None,Couverture standard Hypothèque pour dossier PME
-375,GAR_000375,392,392,Caution bancaire,2416767.32,2384429.73,2416767.32,40279455.3333,2009-10-18,2009-10-18,2010-10-15,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-376,GAR_000376,395,395,Garantie sur fonds de commerce,13839796.5,14199881.69,13839796.5,0.0,2012-11-20,2012-11-20,2016-12-06,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-377,GAR_000377,396,396,Garantie de l'État,30761910.86,29479433.82,30761910.86,1025397028.6667,2015-06-20,2015-06-20,2016-07-09,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-378,GAR_000378,397,397,Garantie sur matériel,1306607.35,1396955.11,1306607.35,130660735.0,2014-04-28,2014-04-28,2015-02-02,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-379,GAR_000379,398,398,Garantie Tamwilcom,14704.6,15309.46,14704.6,367615.0,2008-10-27,2008-10-27,2009-11-21,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-380,GAR_000380,400,400,Caution bancaire,2027251.36,2033297.58,2027251.36,202725136.0,2020-04-06,2020-04-06,2020-11-25,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-381,GAR_000381,401,401,Garantie Tamwilcom,344895.64,351481.24,344895.64,11496521.3333,2006-02-12,2006-02-12,2007-05-27,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-382,GAR_000382,402,402,Caution personnelle,536268.84,531931.98,536268.84,10725376.8,2006-04-09,2006-04-09,2007-08-23,Active,None,Couverture standard Caution personnelle pour dossier TPE
-383,GAR_000383,403,403,Garantie Tamwilcom,255416.42,262443.08,255416.42,0.0,2023-04-19,2023-04-19,2023-12-09,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-384,GAR_000384,404,404,Caution personnelle,859534.88,839912.35,859534.88,0.0,2023-12-20,2023-12-20,2025-04-11,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-385,GAR_000385,406,406,Caution personnelle,191610.0,189600.8,191610.0,1.2922,2023-01-23,2023-01-23,2024-03-19,Active,None,Couverture standard Caution personnelle pour dossier TPE
-386,GAR_000386,407,407,Caution personnelle,331321.1,331424.53,331321.1,0.0,2010-10-29,2010-10-29,2011-09-11,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-387,GAR_000387,408,408,Garantie Tamwilcom,169004.31,173907.08,169004.31,0.0,2009-09-04,2009-09-04,2010-04-09,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-388,GAR_000388,409,409,Hypothèque,14330152.8,14115380.59,14330152.8,0.0,2013-02-01,2013-02-01,2020-08-25,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-389,GAR_000389,411,411,Caution personnelle,53395.57,56055.16,53395.57,2669778.5,2016-09-10,2016-09-10,2017-12-13,Active,None,Couverture standard Caution personnelle pour dossier TPE
-390,GAR_000390,412,412,Caution personnelle,463918.76,480410.18,463918.76,0.0,2008-06-16,2008-06-16,2009-06-01,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-391,GAR_000391,413,413,Hypothèque,8358491.56,8285686.4,8358491.56,835849156.0,2013-10-29,2013-10-29,2016-05-25,Active,None,Couverture standard Hypothèque pour dossier PME
-392,GAR_000392,414,414,Caution bancaire,2886000.22,2811501.26,2886000.22,0.0,2008-06-20,2008-06-20,2015-01-23,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-393,GAR_000393,415,415,Garantie Tamwilcom,568036.43,557206.8,568036.43,18934547.6667,2007-02-10,2007-02-10,2008-04-04,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-394,GAR_000394,416,416,Garantie Tamwilcom,42697.99,42299.38,42697.99,0.0,2012-10-19,2012-10-19,2013-02-04,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-395,GAR_000395,417,417,Aval,1446700.9,1457797.52,1446700.9,14467009.0,2019-03-17,2019-03-17,2023-12-16,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-396,GAR_000396,417,417,Garantie sur créances,1359025.24,1559611.6,1359025.24,13590252.4,2019-03-17,2019-03-17,2024-03-05,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-397,GAR_000397,417,417,Garantie sur fonds de commerce,2498665.51,2382260.97,2498665.51,24986655.1,2019-03-14,2019-03-14,2023-12-17,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-398,GAR_000398,418,418,Hypothèque,10892394.43,10399087.68,10892394.43,0.0,2016-04-11,2016-04-11,2023-10-04,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-399,GAR_000399,418,418,Aval,8714432.94,9066996.69,8714432.94,0.0,2016-04-09,2016-04-09,2023-07-31,Libérée,None,Couverture standard Aval pour dossier Grande Entreprise
-400,GAR_000400,418,418,Garantie sur fonds de commerce,12498157.89,11952465.81,12498157.89,0.0,2016-04-09,2016-04-09,2023-11-03,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-401,GAR_000401,420,420,Garantie Tamwilcom,487501.68,507636.16,487501.68,48750168.0,2018-09-07,2018-09-07,2019-11-16,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-402,GAR_000402,422,422,Hypothèque,18286056.4,18047254.37,18286056.4,0.0,2020-02-27,2020-02-27,2023-11-27,Expirée,None,Couverture standard Hypothèque pour dossier PME
-403,GAR_000403,423,423,Garantie Tamwilcom,1318264.33,1387008.5,1318264.33,0.0,2020-03-28,2020-03-28,2020-12-25,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-404,GAR_000404,424,424,Garantie sur matériel,1533205.84,1857949.72,1533205.84,76660292.0,2007-08-27,2007-08-27,2008-07-13,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-405,GAR_000405,426,426,Garantie sur créances,344808.28,369002.74,344808.28,0.0,2008-07-30,2008-07-30,2010-05-24,Libérée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-406,GAR_000406,426,426,Aval,361167.76,344423.15,361167.76,0.0,2008-07-27,2008-07-27,2010-06-01,Expirée,None,Couverture standard Aval pour dossier Grande Entreprise
-407,GAR_000407,426,426,Hypothèque,409763.51,423399.37,409763.51,0.0,2008-07-30,2008-07-30,2010-07-06,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-408,GAR_000408,431,431,Caution personnelle,11654.13,11441.71,11654.13,233082.6,2011-05-30,2011-05-30,2012-07-10,Active,None,Couverture standard Caution personnelle pour dossier TPE
-409,GAR_000409,432,432,Garantie Tamwilcom,227529.01,223582.01,227529.01,0.0,2015-01-27,2015-01-27,2015-10-16,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-410,GAR_000410,433,433,Nantissement,3861454.16,3777849.55,3861454.16,0.0,2010-03-29,2010-03-29,2014-08-17,Libérée,None,Couverture standard Nantissement pour dossier PME
-411,GAR_000411,433,433,Caution bancaire,2951584.41,2852228.9,2951584.41,0.0,2010-03-28,2010-03-28,2014-10-08,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-412,GAR_000412,434,434,Garantie Tamwilcom,505544.98,485523.71,505544.98,50554498.0,2008-11-26,2008-11-26,2009-05-06,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-413,GAR_000413,437,437,Hypothèque,8375339.99,8263621.53,8375339.99,15.2494,2018-05-22,2018-05-22,2025-08-26,Active,None,Couverture standard Hypothèque pour dossier PME
-414,GAR_000414,438,438,Garantie sur matériel,7199985.04,8994484.64,7199985.04,1.3606,2021-08-11,2021-08-11,2027-06-30,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-415,GAR_000415,439,439,Caution personnelle,107720.44,103382.07,107720.44,10772044.0,2008-11-16,2008-11-16,2009-02-28,Active,None,Couverture standard Caution personnelle pour dossier TPE
-416,GAR_000416,441,441,Hypothèque,4794899.78,4821673.84,4794899.78,0.0,2007-09-14,2007-09-14,2011-11-23,Expirée,None,Couverture standard Hypothèque pour dossier PME
-417,GAR_000417,441,441,Caution bancaire,3022791.57,3004864.61,3022791.57,0.0,2007-09-17,2007-09-17,2012-02-23,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-418,GAR_000418,442,442,Nantissement,6311295.8,6510842.93,6311295.8,18.0895,2021-11-04,2021-11-04,2025-07-11,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-419,GAR_000419,444,444,Caution personnelle,142668.83,136123.33,142668.83,0.0,2018-01-09,2018-01-09,2018-08-23,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-420,GAR_000420,446,446,Garantie Tamwilcom,57891.49,57434.37,57891.49,1.0145,2016-04-13,2016-04-13,2017-01-17,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-421,GAR_000421,447,447,Caution bancaire,8705986.97,8330444.01,8705986.97,39572668.0455,2008-11-30,2008-11-30,2012-09-29,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-422,GAR_000422,448,448,Garantie Tamwilcom,85100.24,81053.07,85100.24,0.0,2010-04-05,2010-04-05,2010-11-02,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-423,GAR_000423,449,449,Garantie Tamwilcom,15808.56,15857.28,15808.56,197607.0,2018-07-04,2018-07-04,2021-01-30,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-424,GAR_000424,450,450,Garantie Tamwilcom,31233.46,31300.6,31233.46,0.0,2007-10-21,2007-10-21,2008-05-26,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-425,GAR_000425,451,451,Garantie sur matériel,7924301.76,8896192.51,7924301.76,113204310.8571,2016-04-22,2016-04-22,2021-04-04,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-426,GAR_000426,452,452,Garantie Tamwilcom,45007.65,43715.57,45007.65,0.0,2022-10-31,2022-10-31,2023-06-07,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-427,GAR_000427,454,454,Nantissement,4054515.37,4079996.23,4054515.37,0.0,2017-05-28,2017-05-28,2018-07-23,Libérée,None,Couverture standard Nantissement pour dossier PME
-428,GAR_000428,454,454,Nantissement,3815824.76,3809749.75,3815824.76,0.0,2017-06-03,2017-06-03,2018-05-05,Expirée,None,Couverture standard Nantissement pour dossier PME
-429,GAR_000429,455,455,Garantie sur matériel,1846034.99,1924999.04,1846034.99,0.0,2015-04-23,2015-04-23,2015-10-31,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-430,GAR_000430,456,456,Garantie sur matériel,5622055.79,6063506.44,5622055.79,0.0,2014-06-29,2014-06-29,2022-08-20,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-431,GAR_000431,459,459,Hypothèque,1651983.9,1675276.32,1651983.9,0.0,2021-01-20,2021-01-20,2021-07-24,Libérée,None,Couverture standard Hypothèque pour dossier PME
-432,GAR_000432,462,462,Caution personnelle,113686.89,113049.66,113686.89,0.0,2010-11-02,2010-11-02,2011-06-18,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-433,GAR_000433,463,463,Caution personnelle,88851.86,92376.01,88851.86,2221296.5,2017-09-24,2017-09-24,2019-01-02,Active,None,Couverture standard Caution personnelle pour dossier TPE
-434,GAR_000434,464,464,Aval,22996517.45,23947791.44,22996517.45,191637645.4167,2017-10-21,2017-10-21,2021-05-27,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-435,GAR_000435,465,465,Garantie sur fonds de commerce,31573668.71,31664559.88,31573668.71,0.0,2019-06-24,2019-06-24,2020-04-02,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-436,GAR_000436,466,466,Garantie Tamwilcom,79964.0,79337.38,79964.0,7996400.0,2012-09-05,2012-09-05,2013-04-04,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-437,GAR_000437,467,467,Caution personnelle,312106.4,318681.73,312106.4,0.0,2006-11-28,2006-11-28,2007-05-10,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-438,GAR_000438,469,469,Garantie sur matériel,5129220.54,6330430.26,5129220.54,0.0,2021-08-02,2021-08-02,2021-12-07,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-439,GAR_000439,470,470,Hypothèque,6309699.04,6633534.5,6309699.04,0.0,2008-09-16,2008-09-16,2008-12-23,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-440,GAR_000440,473,473,Caution personnelle,668539.46,660757.48,668539.46,22284648.6667,2019-02-18,2019-02-18,2021-12-06,Active,None,Couverture standard Caution personnelle pour dossier TPE
-441,GAR_000441,474,474,Caution personnelle,594031.06,571970.39,594031.06,19801035.3333,2010-11-21,2010-11-21,2011-11-14,Active,None,Couverture standard Caution personnelle pour dossier TPE
-442,GAR_000442,475,475,Garantie Tamwilcom,327582.48,322615.72,327582.48,0.0,2010-12-11,2010-12-11,2011-07-03,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-443,GAR_000443,476,476,Nantissement,876390.6,898456.24,876390.6,0.0,2007-11-18,2007-11-18,2008-04-12,Libérée,None,Couverture standard Nantissement pour dossier PME
-444,GAR_000444,477,477,Garantie sur matériel,11769747.41,13821021.64,11769747.41,0.0,2015-12-07,2015-12-07,2016-06-18,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-445,GAR_000445,478,478,Garantie Tamwilcom,4725621.44,4866161.45,4725621.44,236281072.0,2014-10-23,2014-10-23,2015-04-29,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-446,GAR_000446,482,482,Hypothèque,1737159.2,1664355.0,1737159.2,0.0,2015-07-18,2015-07-18,2016-05-05,Expirée,None,Couverture standard Hypothèque pour dossier PME
-447,GAR_000447,483,483,Garantie sur matériel,2328495.09,2484137.73,2328495.09,19404125.75,2015-05-10,2015-05-10,2020-01-04,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-448,GAR_000448,484,484,Garantie Tamwilcom,38769.82,40789.73,38769.82,0.0,2007-06-07,2007-06-07,2008-05-27,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-449,GAR_000449,486,486,Garantie sur matériel,2817082.78,2934498.79,2817082.78,0.0,2016-03-20,2016-03-20,2021-08-21,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-450,GAR_000450,487,487,Caution bancaire,746856.43,723734.04,746856.43,0.0,2008-12-14,2008-12-14,2009-07-15,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-451,GAR_000451,488,488,Caution personnelle,399954.18,402198.09,399954.18,13331806.0,2013-12-22,2013-12-22,2015-02-09,Active,None,Couverture standard Caution personnelle pour dossier TPE
-452,GAR_000452,489,489,Garantie sur matériel,3227057.58,3857664.29,3227057.58,53784293.0,2021-06-18,2021-06-18,2024-01-12,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-453,GAR_000453,490,490,Garantie sur matériel,1628806.69,1661585.72,1628806.69,3.2165,2020-05-17,2020-05-17,2026-03-27,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-454,GAR_000454,492,492,Caution bancaire,10579666.66,10660375.42,10579666.66,0.0,2008-01-11,2008-01-11,2008-12-30,Libérée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-455,GAR_000455,493,493,Garantie sur matériel,1119005.96,1243317.82,1119005.96,6216699.7778,2009-04-16,2009-04-16,2012-03-24,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-456,GAR_000456,495,495,Garantie Tamwilcom,4198783.31,4056238.41,4198783.31,209939165.5,2008-01-26,2008-01-26,2008-10-04,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-457,GAR_000457,496,496,Nantissement,4788437.18,4863250.81,4788437.18,0.0,2008-07-09,2008-07-09,2015-08-02,Libérée,None,Couverture standard Nantissement pour dossier PME
-458,GAR_000458,496,496,Garantie Tamwilcom,4116297.78,4201801.63,4116297.78,0.0,2008-07-04,2008-07-04,2015-11-23,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-459,GAR_000459,497,497,Caution bancaire,13249793.13,12796953.52,13249793.13,0.0,2016-03-21,2016-03-21,2021-02-10,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-460,GAR_000460,500,500,Garantie Tamwilcom,2504192.4,2568954.03,2504192.4,83473080.0,2014-03-29,2014-03-29,2015-01-15,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-461,GAR_000461,501,501,Garantie Tamwilcom,400464.61,381879.79,400464.61,40046461.0,2020-02-17,2020-02-17,2020-10-04,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-462,GAR_000462,502,502,Hypothèque,2167232.79,2159601.76,2167232.79,0.7599,2022-10-13,2022-10-13,2032-01-31,Active,None,Couverture standard Hypothèque pour dossier PME
-463,GAR_000463,502,502,Hypothèque,2337033.33,2247783.78,2337033.33,0.8195,2022-10-15,2022-10-15,2032-02-26,Active,None,Couverture standard Hypothèque pour dossier PME
-464,GAR_000464,503,503,Garantie sur créances,31962293.36,35368491.39,31962293.36,0.0,2011-05-28,2011-05-28,2012-08-16,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-465,GAR_000465,505,505,Garantie Tamwilcom,219702.76,225151.83,219702.76,0.0,2010-07-12,2010-07-12,2011-09-17,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-466,GAR_000466,506,506,Caution personnelle,339844.23,336134.09,339844.23,0.0,2011-12-26,2011-12-26,2012-10-18,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-467,GAR_000467,507,507,Caution bancaire,9769097.88,9833047.88,9769097.88,0.0,2011-04-21,2011-04-21,2015-08-05,Libérée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-468,GAR_000468,508,508,Garantie de l'État,10834084.23,11112797.95,10834084.23,1.4788,2020-06-23,2020-06-23,2029-03-17,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-469,GAR_000469,509,509,Garantie de l'État,21054539.92,21611243.09,21054539.92,0.0,2016-02-22,2016-02-22,2017-02-28,Libérée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-470,GAR_000470,509,509,Hypothèque,35351632.38,35674164.24,35351632.38,0.0,2016-02-23,2016-02-23,2016-12-20,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-471,GAR_000471,509,509,Garantie sur fonds de commerce,36353152.39,35063477.8,36353152.39,0.0,2016-02-17,2016-02-17,2017-03-15,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-472,GAR_000472,510,510,Garantie sur créances,9625022.87,11150209.12,9625022.87,0.0,2015-02-27,2015-02-27,2021-08-17,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-473,GAR_000473,510,510,Hypothèque,15939467.73,16550965.79,15939467.73,0.0,2015-02-28,2015-02-28,2021-09-21,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-474,GAR_000474,510,510,Hypothèque,16963457.32,17065865.09,16963457.32,0.0,2015-02-26,2015-02-26,2021-11-24,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-475,GAR_000475,512,512,Garantie Tamwilcom,4033406.75,3887869.13,4033406.75,0.0,2010-09-05,2010-09-05,2014-04-15,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-476,GAR_000476,512,512,Caution bancaire,4003646.61,4123344.45,4003646.61,0.0,2010-08-30,2010-08-30,2014-07-01,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-477,GAR_000477,513,513,Garantie Tamwilcom,101215.06,98286.65,101215.06,0.0,2013-10-16,2013-10-16,2014-05-25,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-478,GAR_000478,514,514,Garantie Tamwilcom,961393.54,960370.07,961393.54,0.0,2006-11-07,2006-11-07,2007-06-06,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-479,GAR_000479,515,515,Garantie Tamwilcom,11291004.77,10825412.12,11291004.77,0.0,2006-06-09,2006-06-09,2011-09-23,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-480,GAR_000480,516,516,Caution personnelle,14278.87,13710.08,14278.87,0.0,2009-09-20,2009-09-20,2010-07-03,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-481,GAR_000481,517,517,Garantie sur matériel,631621.85,688141.39,631621.85,0.0,2013-05-30,2013-05-30,2013-09-07,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-482,GAR_000482,521,521,Hypothèque,2756608.31,2877689.25,2756608.31,0.0,2019-06-06,2019-06-06,2022-09-11,Expirée,None,Couverture standard Hypothèque pour dossier PME
-483,GAR_000483,521,521,Caution bancaire,2083502.99,2156982.3,2083502.99,0.0,2019-06-03,2019-06-03,2022-09-22,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-484,GAR_000484,523,523,Hypothèque,915699.54,877992.62,915699.54,0.0,2006-09-15,2006-09-15,2007-04-25,Expirée,None,Couverture standard Hypothèque pour dossier PME
-485,GAR_000485,524,524,Garantie Tamwilcom,2271454.13,2355296.77,2271454.13,0.0,2007-12-19,2007-12-19,2008-06-15,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-486,GAR_000486,525,525,Garantie sur matériel,818215.63,912552.15,818215.63,40910781.5,2018-01-26,2018-01-26,2018-08-30,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-487,GAR_000487,525,525,Nantissement,1326847.15,1268910.23,1326847.15,66342357.5,2018-01-23,2018-01-23,2018-10-05,Active,None,Couverture standard Nantissement pour dossier PME
-488,GAR_000488,526,526,Hypothèque,1157638.63,1142410.83,1157638.63,0.0,2010-06-09,2010-06-09,2011-05-04,Libérée,None,Couverture standard Hypothèque pour dossier PME
-489,GAR_000489,527,527,Hypothèque,3362833.94,3492378.37,3362833.94,5.9266,2019-10-27,2019-10-27,2025-12-21,Active,None,Couverture standard Hypothèque pour dossier PME
-490,GAR_000490,528,528,Garantie Tamwilcom,1294194.31,1290228.08,1294194.31,1.8242,2019-01-15,2019-01-15,2026-06-29,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-491,GAR_000491,528,528,Caution bancaire,1531480.75,1575495.95,1531480.75,2.1587,2019-01-10,2019-01-10,2026-06-17,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-492,GAR_000492,530,530,Caution bancaire,7250643.24,7047218.69,7250643.24,0.0,2016-04-25,2016-04-25,2017-01-01,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-493,GAR_000493,531,531,Nantissement,1327504.95,1298109.87,1327504.95,0.0,2017-07-30,2017-07-30,2018-02-20,Expirée,None,Couverture standard Nantissement pour dossier PME
-494,GAR_000494,534,534,Garantie Tamwilcom,249103.56,251224.67,249103.56,0.0,2021-07-28,2021-07-28,2022-10-26,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-495,GAR_000495,537,537,Hypothèque,670809.38,648663.43,670809.38,67080938.0,2016-03-12,2016-03-12,2016-12-11,Active,None,Couverture standard Hypothèque pour dossier PME
-496,GAR_000496,538,538,Garantie Tamwilcom,407518.76,416748.17,407518.76,0.0,2010-08-17,2010-08-17,2011-05-01,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-497,GAR_000497,539,539,Garantie sur créances,5040909.5,5076605.4,5040909.5,42007579.1667,2007-01-06,2007-01-06,2011-05-14,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-498,GAR_000498,539,539,Garantie sur créances,4077451.1,4684303.27,4077451.1,33978759.1667,2007-01-11,2007-01-11,2011-06-23,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-499,GAR_000499,540,540,Garantie Tamwilcom,59022.8,60603.63,59022.8,0.0,2022-09-25,2022-09-25,2023-04-10,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-500,GAR_000500,542,542,Nantissement,800810.23,796417.31,800810.23,0.0,2016-03-15,2016-03-15,2016-10-30,Libérée,None,Couverture standard Nantissement pour dossier PME
-501,GAR_000501,542,542,Caution bancaire,740476.62,775595.71,740476.62,0.0,2016-03-13,2016-03-13,2017-02-02,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-502,GAR_000502,544,544,Nantissement,1719073.89,1675640.16,1719073.89,0.0,2019-08-30,2019-08-30,2020-12-13,Libérée,None,Couverture standard Nantissement pour dossier PME
-503,GAR_000503,545,545,Garantie sur matériel,1385875.44,1416734.03,1385875.44,0.0,2012-11-02,2012-11-02,2013-08-10,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-504,GAR_000504,547,547,Caution personnelle,279680.11,285965.53,279680.11,27968011.0,2009-01-12,2009-01-12,2009-11-30,Active,None,Couverture standard Caution personnelle pour dossier TPE
-505,GAR_000505,548,548,Aval,2127164.8,2071857.28,2127164.8,0.0,2018-10-09,2018-10-09,2023-02-24,Expirée,None,Couverture standard Aval pour dossier Grande Entreprise
-506,GAR_000506,548,548,Garantie de l'État,2477709.2,2438678.1,2477709.2,0.0,2018-10-13,2018-10-13,2023-04-02,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-507,GAR_000507,548,548,Garantie de l'État,2687449.36,2730973.82,2687449.36,0.0,2018-10-13,2018-10-13,2023-04-29,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-508,GAR_000508,549,549,Garantie de l'État,714059.22,733121.06,714059.22,0.444,2023-02-06,2023-02-06,2029-05-02,Active,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-509,GAR_000509,549,549,Garantie sur créances,564099.73,690794.33,564099.73,0.3507,2023-02-01,2023-02-01,2029-06-13,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-510,GAR_000510,549,549,Garantie sur créances,598906.29,612367.15,598906.29,0.3724,2023-02-04,2023-02-04,2029-04-17,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-511,GAR_000511,550,550,Hypothèque,2831857.0,2940361.8,2831857.0,0.0,2011-09-03,2011-09-03,2016-04-01,Libérée,None,Couverture standard Hypothèque pour dossier PME
-512,GAR_000512,551,551,Garantie sur matériel,956994.76,1063180.16,956994.76,31899825.3333,2017-06-21,2017-06-21,2018-04-28,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-513,GAR_000513,553,553,Hypothèque,1003696.52,971422.87,1003696.52,0.0,2011-07-23,2011-07-23,2017-10-17,Expirée,None,Couverture standard Hypothèque pour dossier PME
-514,GAR_000514,553,553,Garantie Tamwilcom,712759.61,745561.15,712759.61,0.0,2011-07-21,2011-07-21,2017-06-24,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-515,GAR_000515,554,554,Garantie sur matériel,8602651.47,9637249.95,8602651.47,13.9916,2013-05-29,2013-05-29,2017-05-05,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-516,GAR_000516,556,556,Garantie sur fonds de commerce,2007331.19,2075339.47,2007331.19,0.0,2007-06-05,2007-06-05,2008-05-15,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-517,GAR_000517,556,556,Garantie de l'État,1107884.89,1085924.17,1107884.89,0.0,2007-06-07,2007-06-07,2008-07-22,Libérée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-518,GAR_000518,556,556,Garantie de l'État,1420562.8,1379951.0,1420562.8,0.0,2007-06-04,2007-06-04,2008-08-27,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-519,GAR_000519,557,557,Caution bancaire,1964322.29,1901487.06,1964322.29,0.0,2016-08-28,2016-08-28,2017-09-23,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-520,GAR_000520,558,558,Caution bancaire,1507872.81,1461499.51,1507872.81,0.0,2017-08-16,2017-08-16,2018-05-03,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-521,GAR_000521,561,561,Nantissement,8148725.81,8105210.42,8148725.81,1.2952,2022-11-30,2022-11-30,2031-05-25,Active,None,Couverture standard Nantissement pour dossier PME
-522,GAR_000522,562,562,Hypothèque,2174202.34,2173693.8,2174202.34,0.0,2019-05-19,2019-05-19,2021-03-11,Libérée,None,Couverture standard Hypothèque pour dossier PME
-523,GAR_000523,563,563,Garantie sur matériel,4019270.15,4812459.03,4019270.15,2.4714,2020-01-30,2020-01-30,2027-01-06,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-524,GAR_000524,564,564,Nantissement,3534677.76,3425278.95,3534677.76,1.1758,2020-08-13,2020-08-13,2028-06-06,Active,None,Couverture standard Nantissement pour dossier PME
-525,GAR_000525,564,564,Hypothèque,3052882.33,3158560.09,3052882.33,1.0155,2020-08-13,2020-08-13,2028-06-29,Active,None,Couverture standard Hypothèque pour dossier PME
-526,GAR_000526,565,565,Caution bancaire,1116643.7,1077914.49,1116643.7,0.0,2021-10-03,2021-10-03,2022-08-13,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-527,GAR_000527,568,568,Garantie Tamwilcom,108519.07,110710.94,108519.07,0.0,2019-12-15,2019-12-15,2020-03-19,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-528,GAR_000528,569,569,Caution personnelle,173390.14,167222.0,173390.14,8669507.0,2022-04-28,2022-04-28,2023-06-06,Active,None,Couverture standard Caution personnelle pour dossier TPE
-529,GAR_000529,570,570,Hypothèque,1334253.87,1275062.21,1334253.87,7848552.1765,2018-06-05,2018-06-05,2021-08-23,Active,None,Couverture standard Hypothèque pour dossier PME
-530,GAR_000530,571,571,Nantissement,2890727.79,2854747.89,2890727.79,8502140.5588,2015-01-10,2015-01-10,2021-10-13,Active,None,Couverture standard Nantissement pour dossier PME
-531,GAR_000531,571,571,Garantie Tamwilcom,2138581.76,2094282.49,2138581.76,6289946.3529,2015-01-04,2015-01-04,2022-01-31,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-532,GAR_000532,572,572,Hypothèque,15782301.93,15172499.39,15782301.93,315646038.6,2017-05-18,2017-05-18,2019-02-12,Active,None,Couverture standard Hypothèque pour dossier PME
-533,GAR_000533,573,573,Nantissement,1717102.29,1748388.04,1717102.29,0.0,2009-09-20,2009-09-20,2010-08-17,Libérée,None,Couverture standard Nantissement pour dossier PME
-534,GAR_000534,574,574,Caution bancaire,7362165.55,7148418.54,7362165.55,18877347.5641,2015-04-11,2015-04-11,2021-11-20,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-535,GAR_000535,575,575,Garantie Tamwilcom,1073280.67,1075997.64,1073280.67,53664033.5,2008-12-29,2008-12-29,2009-08-19,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-536,GAR_000536,576,576,Garantie Tamwilcom,369473.01,360421.77,369473.01,0.0,2011-08-27,2011-08-27,2012-05-24,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-537,GAR_000537,577,577,Caution personnelle,548604.61,534915.97,548604.61,54860461.0,2012-01-05,2012-01-05,2012-09-30,Active,None,Couverture standard Caution personnelle pour dossier TPE
-538,GAR_000538,578,578,Nantissement,6078586.36,6076260.06,6078586.36,303929318.0,2005-11-14,2005-11-14,2006-05-06,Active,None,Couverture standard Nantissement pour dossier PME
-539,GAR_000539,579,579,Caution bancaire,839905.7,824242.9,839905.7,0.0,2017-07-22,2017-07-22,2017-11-20,Libérée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-540,GAR_000540,580,580,Nantissement,11422571.2,11768840.79,11422571.2,0.0,2017-02-26,2017-02-26,2019-09-30,Expirée,None,Couverture standard Nantissement pour dossier PME
-541,GAR_000541,581,581,Garantie sur matériel,1879278.29,1912168.59,1879278.29,6062188.0323,2013-03-14,2013-03-14,2021-03-13,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-542,GAR_000542,582,582,Caution personnelle,401275.15,416393.36,401275.15,10031878.75,2008-12-15,2008-12-15,2010-03-06,Active,None,Couverture standard Caution personnelle pour dossier TPE
-543,GAR_000543,583,583,Nantissement,993239.39,975563.43,993239.39,0.9635,2022-05-21,2022-05-21,2027-11-23,Active,None,Couverture standard Nantissement pour dossier PME
-544,GAR_000544,583,583,Garantie sur matériel,779794.83,793591.98,779794.83,0.7564,2022-05-25,2022-05-25,2027-11-29,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-545,GAR_000545,585,585,Garantie Tamwilcom,104935.27,110103.29,104935.27,0.0,2016-11-08,2016-11-08,2019-05-27,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-546,GAR_000546,585,585,Garantie Tamwilcom,115334.8,113119.42,115334.8,0.0,2016-11-05,2016-11-05,2019-04-14,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-547,GAR_000547,586,586,Caution bancaire,4324329.83,4313718.55,4324329.83,20592046.8095,2014-03-23,2014-03-23,2020-10-29,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-548,GAR_000548,588,588,Garantie Tamwilcom,59950.8,60940.07,59950.8,0.0,2018-10-14,2018-10-14,2020-02-07,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-549,GAR_000549,590,590,Caution bancaire,1188129.99,1135461.03,1188129.99,0.0,2018-04-19,2018-04-19,2018-10-24,Libérée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-550,GAR_000550,591,591,Garantie sur créances,990047.17,1176892.58,990047.17,0.0,2022-02-19,2022-02-19,2023-04-02,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-551,GAR_000551,591,591,Garantie sur créances,1082433.98,1290914.46,1082433.98,0.0,2022-02-15,2022-02-15,2023-06-27,Libérée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-552,GAR_000552,591,591,Hypothèque,1455863.85,1495435.21,1455863.85,0.0,2022-02-16,2022-02-16,2023-06-03,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-553,GAR_000553,592,592,Garantie Tamwilcom,105650.67,102577.82,105650.67,0.0,2021-11-25,2021-11-25,2023-02-18,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-554,GAR_000554,593,593,Caution bancaire,6553869.87,6737129.94,6553869.87,0.0,2011-10-17,2011-10-17,2020-04-29,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-555,GAR_000555,594,594,Nantissement,836058.49,868918.53,836058.49,41802924.5,2012-05-31,2012-05-31,2013-06-03,Active,None,Couverture standard Nantissement pour dossier PME
-556,GAR_000556,595,595,Caution bancaire,243274.82,253954.33,243274.82,12163741.0,2011-09-21,2011-09-21,2015-07-27,Active,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-557,GAR_000557,596,596,Hypothèque,3059863.41,2944545.45,3059863.41,0.0,2014-11-23,2014-11-23,2015-11-05,Expirée,None,Couverture standard Hypothèque pour dossier PME
-558,GAR_000558,597,597,Garantie Tamwilcom,538048.81,564522.21,538048.81,17934960.3333,2008-03-10,2008-03-10,2009-05-11,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-559,GAR_000559,598,598,Nantissement,21699547.2,21173714.22,21699547.2,2169954720.0,2022-11-10,2022-11-10,2024-09-29,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-560,GAR_000560,599,599,Nantissement,4334660.33,4164032.08,4334660.33,0.0,2007-09-11,2007-09-11,2008-07-18,Libérée,None,Couverture standard Nantissement pour dossier PME
-561,GAR_000561,600,600,Garantie Tamwilcom,144012.85,137902.59,144012.85,4800428.3333,2012-08-03,2012-08-03,2014-01-03,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-562,GAR_000562,601,601,Garantie Tamwilcom,316979.3,326836.54,316979.3,3169793.0,2009-05-04,2009-05-04,2012-05-17,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-563,GAR_000563,602,602,Garantie Tamwilcom,111655.11,113307.45,111655.11,0.0,2008-03-29,2008-03-29,2008-09-07,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-564,GAR_000564,603,603,Hypothèque,6399764.85,6121083.52,6399764.85,71108498.3333,2010-11-21,2010-11-21,2014-08-25,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-565,GAR_000565,604,604,Caution personnelle,421234.14,402375.83,421234.14,21061707.0,2022-08-19,2022-08-19,2023-10-10,Active,None,Couverture standard Caution personnelle pour dossier TPE
-566,GAR_000566,605,605,Hypothèque,1580013.7,1556413.33,1580013.7,158001370.0,2015-04-09,2015-04-09,2015-10-23,Active,None,Couverture standard Hypothèque pour dossier PME
-567,GAR_000567,606,606,Caution personnelle,202385.39,199235.08,202385.39,20238539.0,2009-10-14,2009-10-14,2010-12-09,Active,None,Couverture standard Caution personnelle pour dossier TPE
-568,GAR_000568,607,607,Garantie Tamwilcom,201120.33,195452.34,201120.33,10056016.5,2011-08-19,2011-08-19,2012-10-19,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-569,GAR_000569,608,608,Caution personnelle,93286.36,89537.24,93286.36,9328636.0,2011-10-18,2011-10-18,2012-04-20,Active,None,Couverture standard Caution personnelle pour dossier TPE
-570,GAR_000570,610,610,Garantie Tamwilcom,188516.3,183190.57,188516.3,0.0,2013-12-01,2013-12-01,2015-04-01,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-571,GAR_000571,612,612,Garantie Tamwilcom,182091.82,177728.49,182091.82,0.0,2013-03-07,2013-03-07,2013-11-24,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-572,GAR_000572,613,613,Garantie Tamwilcom,100670.9,100801.8,100670.9,5033545.0,2013-10-28,2013-10-28,2014-10-17,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-573,GAR_000573,614,614,Garantie Tamwilcom,12735115.86,12616623.33,12735115.86,0.0,2018-11-01,2018-11-01,2022-01-28,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-574,GAR_000574,615,615,Garantie sur matériel,1539665.85,1860313.97,1539665.85,0.0,2017-03-02,2017-03-02,2017-11-28,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-575,GAR_000575,616,616,Garantie Tamwilcom,4202680.34,4420266.91,4202680.34,210134017.0,2017-09-21,2017-09-21,2024-03-16,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-576,GAR_000576,616,616,Nantissement,8364861.32,8166827.25,8364861.32,418243066.0,2017-09-22,2017-09-22,2024-06-10,Active,None,Couverture standard Nantissement pour dossier PME
-577,GAR_000577,617,617,Garantie sur matériel,119120.69,139011.38,119120.69,0.0,2016-09-26,2016-09-26,2017-05-18,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-578,GAR_000578,618,618,Caution personnelle,143564.93,140590.06,143564.93,14356493.0,2014-09-12,2014-09-12,2015-03-20,Active,None,Couverture standard Caution personnelle pour dossier TPE
-579,GAR_000579,619,619,Garantie Tamwilcom,479319.69,470527.8,479319.69,23965984.5,2012-04-12,2012-04-12,2013-06-24,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-580,GAR_000580,620,620,Garantie sur matériel,1657264.76,2019360.37,1657264.76,0.6052,2010-10-09,2010-10-09,2011-07-30,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-581,GAR_000581,620,620,Caution bancaire,1419865.74,1453204.57,1419865.74,0.5185,2010-10-09,2010-10-09,2011-09-25,En cours de réalisation,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-582,GAR_000582,623,623,Hypothèque,1924238.28,1953421.5,1924238.28,10690212.6667,2017-08-14,2017-08-14,2023-01-25,Active,None,Couverture standard Hypothèque pour dossier PME
-583,GAR_000583,624,624,Garantie sur fonds de commerce,15108479.38,15151096.45,15108479.38,0.0,2010-10-23,2010-10-23,2014-09-27,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-584,GAR_000584,624,624,Garantie sur créances,10275982.78,12456659.67,10275982.78,0.0,2010-10-21,2010-10-21,2014-06-28,Libérée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-585,GAR_000585,625,625,Garantie Tamwilcom,3746779.35,3585233.89,3746779.35,187338967.5,2017-02-18,2017-02-18,2018-03-06,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-586,GAR_000586,627,627,Caution personnelle,838443.27,819676.91,838443.27,0.0,2008-08-29,2008-08-29,2010-01-08,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-587,GAR_000587,629,629,Garantie sur matériel,7712901.54,7818672.59,7712901.54,3.1455,2020-02-28,2020-02-28,2026-09-27,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-588,GAR_000588,630,630,Caution personnelle,724404.97,730503.07,724404.97,0.0,2012-06-06,2012-06-06,2013-04-19,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-589,GAR_000589,631,631,Garantie Tamwilcom,244640.04,255319.39,244640.04,0.0,2012-12-07,2012-12-07,2014-02-01,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-590,GAR_000590,632,632,Garantie Tamwilcom,184940.63,188648.88,184940.63,0.0,2011-12-16,2011-12-16,2012-12-13,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-591,GAR_000591,637,637,Hypothèque,1459784.26,1390272.2,1459784.26,18247303.25,2015-12-02,2015-12-02,2019-04-06,Active,None,Couverture standard Hypothèque pour dossier PME
-592,GAR_000592,638,638,Nantissement,14905498.7,15597226.17,14905498.7,11.3081,2017-02-05,2017-02-05,2025-11-07,Active,None,Couverture standard Nantissement pour dossier PME
-593,GAR_000593,639,639,Caution bancaire,3019181.42,2974621.18,3019181.42,0.0,2017-11-16,2017-11-16,2024-07-01,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-594,GAR_000594,639,639,Hypothèque,4797378.69,4763202.12,4797378.69,0.0,2017-11-16,2017-11-16,2024-05-26,Expirée,None,Couverture standard Hypothèque pour dossier PME
-595,GAR_000595,640,640,Garantie de l'État,10711073.43,10355278.91,10711073.43,0.0,2005-07-21,2005-07-21,2006-07-11,Expirée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-596,GAR_000596,640,640,Aval,7502907.65,7650221.18,7502907.65,0.0,2005-07-20,2005-07-20,2006-03-14,Libérée,None,Couverture standard Aval pour dossier Grande Entreprise
-597,GAR_000597,640,640,Hypothèque,12009104.21,11444845.66,12009104.21,0.0,2005-07-25,2005-07-25,2006-02-17,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-598,GAR_000598,641,641,Caution personnelle,811516.17,789665.18,811516.17,40575808.5,2008-01-29,2008-01-29,2009-01-10,Active,None,Couverture standard Caution personnelle pour dossier TPE
-599,GAR_000599,644,644,Caution personnelle,422416.92,408501.22,422416.92,0.0,2011-12-07,2011-12-07,2013-04-30,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-600,GAR_000600,645,645,Hypothèque,6354883.42,6235434.61,6354883.42,0.0,2011-02-13,2011-02-13,2016-05-21,Expirée,None,Couverture standard Hypothèque pour dossier PME
-601,GAR_000601,648,648,Garantie Tamwilcom,255637.68,246935.14,255637.68,25563768.0,2021-04-20,2021-04-20,2023-05-22,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-602,GAR_000602,649,649,Nantissement,2446786.46,2453929.58,2446786.46,11651364.0952,2020-05-02,2020-05-02,2024-11-02,Active,None,Couverture standard Nantissement pour dossier PME
-603,GAR_000603,650,650,Hypothèque,8324072.08,8368636.27,8324072.08,0.0,2009-02-12,2009-02-12,2011-07-14,Expirée,None,Couverture standard Hypothèque pour dossier PME
-604,GAR_000604,651,651,Caution bancaire,351377.14,342315.56,351377.14,0.0,2021-10-06,2021-10-06,2022-06-18,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-605,GAR_000605,651,651,Nantissement,594450.15,600624.45,594450.15,0.0,2021-10-07,2021-10-07,2022-06-17,Libérée,None,Couverture standard Nantissement pour dossier PME
-606,GAR_000606,652,652,Garantie Tamwilcom,11368889.26,10876165.94,11368889.26,81206351.8571,2018-11-07,2018-11-07,2022-12-22,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-607,GAR_000607,653,653,Caution personnelle,257848.61,252403.08,257848.61,0.0,2011-01-24,2011-01-24,2011-09-20,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-608,GAR_000608,654,654,Caution personnelle,55921.71,57490.63,55921.71,0.0,2015-08-15,2015-08-15,2016-01-31,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-609,GAR_000609,655,655,Nantissement,8039732.75,8056945.84,8039732.75,0.0,2008-09-01,2008-09-01,2015-08-29,Expirée,None,Couverture standard Nantissement pour dossier PME
-610,GAR_000610,655,655,Garantie sur matériel,5026079.7,5279433.01,5026079.7,0.0,2008-08-31,2008-08-31,2015-08-12,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-611,GAR_000611,658,658,Garantie Tamwilcom,496644.88,511537.47,496644.88,24832244.0,2017-01-03,2017-01-03,2018-04-06,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-612,GAR_000612,659,659,Nantissement,1263287.94,1209619.94,1263287.94,126328794.0,2007-07-04,2007-07-04,2008-07-06,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-613,GAR_000613,659,659,Garantie sur créances,726974.54,878028.27,726974.54,72697454.0,2007-07-01,2007-07-01,2008-10-01,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-614,GAR_000614,659,659,Garantie sur fonds de commerce,1202150.64,1222068.08,1202150.64,120215064.0,2007-07-01,2007-07-01,2008-06-22,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-615,GAR_000615,660,660,Nantissement,16270077.68,15899074.24,16270077.68,2.1022,2022-04-22,2022-04-22,2029-04-19,Active,None,Couverture standard Nantissement pour dossier PME
-616,GAR_000616,662,662,Hypothèque,390466.74,375589.09,390466.74,0.0,2017-03-14,2017-03-14,2017-11-01,Libérée,None,Couverture standard Hypothèque pour dossier PME
-617,GAR_000617,662,662,Garantie Tamwilcom,252236.99,259150.57,252236.99,0.0,2017-03-14,2017-03-14,2017-08-10,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-618,GAR_000618,663,663,Caution bancaire,3653558.17,3658363.16,3653558.17,121785272.3333,2017-05-21,2017-05-21,2022-05-25,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-619,GAR_000619,664,664,Garantie sur fonds de commerce,1160588.53,1163203.59,1160588.53,0.0,2007-02-18,2007-02-18,2012-05-04,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-620,GAR_000620,664,664,Garantie sur créances,642235.95,645172.33,642235.95,0.0,2007-02-18,2007-02-18,2012-02-23,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-621,GAR_000621,664,664,Garantie sur fonds de commerce,1025040.95,1045698.54,1025040.95,0.0,2007-02-14,2007-02-14,2012-01-03,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-622,GAR_000622,665,665,Nantissement,11329521.79,11141544.74,11329521.79,0.0,2007-01-17,2007-01-17,2011-05-23,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-623,GAR_000623,666,666,Nantissement,14463005.17,13814125.29,14463005.17,0.0,2012-04-08,2012-04-08,2018-08-10,Expirée,None,Couverture standard Nantissement pour dossier PME
-624,GAR_000624,668,668,Garantie sur matériel,6837875.51,8114468.54,6837875.51,0.0,2009-03-31,2009-03-31,2016-07-22,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-625,GAR_000625,670,670,Caution personnelle,338613.15,353447.24,338613.15,0.0,2010-09-29,2010-09-29,2011-09-28,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-626,GAR_000626,671,671,Garantie Tamwilcom,2392594.58,2317445.65,2392594.58,0.0,2019-04-06,2019-04-06,2019-11-25,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-627,GAR_000627,673,673,Hypothèque,2503031.99,2529305.77,2503031.99,0.0,2022-06-13,2022-06-13,2023-07-19,Expirée,None,Couverture standard Hypothèque pour dossier PME
-628,GAR_000628,674,674,Nantissement,18022073.35,18535213.32,18022073.35,0.0,2014-10-19,2014-10-19,2018-09-16,Expirée,None,Couverture standard Nantissement pour dossier PME
-629,GAR_000629,675,675,Garantie sur matériel,2163661.19,2387149.84,2163661.19,0.0,2011-04-23,2011-04-23,2011-12-24,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-630,GAR_000630,676,676,Caution personnelle,624364.0,657158.19,624364.0,0.0,2007-07-04,2007-07-04,2008-07-14,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-631,GAR_000631,677,677,Hypothèque,237510.04,241734.24,237510.04,0.0,2013-10-10,2013-10-10,2014-02-02,Expirée,None,Couverture standard Hypothèque pour dossier PME
-632,GAR_000632,678,678,Nantissement,16027169.47,15862646.18,16027169.47,76319854.619,2006-02-11,2006-02-11,2011-08-17,Active,None,Couverture standard Nantissement pour dossier PME
-633,GAR_000633,679,679,Garantie Tamwilcom,4607367.82,4497582.33,4607367.82,0.0,2006-07-06,2006-07-06,2014-05-27,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-634,GAR_000634,681,681,Hypothèque,1129736.89,1162615.61,1129736.89,0.0,2011-10-08,2011-10-08,2012-11-13,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-635,GAR_000635,681,681,Hypothèque,1248787.77,1219959.95,1248787.77,0.0,2011-10-15,2011-10-15,2012-11-27,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-636,GAR_000636,681,681,Garantie sur fonds de commerce,1129860.43,1109566.86,1129860.43,0.0,2011-10-10,2011-10-10,2013-01-03,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-637,GAR_000637,682,682,Hypothèque,2670081.27,2610123.13,2670081.27,2.8378,2022-12-28,2022-12-28,2026-07-30,Active,None,Couverture standard Hypothèque pour dossier PME
-638,GAR_000638,683,683,Garantie sur créances,79117606.35,89376519.96,79117606.35,2637253545.0,2014-06-20,2014-06-20,2015-03-15,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-639,GAR_000639,684,684,Caution bancaire,6547659.69,6534983.59,6547659.69,654765969.0,2021-02-09,2021-02-09,2024-04-07,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-640,GAR_000640,685,685,Caution personnelle,51232.98,50003.47,51232.98,0.0,2017-04-30,2017-04-30,2017-09-10,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-641,GAR_000641,686,686,Garantie sur fonds de commerce,925491.82,938879.88,925491.82,0.0,2016-02-08,2016-02-08,2016-06-13,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-642,GAR_000642,686,686,Aval,811858.1,788597.67,811858.1,0.0,2016-02-03,2016-02-03,2016-05-23,Expirée,None,Couverture standard Aval pour dossier Grande Entreprise
-643,GAR_000643,687,687,Garantie Tamwilcom,400727.41,398367.99,400727.41,20036370.5,2016-02-17,2016-02-17,2016-10-29,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-644,GAR_000644,688,688,Garantie Tamwilcom,100441.77,98320.29,100441.77,0.0,2011-12-09,2011-12-09,2012-05-22,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-645,GAR_000645,689,689,Hypothèque,16225473.37,15499284.92,16225473.37,0.0,2011-03-01,2011-03-01,2018-03-08,Libérée,None,Couverture standard Hypothèque pour dossier PME
-646,GAR_000646,690,690,Garantie Tamwilcom,64648.32,61903.61,64648.32,0.0,2010-07-18,2010-07-18,2011-04-10,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-647,GAR_000647,691,691,Caution bancaire,11072489.87,10751193.05,11072489.87,69203061.6875,2012-12-28,2012-12-28,2020-07-14,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-648,GAR_000648,692,692,Caution personnelle,37516.87,38386.56,37516.87,0.0,2007-03-12,2007-03-12,2007-12-05,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-649,GAR_000649,693,693,Garantie sur créances,1273768.67,1576221.33,1273768.67,9098347.6429,2019-03-28,2019-03-28,2023-02-12,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-650,GAR_000650,693,693,Hypothèque,2086447.25,2185887.92,2086447.25,14903194.6429,2019-04-01,2019-04-01,2023-02-01,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-651,GAR_000651,693,693,Aval,2027692.1,1939947.89,2027692.1,14483515.0,2019-03-28,2019-03-28,2023-01-28,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-652,GAR_000652,694,694,Garantie de l'État,11032550.35,11137577.29,11032550.35,0.0,2017-01-20,2017-01-20,2025-02-25,Libérée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-653,GAR_000653,694,694,Nantissement,19432720.63,19077817.42,19432720.63,0.0,2017-01-21,2017-01-21,2025-01-19,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-654,GAR_000654,696,696,Caution bancaire,7432517.67,7576206.98,7432517.67,0.0,2011-06-13,2011-06-13,2013-11-12,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-655,GAR_000655,697,697,Caution bancaire,1827794.55,1872825.32,1827794.55,0.0,2023-05-25,2023-05-25,2024-06-14,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-656,GAR_000656,698,698,Caution personnelle,140204.8,135054.62,140204.8,0.0,2015-07-19,2015-07-19,2016-03-31,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-657,GAR_000657,699,699,Hypothèque,530325.31,544608.22,530325.31,0.0,2014-02-08,2014-02-08,2014-10-22,Expirée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-658,GAR_000658,700,700,Garantie Tamwilcom,242670.57,237657.03,242670.57,0.0,2017-04-24,2017-04-24,2018-08-14,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-659,GAR_000659,701,701,Garantie Tamwilcom,19133.73,19093.38,19133.73,0.0,2011-09-18,2011-09-18,2012-01-08,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-660,GAR_000660,702,702,Garantie Tamwilcom,86837.21,85457.01,86837.21,0.0,2023-08-30,2023-08-30,2024-02-22,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-661,GAR_000661,703,703,Caution bancaire,30434.75,30933.6,30434.75,1521737.5,2015-10-08,2015-10-08,2016-08-18,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-662,GAR_000662,704,704,Hypothèque,3610589.58,3686417.97,3610589.58,0.0,2009-01-31,2009-01-31,2009-09-23,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-663,GAR_000663,704,704,Garantie sur créances,2186241.38,2498685.82,2186241.38,0.0,2009-01-26,2009-01-26,2009-09-02,Libérée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-664,GAR_000664,705,705,Garantie sur matériel,2009890.81,2045337.62,2009890.81,200989081.0,2015-01-28,2015-01-28,2015-12-01,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-665,GAR_000665,707,707,Garantie sur matériel,7401166.65,7508231.16,7401166.65,28466025.5769,2013-07-14,2013-07-14,2019-09-18,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-666,GAR_000666,708,708,Nantissement,1103295.09,1160412.1,1103295.09,0.0,2012-03-07,2012-03-07,2018-08-21,Libérée,None,Couverture standard Nantissement pour dossier PME
-667,GAR_000667,709,709,Caution personnelle,50465.47,49228.78,50465.47,0.0,2012-09-14,2012-09-14,2013-08-13,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-668,GAR_000668,711,711,Caution bancaire,469464.58,482988.09,469464.58,0.0,2011-06-10,2011-06-10,2016-11-22,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-669,GAR_000669,712,712,Hypothèque,7458537.32,7142815.95,7458537.32,0.0,2010-11-17,2010-11-17,2011-01-22,Libérée,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-670,GAR_000670,712,712,Nantissement,7068046.33,6945648.4,7068046.33,0.0,2010-11-20,2010-11-20,2011-05-18,Expirée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-671,GAR_000671,714,714,Nantissement,240656.58,253138.72,240656.58,0.0,2012-05-28,2012-05-28,2019-02-13,Libérée,None,Couverture standard Nantissement pour dossier PME
-672,GAR_000672,714,714,Hypothèque,321928.6,312886.4,321928.6,0.0,2012-05-24,2012-05-24,2019-01-25,Libérée,None,Couverture standard Hypothèque pour dossier PME
-673,GAR_000673,717,717,Caution bancaire,9704628.71,9538867.77,9704628.71,0.0,2012-11-06,2012-11-06,2013-07-02,Libérée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-674,GAR_000674,718,718,Caution bancaire,369458.34,363381.67,369458.34,36945834.0,2022-05-27,2022-05-27,2022-12-20,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-675,GAR_000675,718,718,Garantie sur matériel,351873.12,357147.1,351873.12,35187312.0,2022-05-28,2022-05-28,2022-11-07,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-676,GAR_000676,719,719,Garantie sur matériel,1549106.77,1690865.87,1549106.77,77455338.5,2010-10-14,2010-10-14,2011-07-27,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-677,GAR_000677,720,720,Caution personnelle,103109.5,100196.65,103109.5,2577737.5,2007-05-17,2007-05-17,2008-09-27,Active,None,Couverture standard Caution personnelle pour dossier TPE
-678,GAR_000678,721,721,Garantie sur fonds de commerce,85761481.35,82890972.37,85761481.35,0.0,2011-04-08,2011-04-08,2012-03-11,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-679,GAR_000679,723,723,Garantie sur matériel,729452.12,850532.72,729452.12,0.0,2010-02-09,2010-02-09,2010-09-06,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-680,GAR_000680,724,724,Caution personnelle,90643.59,87641.45,90643.59,0.0,2010-09-03,2010-09-03,2011-10-28,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-681,GAR_000681,725,725,Garantie Tamwilcom,21349.92,20447.32,21349.92,0.0,2017-06-03,2017-06-03,2018-01-04,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-682,GAR_000682,726,726,Garantie Tamwilcom,275763.04,265758.74,275763.04,27576304.0,2007-10-29,2007-10-29,2008-09-01,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-683,GAR_000683,728,728,Caution personnelle,452402.07,449528.55,452402.07,0.0,2009-11-25,2009-11-25,2011-06-01,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-684,GAR_000684,729,729,Garantie Tamwilcom,124438.82,122237.27,124438.82,0.0,2010-09-13,2010-09-13,2011-09-13,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-685,GAR_000685,730,730,Nantissement,1625930.68,1642623.88,1625930.68,0.0,2017-12-19,2017-12-19,2019-02-01,Expirée,None,Couverture standard Nantissement pour dossier PME
-686,GAR_000686,730,730,Garantie sur matériel,1195618.82,1332281.14,1195618.82,0.0,2017-12-18,2017-12-18,2018-11-24,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-687,GAR_000687,731,731,Garantie sur fonds de commerce,10820497.15,10691875.99,10820497.15,0.0,2020-09-23,2020-09-23,2021-07-08,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-688,GAR_000688,732,732,Garantie sur fonds de commerce,2635536.65,2626696.76,2635536.65,0.0,2022-06-09,2022-06-09,2022-12-12,Expirée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-689,GAR_000689,733,733,Garantie Tamwilcom,729561.82,760298.7,729561.82,0.0,2010-09-23,2010-09-23,2019-07-20,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-690,GAR_000690,734,734,Caution bancaire,1345146.8,1322363.01,1345146.8,0.0,2017-02-18,2017-02-18,2017-09-22,Expirée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-691,GAR_000691,735,735,Nantissement,832264.0,807502.89,832264.0,0.0,2017-02-06,2017-02-06,2017-04-22,Libérée,None,Couverture standard Nantissement pour dossier PME
-692,GAR_000692,735,735,Nantissement,910395.34,886570.7,910395.34,0.0,2017-02-06,2017-02-06,2017-07-21,Libérée,None,Couverture standard Nantissement pour dossier PME
-693,GAR_000693,736,736,Garantie sur matériel,9831007.39,10223776.91,9831007.39,0.0,2018-03-25,2018-03-25,2024-10-02,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-694,GAR_000694,737,737,Caution personnelle,90496.53,91692.4,90496.53,0.0,2014-02-24,2014-02-24,2014-12-28,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-695,GAR_000695,739,739,Garantie Tamwilcom,1016860.96,1017141.66,1016860.96,50843048.0,2011-02-19,2011-02-19,2012-01-08,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-696,GAR_000696,739,739,Caution bancaire,836705.67,856094.81,836705.67,41835283.5,2011-02-20,2011-02-20,2012-02-12,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-697,GAR_000697,740,740,Aval,16018822.97,16860698.44,16018822.97,0.0,2011-02-14,2011-02-14,2014-09-19,Expirée,None,Couverture standard Aval pour dossier Grande Entreprise
-698,GAR_000698,741,741,Nantissement,5366530.13,5441643.56,5366530.13,178884337.6667,2008-05-01,2008-05-01,2009-02-23,Active,None,Couverture standard Nantissement pour dossier PME
-699,GAR_000699,742,742,Caution personnelle,87313.14,83888.86,87313.14,0.0,2006-04-09,2006-04-09,2007-03-29,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-700,GAR_000700,744,744,Garantie de l'État,3651507.51,3836963.99,3651507.51,0.0,2010-03-29,2010-03-29,2017-08-03,Libérée,État Marocain,Couverture standard Garantie de l'État pour dossier Grande Entreprise
-701,GAR_000701,744,744,Nantissement,4262189.23,4168155.07,4262189.23,0.0,2010-03-27,2010-03-27,2017-05-23,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-702,GAR_000702,744,744,Nantissement,5424920.66,5382585.43,5424920.66,0.0,2010-03-30,2010-03-30,2017-07-18,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-703,GAR_000703,746,746,Caution personnelle,80584.44,84550.1,80584.44,0.0,2010-12-31,2010-12-31,2011-10-02,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-704,GAR_000704,747,747,Caution personnelle,161611.86,159456.41,161611.86,0.0,2009-12-03,2009-12-03,2010-09-12,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-705,GAR_000705,748,748,Hypothèque,2786675.26,2807143.8,2786675.26,7.1908,2019-08-28,2019-08-28,2025-09-19,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-706,GAR_000706,748,748,Hypothèque,2252245.44,2224943.42,2252245.44,5.8117,2019-08-27,2019-08-27,2025-11-28,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-707,GAR_000707,749,749,Caution personnelle,12819.24,12441.01,12819.24,0.0,2008-09-02,2008-09-02,2009-01-02,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-708,GAR_000708,750,750,Nantissement,927295.76,916612.45,927295.76,92729576.0,2013-05-22,2013-05-22,2014-07-09,Active,None,Couverture standard Nantissement pour dossier PME
-709,GAR_000709,751,751,Nantissement,1590874.29,1626288.22,1590874.29,0.0,2008-02-25,2008-02-25,2009-03-22,Expirée,None,Couverture standard Nantissement pour dossier PME
-710,GAR_000710,752,752,Garantie sur matériel,8664273.36,9556493.46,8664273.36,78766121.4545,2010-03-27,2010-03-27,2013-08-25,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-711,GAR_000711,753,753,Garantie Tamwilcom,2473591.56,2553864.79,2473591.56,0.0,2015-08-02,2015-08-02,2020-07-14,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-712,GAR_000712,753,753,Caution bancaire,3287868.12,3140276.01,3287868.12,0.0,2015-07-30,2015-07-30,2020-10-12,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-713,GAR_000713,754,754,Caution personnelle,55567.79,56325.23,55567.79,5556779.0,2016-06-27,2016-06-27,2017-03-03,Active,None,Couverture standard Caution personnelle pour dossier TPE
-714,GAR_000714,756,756,Garantie Tamwilcom,95420.86,95680.97,95420.86,0.0,2010-08-24,2010-08-24,2011-02-20,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-715,GAR_000715,757,757,Nantissement,8924458.07,8743665.95,8924458.07,0.0,2009-10-12,2009-10-12,2012-02-22,Libérée,None,Couverture standard Nantissement pour dossier PME
-716,GAR_000716,758,758,Garantie Tamwilcom,269225.21,281255.78,269225.21,0.0,2019-12-05,2019-12-05,2020-09-08,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-717,GAR_000717,759,759,Caution personnelle,731248.75,713408.86,731248.75,0.0,2020-07-12,2020-07-12,2021-11-17,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-718,GAR_000718,760,760,Caution personnelle,38328.83,39128.88,38328.83,0.0,2013-12-05,2013-12-05,2014-04-08,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-719,GAR_000719,761,761,Caution personnelle,82115.71,83048.43,82115.71,0.0,2019-06-22,2019-06-22,2019-12-29,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-720,GAR_000720,762,762,Garantie sur créances,32750438.27,38029803.19,32750438.27,655008765.4,2006-09-01,2006-09-01,2007-11-11,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-721,GAR_000721,763,763,Caution bancaire,5140183.28,5341847.71,5140183.28,0.0,2017-10-08,2017-10-08,2021-01-27,Libérée,RMA Watanya,Couverture standard Caution bancaire pour dossier PME
-722,GAR_000722,764,764,Garantie sur matériel,3633857.36,4362763.8,3633857.36,2.4196,2018-04-14,2018-04-14,2028-01-30,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-723,GAR_000723,765,765,Caution bancaire,5617559.83,5730715.93,5617559.83,0.0,2014-12-14,2014-12-14,2019-04-24,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-724,GAR_000724,765,765,Garantie Tamwilcom,5657732.31,5633655.3,5657732.31,0.0,2014-12-15,2014-12-15,2019-06-27,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-725,GAR_000725,766,766,Caution personnelle,276166.27,276826.15,276166.27,0.0,2017-09-20,2017-09-20,2018-04-27,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-726,GAR_000726,767,767,Nantissement,29707076.98,30452783.5,29707076.98,0.0,2022-07-06,2022-07-06,2023-09-17,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-727,GAR_000727,769,769,Nantissement,8530092.87,8830161.06,8530092.87,853009287.0,2013-11-05,2013-11-05,2014-08-30,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-728,GAR_000728,769,769,Garantie sur créances,5903089.13,6477305.05,5903089.13,590308913.0,2013-11-10,2013-11-10,2014-07-06,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-729,GAR_000729,770,770,Caution personnelle,41152.24,39265.3,41152.24,0.0,2017-06-21,2017-06-21,2019-01-26,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-730,GAR_000730,771,771,Garantie Tamwilcom,161287.81,161346.39,161287.81,3225756.2,2017-01-11,2017-01-11,2018-06-06,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-731,GAR_000731,772,772,Garantie Tamwilcom,44450.01,42906.95,44450.01,0.0,2009-11-07,2009-11-07,2010-09-12,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-732,GAR_000732,773,773,Garantie Tamwilcom,230414.64,225519.76,230414.64,0.0,2012-02-07,2012-02-07,2012-12-23,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-733,GAR_000733,774,774,Garantie sur matériel,4260901.69,4650595.07,4260901.69,0.0,2008-02-08,2008-02-08,2008-12-11,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-734,GAR_000734,776,776,Garantie Tamwilcom,210389.67,215528.09,210389.67,0.0,2015-10-16,2015-10-16,2016-12-10,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-735,GAR_000735,777,777,Garantie sur créances,4515624.66,4654815.25,4515624.66,0.0,2016-12-24,2016-12-24,2017-06-20,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-736,GAR_000736,778,778,Caution personnelle,68794.57,69483.24,68794.57,0.0,2007-09-26,2007-09-26,2007-11-27,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-737,GAR_000737,779,779,Caution bancaire,496133.73,488636.49,496133.73,1.3918,2020-04-12,2020-04-12,2029-11-24,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-738,GAR_000738,780,780,Garantie Tamwilcom,2678125.96,2550677.25,2678125.96,0.0,2011-12-07,2011-12-07,2014-08-02,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-739,GAR_000739,783,783,Garantie Tamwilcom,4045434.78,4245353.0,4045434.78,17588846.8696,2006-04-28,2006-04-28,2014-03-17,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-740,GAR_000740,783,783,Nantissement,6598744.88,6882045.49,6598744.88,28690195.1304,2006-04-22,2006-04-22,2014-04-04,Active,None,Couverture standard Nantissement pour dossier PME
-741,GAR_000741,784,784,Hypothèque,5184428.82,5316043.27,5184428.82,259221441.0,2007-04-25,2007-04-25,2007-12-13,Active,None,Couverture standard Hypothèque pour dossier PME
-742,GAR_000742,785,785,Garantie Tamwilcom,46482.98,44584.93,46482.98,2324149.0,2012-09-21,2012-09-21,2013-12-09,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-743,GAR_000743,787,787,Nantissement,7535967.29,7771174.66,7535967.29,31399863.7083,2008-06-05,2008-06-05,2014-05-24,Active,None,Couverture standard Nantissement pour dossier PME
-744,GAR_000744,788,788,Garantie Tamwilcom,378460.45,371427.56,378460.45,0.0,2018-11-29,2018-11-29,2019-09-18,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-745,GAR_000745,789,789,Nantissement,3408459.46,3416576.92,3408459.46,340845946.0,2008-03-11,2008-03-11,2009-05-28,Active,None,Couverture standard Nantissement pour dossier PME
-746,GAR_000746,790,790,Garantie Tamwilcom,124055.58,120052.44,124055.58,0.0,2018-06-14,2018-06-14,2018-12-31,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-747,GAR_000747,791,791,Garantie sur matériel,1410800.06,1477453.99,1410800.06,2.1837,2021-01-26,2021-01-26,2022-02-12,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-748,GAR_000748,793,793,Nantissement,37092689.67,36697074.6,37092689.67,0.0,2006-12-05,2006-12-05,2015-08-04,Expirée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-749,GAR_000749,794,794,Caution bancaire,741204.41,762246.7,741204.41,0.0,2012-10-09,2012-10-09,2014-01-30,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-750,GAR_000750,795,795,Garantie Tamwilcom,1339059.7,1380643.35,1339059.7,44635323.3333,2018-09-02,2018-09-02,2022-10-01,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-751,GAR_000751,795,795,Garantie sur matériel,1112974.95,1365752.27,1112974.95,37099165.0,2018-08-29,2018-08-29,2022-06-18,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-752,GAR_000752,796,796,Nantissement,7480895.69,7169888.08,7480895.69,24131921.5806,2015-06-20,2015-06-20,2021-02-06,Active,None,Couverture standard Nantissement pour dossier PME
-753,GAR_000753,797,797,Garantie sur matériel,654911.95,800711.51,654911.95,65491195.0,2016-10-08,2016-10-08,2017-05-28,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-754,GAR_000754,797,797,Garantie sur matériel,665016.1,825745.64,665016.1,66501610.0,2016-10-08,2016-10-08,2017-08-25,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-755,GAR_000755,798,798,Aval,14511932.65,13850160.51,14511932.65,161243696.1111,2017-04-08,2017-04-08,2020-04-30,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-756,GAR_000756,799,799,Caution personnelle,620440.68,623053.19,620440.68,0.0,2016-04-10,2016-04-10,2017-01-19,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-757,GAR_000757,801,801,Aval,10413233.11,10477321.09,10413233.11,0.0,2015-04-10,2015-04-10,2017-08-13,Expirée,None,Couverture standard Aval pour dossier Grande Entreprise
-758,GAR_000758,803,803,Garantie sur fonds de commerce,31548108.39,30291014.81,31548108.39,1.9096,2021-03-28,2021-03-28,2030-05-05,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-759,GAR_000759,804,804,Nantissement,4688611.49,4876030.74,4688611.49,4.4427,2020-06-22,2020-06-22,2026-05-01,Active,None,Couverture standard Nantissement pour dossier PME
-760,GAR_000760,805,805,Garantie sur fonds de commerce,6926570.34,6840820.39,6926570.34,0.0,2010-12-31,2010-12-31,2011-08-12,Libérée,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-761,GAR_000761,805,805,Garantie sur créances,4094651.29,4716979.67,4094651.29,0.0,2011-01-04,2011-01-04,2011-05-15,Libérée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-762,GAR_000762,805,805,Garantie sur créances,4216691.7,4578433.51,4216691.7,0.0,2011-01-01,2011-01-01,2011-07-26,Expirée,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-763,GAR_000763,807,807,Garantie Tamwilcom,765165.46,732293.35,765165.46,0.0,2017-01-29,2017-01-29,2018-04-10,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-764,GAR_000764,808,808,Hypothèque,1508776.38,1563437.16,1508776.38,0.0,2020-04-04,2020-04-04,2021-03-02,Expirée,None,Couverture standard Hypothèque pour dossier PME
-765,GAR_000765,809,809,Garantie Tamwilcom,13055708.65,12665023.99,13055708.65,0.0,2016-08-28,2016-08-28,2021-07-16,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-766,GAR_000766,811,811,Garantie Tamwilcom,496421.27,489904.89,496421.27,0.0,2014-10-25,2014-10-25,2015-04-07,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-767,GAR_000767,812,812,Garantie sur fonds de commerce,14977143.4,14465542.35,14977143.4,187214292.5,2018-01-10,2018-01-10,2020-10-25,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-768,GAR_000768,813,813,Caution personnelle,282203.33,274659.72,282203.33,0.0,2011-05-07,2011-05-07,2012-01-23,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-769,GAR_000769,814,814,Garantie sur matériel,1795270.0,1918340.74,1795270.0,0.0,2022-05-05,2022-05-05,2023-06-17,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-770,GAR_000770,815,815,Caution bancaire,342930.52,332466.42,342930.52,8573263.0,2006-09-09,2006-09-09,2008-01-23,Active,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-771,GAR_000771,817,817,Garantie sur matériel,66257.07,78325.97,66257.07,0.0,2018-06-24,2018-06-24,2018-10-09,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-772,GAR_000772,819,819,Garantie sur matériel,438065.75,497002.07,438065.75,0.0,2014-12-27,2014-12-27,2016-03-06,Libérée,None,Couverture standard Garantie sur matériel pour dossier PME
-773,GAR_000773,819,819,Garantie Tamwilcom,606863.03,636847.36,606863.03,0.0,2014-12-24,2014-12-24,2016-04-15,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-774,GAR_000774,820,820,Garantie Tamwilcom,1415941.58,1490259.64,1415941.58,0.0,2011-09-23,2011-09-23,2012-02-09,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-775,GAR_000775,821,821,Hypothèque,42149602.45,44154714.1,42149602.45,4214960245.0,2018-08-08,2018-08-08,2020-06-17,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-776,GAR_000776,822,822,Garantie sur matériel,6279562.55,6853283.98,6279562.55,0.0,2016-10-22,2016-10-22,2017-05-09,Expirée,None,Couverture standard Garantie sur matériel pour dossier PME
-777,GAR_000777,824,824,Garantie Tamwilcom,155765.71,148582.49,155765.71,0.0,2014-11-10,2014-11-10,2015-12-22,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-778,GAR_000778,825,825,Hypothèque,8264678.13,8523304.14,8264678.13,0.0,2005-07-25,2005-07-25,2006-01-22,Libérée,None,Couverture standard Hypothèque pour dossier PME
-779,GAR_000779,826,826,Caution personnelle,24439.05,23939.41,24439.05,2443905.0,2018-06-12,2018-06-12,2018-10-24,Active,None,Couverture standard Caution personnelle pour dossier TPE
-780,GAR_000780,827,827,Garantie sur fonds de commerce,9527578.08,9981830.59,9527578.08,238189452.0,2015-07-14,2015-07-14,2016-10-02,Active,None,Couverture standard Garantie sur fonds de commerce pour dossier Grande Entreprise
-781,GAR_000781,827,827,Hypothèque,10116642.47,9656276.39,10116642.47,252916061.75,2015-07-17,2015-07-17,2016-11-06,Active,None,Couverture standard Hypothèque pour dossier Grande Entreprise
-782,GAR_000782,828,828,Nantissement,33263499.4,31692064.36,33263499.4,221756662.6667,2017-02-01,2017-02-01,2020-11-17,Active,None,Couverture standard Nantissement pour dossier Grande Entreprise
-783,GAR_000783,829,829,Aval,5755423.79,5830518.08,5755423.79,191847459.6667,2021-04-19,2021-04-19,2023-09-23,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-784,GAR_000784,829,829,Garantie sur créances,4029846.42,4641190.02,4029846.42,134328214.0,2021-04-17,2021-04-17,2023-06-26,Active,None,Couverture standard Garantie sur créances pour dossier Grande Entreprise
-785,GAR_000785,829,829,Aval,4427616.48,4315194.3,4427616.48,147587216.0,2021-04-12,2021-04-12,2023-08-22,Active,None,Couverture standard Aval pour dossier Grande Entreprise
-786,GAR_000786,830,830,Aval,6103697.53,6367837.71,6103697.53,0.0,2008-06-14,2008-06-14,2009-03-22,Libérée,None,Couverture standard Aval pour dossier Grande Entreprise
-787,GAR_000787,830,830,Nantissement,11878139.51,11999179.05,11878139.51,0.0,2008-06-14,2008-06-14,2009-04-06,Libérée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-788,GAR_000788,830,830,Nantissement,9496052.85,9532542.74,9496052.85,0.0,2008-06-18,2008-06-18,2009-07-10,Expirée,None,Couverture standard Nantissement pour dossier Grande Entreprise
-789,GAR_000789,832,832,Caution personnelle,85518.19,87724.82,85518.19,1425303.1667,2016-11-23,2016-11-23,2018-04-23,Active,None,Couverture standard Caution personnelle pour dossier TPE
-790,GAR_000790,833,833,Garantie Tamwilcom,188490.96,188396.3,188490.96,0.0,2020-04-27,2020-04-27,2021-03-30,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-791,GAR_000791,835,835,Garantie Tamwilcom,266336.82,270026.32,266336.82,26633682.0,2011-07-24,2011-07-24,2012-06-09,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-792,GAR_000792,836,836,Nantissement,3529554.24,3439658.14,3529554.24,352955424.0,2022-09-08,2022-09-08,2023-09-24,Active,None,Couverture standard Nantissement pour dossier PME
-793,GAR_000793,838,838,Caution bancaire,3233757.95,3126994.52,3233757.95,0.0,2012-06-20,2012-06-20,2013-08-10,Libérée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-794,GAR_000794,839,839,Garantie Tamwilcom,721512.64,708052.57,721512.64,0.0,2019-10-19,2019-10-19,2020-07-31,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-795,GAR_000795,840,840,Garantie Tamwilcom,671559.21,702632.74,671559.21,0.0,2020-09-17,2020-09-17,2021-08-04,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-796,GAR_000796,842,842,Hypothèque,17288877.15,16808367.83,17288877.15,0.0,2018-11-11,2018-11-11,2021-10-06,Libérée,None,Couverture standard Hypothèque pour dossier PME
-797,GAR_000797,843,843,Garantie Tamwilcom,2836012.41,2835282.1,2836012.41,0.0,2015-08-20,2015-08-20,2016-05-20,Expirée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-798,GAR_000798,846,846,Garantie Tamwilcom,729670.53,723332.43,729670.53,0.0,2016-10-01,2016-10-01,2017-09-20,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-799,GAR_000799,848,848,Garantie Tamwilcom,8088015.75,7818480.16,8088015.75,202200393.75,2021-03-07,2021-03-07,2024-07-08,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-800,GAR_000800,849,849,Caution bancaire,5939931.47,6149663.5,5939931.47,0.0,2013-02-20,2013-02-20,2021-11-19,Expirée,BOA Assurances,Couverture standard Caution bancaire pour dossier PME
-801,GAR_000801,850,850,Caution personnelle,35903.36,35546.48,35903.36,0.0,2013-12-04,2013-12-04,2014-04-03,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-802,GAR_000802,852,852,Garantie Tamwilcom,213957.37,204187.58,213957.37,10697868.5,2006-12-15,2006-12-15,2007-11-04,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier TPE
-803,GAR_000803,854,854,Garantie Tamwilcom,6615689.1,6397169.65,6615689.1,26462756.4,2013-03-07,2013-03-07,2017-12-28,Active,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
-804,GAR_000804,855,855,Caution personnelle,242313.06,251206.54,242313.06,0.0,2020-11-25,2020-11-25,2022-01-13,Libérée,None,Couverture standard Caution personnelle pour dossier TPE
-805,GAR_000805,858,858,Hypothèque,5262554.59,5037204.77,5262554.59,175418486.3333,2012-10-03,2012-10-03,2013-11-08,Active,None,Couverture standard Hypothèque pour dossier PME
-806,GAR_000806,859,859,Nantissement,9483371.4,9851507.28,9483371.4,474168570.0,2016-10-28,2016-10-28,2021-04-12,Active,None,Couverture standard Nantissement pour dossier PME
-807,GAR_000807,861,861,Caution personnelle,155715.45,149581.88,155715.45,0.0,2021-08-13,2021-08-13,2022-04-09,Expirée,None,Couverture standard Caution personnelle pour dossier TPE
-808,GAR_000808,862,862,Hypothèque,12150512.53,12324390.47,12150512.53,135005694.7778,2016-01-10,2016-01-10,2019-05-25,Active,None,Couverture standard Hypothèque pour dossier PME
-809,GAR_000809,863,863,Garantie sur matériel,2143340.0,2582112.78,2143340.0,214334000.0,2011-04-08,2011-04-08,2011-11-23,Active,None,Couverture standard Garantie sur matériel pour dossier PME
-810,GAR_000810,864,864,Garantie Tamwilcom,8006195.81,7977648.5,8006195.81,0.0,2011-02-24,2011-02-24,2015-05-23,Libérée,Tamwilcom (SNGFE),Couverture standard Garantie Tamwilcom pour dossier PME
+id_garantie,numero_garantie,id_contrat,type_garantie,valeur,date_affectation
+1,GAR_000001,1,Garantie sur matériel,5792210.57,2022-02-05
+2,GAR_000002,1,Garantie sur matériel,4965903.81,2022-02-03
+3,GAR_000003,2,Hypothèque,971105.6,2021-03-07
+4,GAR_000004,3,Caution personnelle,86564.24,2024-11-20
+5,GAR_000005,4,Caution bancaire,834628.86,2024-12-01
+6,GAR_000006,4,Caution bancaire,896106.91,2024-11-28
+7,GAR_000007,5,Nantissement,17046677.19,2024-06-24
+8,GAR_000008,6,Nantissement,1769096.0,2024-12-19
+9,GAR_000009,7,Caution personnelle,100111.35,2024-12-12
+10,GAR_000010,8,Caution personnelle,126030.95,2022-11-27
+11,GAR_000011,9,Caution personnelle,780933.91,2024-05-25
+12,GAR_000012,10,Garantie sur matériel,8906161.89,2020-06-29
+13,GAR_000013,11,Garantie sur matériel,198611.13,2024-09-13
+14,GAR_000014,11,Caution bancaire,226772.75,2024-09-13
+15,GAR_000015,13,Hypothèque,13953356.83,2016-08-05
+16,GAR_000016,14,Caution personnelle,71244.29,2024-07-16
+17,GAR_000017,15,Caution personnelle,83279.92,2024-07-07
+18,GAR_000018,16,Caution personnelle,105749.61,2024-06-19
+19,GAR_000019,17,Garantie de l'État,21722136.47,2024-11-06
+20,GAR_000020,17,Garantie sur créances,15862926.94,2024-11-07
+21,GAR_000021,18,Garantie sur fonds de commerce,5222821.53,2024-11-15
+22,GAR_000022,20,Nantissement,38123472.15,2024-10-29
+23,GAR_000023,21,Aval,2599484.46,2023-01-30
+24,GAR_000024,21,Hypothèque,3912468.56,2023-01-25
+25,GAR_000025,21,Garantie sur fonds de commerce,3871008.89,2023-01-30
+26,GAR_000026,22,Garantie de l'État,1231014.64,2024-06-19
+27,GAR_000027,22,Garantie sur créances,1105930.37,2024-06-24
+28,GAR_000028,22,Garantie de l'État,1220375.2,2024-06-20
+29,GAR_000029,23,Hypothèque,9315186.29,2024-10-08
+30,GAR_000030,26,Garantie sur matériel,2439518.78,2024-10-18
+31,GAR_000031,27,Caution bancaire,6688509.47,2022-02-28
+32,GAR_000032,28,Garantie Tamwilcom,281522.65,2024-07-09
+33,GAR_000033,29,Garantie sur matériel,2814000.26,2019-03-26
+34,GAR_000034,30,Garantie Tamwilcom,1379613.64,2023-08-05
+35,GAR_000035,31,Nantissement,15130092.97,2022-05-29
+36,GAR_000036,32,Caution bancaire,7787593.42,2023-02-26
+37,GAR_000037,33,Garantie Tamwilcom,668522.91,2024-09-05
+38,GAR_000038,34,Garantie sur créances,24289078.01,2024-04-10
+39,GAR_000039,38,Nantissement,2615920.77,2024-12-04
+40,GAR_000040,38,Garantie sur créances,1786506.93,2024-12-02
+41,GAR_000041,39,Nantissement,409627.22,2024-10-18
+42,GAR_000042,40,Nantissement,1390469.51,2024-10-02
+43,GAR_000043,41,Hypothèque,3368073.62,2024-09-29
+44,GAR_000044,41,Garantie Tamwilcom,2806942.11,2024-09-24
+45,GAR_000045,42,Garantie sur matériel,1664720.88,2024-10-18
+46,GAR_000046,43,Garantie sur fonds de commerce,7290952.0,2021-09-16
+47,GAR_000047,43,Garantie de l'État,4951739.88,2021-09-11
+48,GAR_000048,43,Aval,3899379.86,2021-09-16
+49,GAR_000049,45,Garantie Tamwilcom,802995.27,2024-11-29
+50,GAR_000050,46,Hypothèque,836319.43,2024-12-28
+51,GAR_000051,48,Caution personnelle,167982.42,2024-09-14
+52,GAR_000052,49,Garantie sur matériel,4350205.51,2023-05-21
+53,GAR_000053,50,Garantie sur matériel,4794844.22,2024-07-23
+54,GAR_000054,51,Garantie sur matériel,3865847.85,2024-04-25
+55,GAR_000055,53,Hypothèque,24630251.66,2021-03-20
+56,GAR_000056,54,Garantie Tamwilcom,87935.1,2024-11-22
+57,GAR_000057,55,Nantissement,14426943.36,2021-05-07
+58,GAR_000058,56,Caution bancaire,3328534.56,2023-03-14
+59,GAR_000059,57,Garantie Tamwilcom,114694.03,2024-12-18
+60,GAR_000060,58,Garantie Tamwilcom,4160863.7,2023-12-24
+61,GAR_000061,58,Caution bancaire,3861508.51,2023-12-25
+62,GAR_000062,59,Hypothèque,8132560.21,2024-08-01
+63,GAR_000063,64,Hypothèque,18338723.33,2023-02-13
+64,GAR_000064,65,Garantie Tamwilcom,177418.92,2024-11-25
+65,GAR_000065,66,Garantie Tamwilcom,59238.39,2024-09-13
+66,GAR_000066,68,Garantie Tamwilcom,295684.35,2024-08-04
+67,GAR_000067,70,Garantie sur créances,24033530.8,2019-06-22
+68,GAR_000068,71,Caution personnelle,92647.88,2024-08-26
+69,GAR_000069,73,Caution personnelle,561156.35,2024-10-25
+70,GAR_000070,75,Nantissement,11595037.21,2024-10-18
+71,GAR_000071,76,Nantissement,17371730.42,2019-11-07
+72,GAR_000072,77,Garantie sur matériel,486761.91,2018-02-15
+73,GAR_000073,78,Garantie Tamwilcom,80342.22,2024-11-04
+74,GAR_000074,80,Hypothèque,5740538.99,2023-09-23
+75,GAR_000075,80,Nantissement,5229049.29,2023-09-22
+76,GAR_000076,82,Nantissement,929480.27,2024-03-13
+77,GAR_000077,83,Garantie Tamwilcom,140244.65,2024-04-18
+78,GAR_000078,84,Garantie Tamwilcom,130892.11,2024-11-19
+79,GAR_000079,85,Garantie Tamwilcom,1467537.86,2023-07-30
+80,GAR_000080,85,Caution bancaire,1422398.48,2023-07-31
+81,GAR_000081,86,Garantie Tamwilcom,10035952.36,2023-07-15
+82,GAR_000082,87,Garantie Tamwilcom,899213.93,2018-02-28
+83,GAR_000083,87,Garantie Tamwilcom,787581.82,2018-03-07
+84,GAR_000084,89,Garantie Tamwilcom,82160.63,2024-12-17
+85,GAR_000085,90,Garantie Tamwilcom,207399.25,2024-10-16
+86,GAR_000086,91,Nantissement,6402689.16,2024-07-12
+87,GAR_000087,91,Garantie Tamwilcom,4233985.26,2024-07-12
+88,GAR_000088,93,Garantie sur créances,823020.91,2024-08-09
+89,GAR_000089,93,Garantie de l'État,1058125.65,2024-08-06
+90,GAR_000090,93,Aval,908064.04,2024-08-12
+91,GAR_000091,94,Garantie sur matériel,8668036.96,2022-08-08
+92,GAR_000092,95,Caution personnelle,574833.06,2024-10-24
+93,GAR_000093,96,Garantie Tamwilcom,687770.8,2024-04-28
+94,GAR_000094,97,Caution bancaire,890740.59,2024-08-25
+95,GAR_000095,98,Caution personnelle,66651.0,2024-09-16
+96,GAR_000096,100,Garantie Tamwilcom,1768243.32,2022-02-20
+97,GAR_000097,101,Garantie de l'État,15294543.21,2024-11-30
+98,GAR_000098,101,Hypothèque,20592797.76,2024-11-28
+99,GAR_000099,102,Garantie Tamwilcom,2292842.24,2021-05-13
+100,GAR_000100,103,Nantissement,28359391.09,2024-03-12
+101,GAR_000101,104,Caution personnelle,207238.58,2023-10-16
+102,GAR_000102,105,Garantie Tamwilcom,273495.33,2025-01-02
+103,GAR_000103,107,Caution bancaire,5297306.51,2024-03-24
+104,GAR_000104,107,Nantissement,7500818.57,2024-03-19
+105,GAR_000105,108,Garantie sur matériel,4226416.24,2024-10-15
+106,GAR_000106,111,Nantissement,3936602.99,2022-05-26
+107,GAR_000107,114,Nantissement,3196553.68,2023-01-07
+108,GAR_000108,114,Garantie sur matériel,2039070.48,2023-01-10
+109,GAR_000109,116,Garantie Tamwilcom,724114.34,2024-11-19
+110,GAR_000110,117,Garantie Tamwilcom,188454.9,2023-02-21
+111,GAR_000111,119,Garantie Tamwilcom,69144.73,2024-08-13
+112,GAR_000112,121,Garantie Tamwilcom,49647.47,2024-12-07
+113,GAR_000113,122,Garantie Tamwilcom,374741.31,2023-01-21
+114,GAR_000114,124,Hypothèque,497049.3,2024-07-09
+115,GAR_000115,125,Garantie Tamwilcom,523921.24,2024-07-28
+116,GAR_000116,126,Nantissement,8031187.39,2024-11-17
+117,GAR_000117,127,Hypothèque,10622803.03,2024-12-04
+118,GAR_000118,127,Aval,6355700.01,2024-12-05
+119,GAR_000119,127,Nantissement,11055617.67,2024-12-05
+120,GAR_000120,128,Caution bancaire,6279001.84,2023-07-24
+121,GAR_000121,129,Garantie Tamwilcom,281306.84,2024-08-09
+122,GAR_000122,130,Caution personnelle,27451.95,2024-12-27
+123,GAR_000123,131,Aval,16649581.47,2021-05-07
+124,GAR_000124,133,Caution personnelle,135460.15,2024-07-01
+125,GAR_000125,134,Garantie Tamwilcom,920966.97,2024-11-30
+126,GAR_000126,135,Caution bancaire,623284.54,2024-06-13
+127,GAR_000127,135,Garantie sur matériel,522901.33,2024-06-14
+128,GAR_000128,136,Aval,23823150.2,2019-10-19
+129,GAR_000129,137,Nantissement,14106695.27,2024-11-10
+130,GAR_000130,138,Hypothèque,1161806.59,2024-06-18
+131,GAR_000131,138,Garantie sur matériel,885078.93,2024-06-18
+132,GAR_000132,140,Garantie Tamwilcom,9852862.5,2020-12-21
+133,GAR_000133,141,Caution personnelle,218311.25,2024-10-20
+134,GAR_000134,143,Garantie Tamwilcom,282540.36,2023-08-08
+135,GAR_000135,144,Caution personnelle,32805.52,2024-12-16
+136,GAR_000136,145,Caution bancaire,6147150.0,2023-12-15
+137,GAR_000137,146,Garantie Tamwilcom,8635688.07,2024-08-17
+138,GAR_000138,147,Nantissement,1796846.78,2024-12-22
+139,GAR_000139,150,Hypothèque,6935204.28,2024-11-22
+140,GAR_000140,152,Garantie sur matériel,10583972.86,2021-05-17
+141,GAR_000141,154,Garantie Tamwilcom,497570.51,2024-05-17
+142,GAR_000142,155,Garantie Tamwilcom,355983.57,2024-09-26
+143,GAR_000143,157,Garantie Tamwilcom,72284.71,2024-12-16
+144,GAR_000144,158,Nantissement,10083458.43,2022-07-13
+145,GAR_000145,159,Garantie de l'État,994013.75,2019-01-16
+146,GAR_000146,159,Garantie de l'État,1057346.86,2019-01-19
+147,GAR_000147,162,Garantie de l'État,2812256.78,2022-01-25
+148,GAR_000148,163,Aval,7203376.94,2022-02-23
+149,GAR_000149,163,Garantie sur créances,5726313.03,2022-03-02
+150,GAR_000150,163,Garantie sur fonds de commerce,8863903.4,2022-02-25
+151,GAR_000151,164,Garantie sur matériel,393534.59,2024-10-24
+152,GAR_000152,164,Hypothèque,712595.16,2024-10-24
+153,GAR_000153,166,Aval,1185183.01,2024-11-23
+154,GAR_000154,166,Hypothèque,1323325.43,2024-11-27
+155,GAR_000155,166,Aval,921208.85,2024-11-28
+156,GAR_000156,168,Caution bancaire,1092364.29,2024-11-13
+157,GAR_000157,169,Garantie sur fonds de commerce,2890408.74,2020-09-10
+158,GAR_000158,169,Hypothèque,2964148.23,2020-09-14
+159,GAR_000159,170,Hypothèque,4368596.43,2024-11-26
+160,GAR_000160,172,Hypothèque,1623521.53,2023-11-16
+161,GAR_000161,172,Hypothèque,1722790.31,2023-11-16
+162,GAR_000162,173,Caution personnelle,220817.88,2024-07-02
+163,GAR_000163,174,Garantie Tamwilcom,46697.97,2024-12-18
+164,GAR_000164,177,Garantie de l'État,1438967.62,2018-02-15
+165,GAR_000165,177,Garantie sur créances,1098866.23,2018-02-14
+166,GAR_000166,177,Aval,1428485.26,2018-02-19
+167,GAR_000167,178,Garantie de l'État,890485.03,2017-02-26
+168,GAR_000168,179,Garantie Tamwilcom,3483849.21,2023-06-23
+169,GAR_000169,180,Garantie Tamwilcom,1522260.45,2024-06-01
+170,GAR_000170,181,Garantie Tamwilcom,643238.27,2024-09-22
+171,GAR_000171,182,Caution personnelle,517008.57,2024-12-09
+172,GAR_000172,183,Caution personnelle,103187.78,2024-06-10
+173,GAR_000173,184,Garantie Tamwilcom,833402.34,2024-08-20
+174,GAR_000174,186,Garantie Tamwilcom,192767.02,2024-09-17
+175,GAR_000175,189,Caution personnelle,132587.94,2024-11-09
+176,GAR_000176,191,Garantie sur matériel,3428738.43,2024-07-29
+177,GAR_000177,192,Garantie sur matériel,398234.07,2024-10-04
+178,GAR_000178,193,Hypothèque,15265038.62,2024-12-06
+179,GAR_000179,194,Hypothèque,4080864.48,2024-08-04
+180,GAR_000180,194,Nantissement,3510762.95,2024-08-08
+181,GAR_000181,195,Garantie sur créances,9967965.34,2024-06-22
+182,GAR_000182,197,Nantissement,13956836.74,2024-11-20
+183,GAR_000183,198,Garantie sur matériel,6033748.89,2023-08-25
+184,GAR_000184,199,Garantie sur créances,12976579.99,2023-04-07
+185,GAR_000185,199,Hypothèque,18645999.23,2023-04-11
+186,GAR_000186,199,Nantissement,19043123.96,2023-04-04
+187,GAR_000187,200,Caution personnelle,681393.46,2024-06-13
+188,GAR_000188,201,Garantie Tamwilcom,206424.11,2024-12-10
+189,GAR_000189,202,Garantie sur créances,18484483.45,2021-01-25
+190,GAR_000190,202,Hypothèque,29685074.68,2021-01-20
+191,GAR_000191,203,Caution personnelle,505742.15,2024-09-28
+192,GAR_000192,204,Garantie sur matériel,2553708.71,2024-10-19
+193,GAR_000193,204,Hypothèque,5013737.35,2024-10-17
+194,GAR_000194,205,Garantie Tamwilcom,14517851.7,2023-05-13
+195,GAR_000195,208,Caution personnelle,231624.51,2024-12-03
+196,GAR_000196,209,Garantie Tamwilcom,3491369.89,2024-10-05
+197,GAR_000197,210,Hypothèque,14841329.01,2024-08-16
+198,GAR_000198,211,Caution personnelle,321083.15,2024-10-09
+199,GAR_000199,212,Nantissement,1035540.66,2022-10-13
+200,GAR_000200,213,Hypothèque,833213.61,2024-07-01
+201,GAR_000201,214,Caution personnelle,129643.19,2024-05-01
+202,GAR_000202,215,Garantie Tamwilcom,488493.41,2024-11-12
+203,GAR_000203,219,Hypothèque,771098.21,2024-12-10
+204,GAR_000204,220,Hypothèque,1815780.57,2024-04-01
+205,GAR_000205,220,Garantie sur créances,960877.46,2024-04-04
+206,GAR_000206,220,Aval,1146487.73,2024-03-30
+207,GAR_000207,221,Garantie sur fonds de commerce,4995967.53,2024-08-19
+208,GAR_000208,223,Hypothèque,798391.05,2025-01-01
+209,GAR_000209,224,Hypothèque,10463560.72,2024-02-26
+210,GAR_000210,225,Caution personnelle,178188.48,2024-09-24
+211,GAR_000211,227,Caution bancaire,2561816.15,2024-08-04
+212,GAR_000212,228,Garantie sur matériel,445363.97,2024-11-17
+213,GAR_000213,229,Caution personnelle,152041.48,2024-10-06
+214,GAR_000214,230,Nantissement,4016555.4,2024-10-27
+215,GAR_000215,231,Caution personnelle,468186.24,2024-11-10
+216,GAR_000216,232,Caution personnelle,75399.67,2024-12-23
+217,GAR_000217,234,Aval,4447761.29,2024-10-05
+218,GAR_000218,234,Garantie de l'État,4207092.72,2024-10-07
+219,GAR_000219,235,Caution personnelle,450634.73,2024-09-27
+220,GAR_000220,236,Hypothèque,15028818.37,2024-06-24
+221,GAR_000221,238,Garantie sur matériel,9251192.42,2024-09-25
+222,GAR_000222,239,Garantie Tamwilcom,4307355.97,2024-07-03
+223,GAR_000223,239,Hypothèque,5334062.35,2024-07-04
+224,GAR_000224,240,Garantie sur matériel,8827968.76,2024-08-25
+225,GAR_000225,241,Hypothèque,1796127.92,2024-09-11
+226,GAR_000226,242,Caution personnelle,85735.85,2024-12-06
+227,GAR_000227,243,Nantissement,46832532.75,2022-06-07
+228,GAR_000228,244,Caution personnelle,236885.28,2024-11-19
+229,GAR_000229,245,Caution personnelle,150145.78,2024-12-21
+230,GAR_000230,246,Garantie Tamwilcom,97320.56,2024-10-21
+231,GAR_000231,248,Caution bancaire,846376.05,2024-07-11
+232,GAR_000232,249,Caution personnelle,293182.63,2024-08-13
+233,GAR_000233,251,Caution bancaire,757591.76,2024-12-12
+234,GAR_000234,254,Garantie de l'État,197412.81,2022-08-18
+235,GAR_000235,255,Caution bancaire,6583857.61,2024-05-25
+236,GAR_000236,256,Aval,6079053.93,2024-01-26
+237,GAR_000237,256,Aval,5353126.85,2024-01-30
+238,GAR_000238,256,Garantie sur fonds de commerce,8058121.88,2024-01-25
+239,GAR_000239,257,Nantissement,3281791.17,2024-12-05
+240,GAR_000240,258,Caution bancaire,108307.75,2024-12-03
+241,GAR_000241,258,Garantie Tamwilcom,132088.56,2024-12-04
+242,GAR_000242,260,Nantissement,9595492.31,2022-03-14
+243,GAR_000243,261,Garantie Tamwilcom,806916.91,2024-08-06
+244,GAR_000244,261,Hypothèque,1083710.09,2024-08-06
+245,GAR_000245,262,Nantissement,808141.65,2023-07-10
+246,GAR_000246,262,Garantie sur matériel,472195.58,2023-07-14
+247,GAR_000247,264,Garantie de l'État,13018029.24,2023-03-06
+248,GAR_000248,266,Garantie sur créances,8899735.25,2023-02-20
+249,GAR_000249,266,Garantie sur créances,7905538.52,2023-02-15
+250,GAR_000250,266,Nantissement,16890051.5,2023-02-14
+251,GAR_000251,267,Caution personnelle,538217.52,2024-11-12
+252,GAR_000252,268,Caution bancaire,2778030.38,2024-08-18
+253,GAR_000253,270,Garantie Tamwilcom,209651.7,2024-11-20
+254,GAR_000254,271,Garantie Tamwilcom,25715.92,2024-12-02
+255,GAR_000255,274,Aval,9727853.79,2023-02-06
+256,GAR_000256,275,Garantie Tamwilcom,1900185.68,2024-08-22
+257,GAR_000257,275,Hypothèque,3366724.92,2024-08-18
+258,GAR_000258,276,Garantie Tamwilcom,228195.13,2024-08-11
+259,GAR_000259,277,Garantie Tamwilcom,89049.11,2024-05-06
+260,GAR_000260,278,Hypothèque,20221377.54,2024-05-15
+261,GAR_000261,278,Aval,12485126.96,2024-05-14
+262,GAR_000262,279,Garantie Tamwilcom,561429.89,2022-11-03
+263,GAR_000263,280,Caution personnelle,238195.22,2025-01-01
+264,GAR_000264,281,Caution personnelle,817084.29,2024-10-26
+265,GAR_000265,283,Garantie sur matériel,1367892.46,2024-10-10
+266,GAR_000266,284,Garantie sur matériel,8803936.57,2020-05-28
+267,GAR_000267,285,Garantie Tamwilcom,1521929.99,2024-08-15
+268,GAR_000268,286,Hypothèque,1957426.72,2024-05-04
+269,GAR_000269,286,Nantissement,2242696.18,2024-05-02
+270,GAR_000270,290,Nantissement,2765952.21,2023-12-26
+271,GAR_000271,291,Nantissement,2167451.84,2024-12-21
+272,GAR_000272,292,Caution personnelle,60229.11,2024-06-18
+273,GAR_000273,293,Caution bancaire,1472125.1,2024-07-12
+274,GAR_000274,294,Garantie Tamwilcom,170719.93,2024-10-15
+275,GAR_000275,295,Hypothèque,324398.82,2024-10-23
+276,GAR_000276,296,Garantie Tamwilcom,574119.62,2023-10-03
+277,GAR_000277,297,Caution personnelle,63634.39,2024-06-05
+278,GAR_000278,299,Garantie Tamwilcom,526994.94,2021-08-06
+279,GAR_000279,300,Garantie sur matériel,8867883.2,2022-09-16
+280,GAR_000280,301,Caution personnelle,390271.37,2024-06-21
+281,GAR_000281,302,Garantie Tamwilcom,50949.86,2024-09-12
+282,GAR_000282,303,Nantissement,628627.87,2024-03-15
+283,GAR_000283,303,Hypothèque,557615.15,2024-03-20
+284,GAR_000284,304,Hypothèque,108046793.25,2024-06-22
+285,GAR_000285,305,Nantissement,4253698.56,2024-09-29
+286,GAR_000286,305,Garantie sur matériel,2618026.64,2024-10-03
+287,GAR_000287,306,Hypothèque,14182431.64,2019-07-13
+288,GAR_000288,308,Nantissement,13662753.36,2017-12-19
+289,GAR_000289,308,Garantie sur créances,9140532.01,2017-12-17
+290,GAR_000290,309,Caution bancaire,2589102.86,2024-02-15
+291,GAR_000291,310,Garantie Tamwilcom,49678.24,2024-11-08
+292,GAR_000292,311,Hypothèque,5742867.69,2024-03-12
+293,GAR_000293,312,Garantie Tamwilcom,45137.15,2024-07-14
+294,GAR_000294,313,Garantie Tamwilcom,127602.68,2024-06-08
+295,GAR_000295,314,Caution personnelle,327754.12,2024-12-05
+296,GAR_000296,316,Garantie Tamwilcom,75701.48,2024-12-09
+297,GAR_000297,317,Garantie sur créances,27896865.03,2022-11-24
+298,GAR_000298,318,Aval,3919180.89,2024-12-14
+299,GAR_000299,318,Nantissement,5305250.86,2024-12-14
+300,GAR_000300,319,Garantie Tamwilcom,202224.05,2024-08-02
+301,GAR_000301,320,Caution personnelle,25840.05,2024-12-02
+302,GAR_000302,322,Caution personnelle,551637.97,2024-08-22
+303,GAR_000303,323,Garantie Tamwilcom,2890329.64,2020-07-06
+304,GAR_000304,324,Garantie Tamwilcom,769555.11,2024-11-24
+305,GAR_000305,325,Garantie sur matériel,8059801.28,2024-08-11
+306,GAR_000306,326,Caution bancaire,1572570.61,2024-10-24
+307,GAR_000307,326,Nantissement,1910148.03,2024-10-31
+308,GAR_000308,328,Garantie sur matériel,590342.25,2024-06-26
+309,GAR_000309,329,Nantissement,4579158.87,2024-08-19
+310,GAR_000310,331,Caution bancaire,4211088.8,2024-10-03
+311,GAR_000311,331,Garantie sur matériel,3955257.2,2024-10-01
+312,GAR_000312,332,Garantie sur matériel,5887959.9,2023-09-18
+313,GAR_000313,333,Caution bancaire,3370306.66,2019-01-14
+314,GAR_000314,334,Caution bancaire,2280989.02,2023-08-09
+315,GAR_000315,336,Garantie Tamwilcom,496031.79,2024-07-30
+316,GAR_000316,337,Garantie Tamwilcom,86980.27,2024-11-11
+317,GAR_000317,339,Hypothèque,8594566.31,2021-03-14
+318,GAR_000318,340,Garantie sur créances,398617.29,2024-10-17
+319,GAR_000319,340,Aval,523458.02,2024-10-12
+320,GAR_000320,341,Caution personnelle,10039.5,2024-08-19
+321,GAR_000321,342,Caution personnelle,320360.93,2024-08-14
+322,GAR_000322,343,Nantissement,13453745.8,2021-11-14
+323,GAR_000323,344,Garantie de l'État,11611975.62,2023-07-14
+324,GAR_000324,344,Garantie sur créances,10036659.87,2023-07-08
+325,GAR_000325,346,Garantie Tamwilcom,390956.41,2024-11-08
+326,GAR_000326,347,Caution personnelle,488565.14,2024-11-27
+327,GAR_000327,349,Hypothèque,4485117.36,2024-10-14
+328,GAR_000328,350,Caution personnelle,120656.66,2024-12-23
+329,GAR_000329,352,Hypothèque,17948013.51,2024-11-29
+330,GAR_000330,352,Garantie sur créances,10417285.84,2024-11-27
+331,GAR_000331,353,Hypothèque,408681.59,2024-12-25
+332,GAR_000332,354,Nantissement,9694479.79,2023-09-14
+333,GAR_000333,355,Hypothèque,1963364.41,2023-12-02
+334,GAR_000334,356,Nantissement,1845071.18,2024-11-09
+335,GAR_000335,358,Nantissement,19196459.58,2020-06-20
+336,GAR_000336,358,Hypothèque,15986383.12,2020-06-24
+337,GAR_000337,359,Garantie Tamwilcom,139340.46,2024-02-14
+338,GAR_000338,360,Garantie Tamwilcom,15005.83,2023-10-07
+339,GAR_000339,361,Caution personnelle,40494.64,2024-12-05
+340,GAR_000340,363,Nantissement,5683886.75,2022-08-09
+341,GAR_000341,363,Garantie sur fonds de commerce,5465148.09,2022-08-13
+342,GAR_000342,364,Garantie sur fonds de commerce,3721910.8,2023-08-07
+343,GAR_000343,365,Caution personnelle,61234.1,2024-12-07
+344,GAR_000344,366,Garantie de l'État,9549973.39,2024-10-25
+345,GAR_000345,366,Garantie sur fonds de commerce,15503626.52,2024-10-27
+346,GAR_000346,366,Hypothèque,16894385.36,2024-10-22
+347,GAR_000347,368,Hypothèque,4054419.06,2023-11-28
+348,GAR_000348,368,Aval,2842382.88,2023-11-28
+349,GAR_000349,368,Garantie sur créances,2811814.37,2023-11-23
+350,GAR_000350,369,Caution personnelle,148783.9,2024-07-22
+351,GAR_000351,371,Caution personnelle,144272.9,2024-07-25
+352,GAR_000352,372,Caution personnelle,30674.41,2024-10-08
+353,GAR_000353,373,Garantie sur matériel,1334434.19,2022-05-15
+354,GAR_000354,373,Garantie sur matériel,1382272.73,2022-05-22
+355,GAR_000355,374,Garantie sur matériel,1419331.92,2024-05-16
+356,GAR_000356,375,Garantie Tamwilcom,270402.32,2023-09-28
+357,GAR_000357,376,Caution bancaire,10223288.67,2024-08-11
+358,GAR_000358,377,Nantissement,2934163.23,2020-01-03
+359,GAR_000359,378,Caution personnelle,35910.08,2024-10-25
+360,GAR_000360,379,Garantie Tamwilcom,11215999.16,2021-05-09
+361,GAR_000361,381,Garantie sur créances,19920478.4,2022-03-24
+362,GAR_000362,382,Garantie Tamwilcom,45616.75,2024-08-21
+363,GAR_000363,383,Garantie de l'État,324614.72,2024-07-25
+364,GAR_000364,383,Nantissement,344285.17,2024-07-21
+365,GAR_000365,383,Hypothèque,419810.65,2024-07-27
+366,GAR_000366,385,Nantissement,12978158.45,2020-10-13
+367,GAR_000367,386,Garantie de l'État,599299.18,2024-08-25
+368,GAR_000368,386,Garantie de l'État,677305.15,2024-08-26
+369,GAR_000369,386,Garantie sur fonds de commerce,872397.67,2024-08-27
+370,GAR_000370,387,Caution bancaire,2582589.92,2024-08-15
+371,GAR_000371,387,Hypothèque,3721607.7,2024-08-11
+372,GAR_000372,388,Garantie Tamwilcom,840793.83,2020-08-01
+373,GAR_000373,388,Nantissement,984022.94,2020-07-29
+374,GAR_000374,390,Caution personnelle,161367.46,2024-09-18
+375,GAR_000375,391,Nantissement,4767008.82,2024-11-14
+376,GAR_000376,392,Caution bancaire,9353765.58,2023-09-07
+377,GAR_000377,393,Garantie Tamwilcom,12209914.2,2023-12-06
+378,GAR_000378,395,Garantie Tamwilcom,4184106.9,2024-07-15
+379,GAR_000379,395,Hypothèque,5797341.36,2024-07-11
+380,GAR_000380,396,Caution bancaire,429360.23,2024-12-23
+381,GAR_000381,396,Garantie sur matériel,444318.86,2024-12-24
+382,GAR_000382,397,Garantie Tamwilcom,10192067.44,2022-08-11
+383,GAR_000383,398,Hypothèque,4515488.09,2024-02-04
+384,GAR_000384,399,Nantissement,25324162.08,2024-11-17
+385,GAR_000385,400,Garantie sur fonds de commerce,4444489.93,2023-12-25
+386,GAR_000386,400,Hypothèque,3663293.08,2023-12-22
+387,GAR_000387,400,Garantie de l'État,2877314.51,2023-12-22
+388,GAR_000388,401,Caution personnelle,132066.74,2024-10-16
+389,GAR_000389,402,Caution personnelle,62445.86,2024-09-01
+390,GAR_000390,404,Garantie Tamwilcom,599874.56,2024-06-25
+391,GAR_000391,406,Hypothèque,1328193.13,2024-11-21
+392,GAR_000392,407,Garantie Tamwilcom,5786183.43,2023-05-14
+393,GAR_000393,407,Garantie Tamwilcom,5367933.89,2023-05-09
+394,GAR_000394,410,Nantissement,26050488.96,2022-11-24
+395,GAR_000395,411,Caution personnelle,255930.49,2024-10-29
+396,GAR_000396,413,Garantie Tamwilcom,646999.12,2024-11-02
+397,GAR_000397,414,Hypothèque,5054055.11,2024-11-04
+398,GAR_000398,415,Garantie Tamwilcom,555960.34,2024-07-16
+399,GAR_000399,416,Caution personnelle,366425.41,2024-05-24
+400,GAR_000400,419,Garantie sur fonds de commerce,61832706.22,2023-03-30
+401,GAR_000401,420,Garantie de l'État,2287231.9,2018-06-28
+402,GAR_000402,421,Garantie Tamwilcom,605061.56,2024-10-01
+403,GAR_000403,426,Caution bancaire,2456270.66,2021-03-30
+404,GAR_000404,427,Garantie sur matériel,3838855.19,2021-04-29
+405,GAR_000405,427,Garantie sur matériel,4911106.8,2021-04-30
+406,GAR_000406,428,Garantie Tamwilcom,4462265.34,2024-12-18
+407,GAR_000407,429,Caution personnelle,816832.42,2024-09-18
+408,GAR_000408,431,Garantie Tamwilcom,62848.32,2024-12-12
+409,GAR_000409,432,Garantie Tamwilcom,293595.25,2024-09-24
+410,GAR_000410,433,Caution personnelle,115808.61,2023-04-02
+411,GAR_000411,434,Nantissement,9612440.47,2022-06-20
+412,GAR_000412,435,Caution personnelle,51033.54,2024-11-15
+413,GAR_000413,436,Garantie Tamwilcom,512187.16,2023-05-11
+414,GAR_000414,437,Hypothèque,5031830.03,2024-10-04
+415,GAR_000415,437,Garantie sur matériel,3540581.8,2024-10-06
+416,GAR_000416,438,Garantie sur matériel,4101729.2,2024-11-25
+417,GAR_000417,439,Nantissement,19755214.95,2024-12-10
+418,GAR_000418,440,Caution personnelle,92246.89,2024-10-07
+419,GAR_000419,441,Garantie Tamwilcom,7382218.96,2023-08-22
+420,GAR_000420,442,Nantissement,697470.17,2024-07-21
+421,GAR_000421,443,Hypothèque,14377846.17,2024-02-12
+422,GAR_000422,443,Garantie de l'État,10870727.51,2024-02-07
+423,GAR_000423,443,Hypothèque,11149503.64,2024-02-11
+424,GAR_000424,444,Garantie Tamwilcom,570842.97,2024-11-13
+425,GAR_000425,445,Caution personnelle,55105.79,2024-09-24
+426,GAR_000426,446,Caution personnelle,53763.88,2024-06-16
+427,GAR_000427,447,Garantie sur créances,445689.08,2024-05-12
+428,GAR_000428,447,Aval,418531.34,2024-05-17
+429,GAR_000429,448,Garantie de l'État,4647358.93,2024-12-24
+430,GAR_000430,449,Nantissement,4488868.38,2017-11-17
+431,GAR_000431,449,Aval,3315290.78,2017-11-14
+432,GAR_000432,449,Nantissement,4431895.13,2017-11-13
+433,GAR_000433,450,Nantissement,1785219.08,2021-06-04
+434,GAR_000434,450,Garantie sur matériel,1331593.44,2021-06-03
+435,GAR_000435,451,Hypothèque,6385985.25,2024-06-08
+436,GAR_000436,452,Garantie Tamwilcom,203128.45,2024-04-04
+437,GAR_000437,453,Garantie Tamwilcom,308647.99,2024-08-20
+438,GAR_000438,454,Caution personnelle,93686.41,2024-11-26
+439,GAR_000439,455,Garantie Tamwilcom,84766.08,2024-07-19
+440,GAR_000440,456,Garantie sur matériel,7556474.07,2024-08-07
+441,GAR_000441,459,Caution personnelle,626547.65,2024-05-06
+442,GAR_000442,460,Caution bancaire,3365239.86,2024-11-22
+443,GAR_000443,461,Hypothèque,9032281.69,2015-09-27
+444,GAR_000444,462,Garantie Tamwilcom,1817015.08,2025-01-04
+445,GAR_000445,463,Garantie Tamwilcom,503837.81,2024-12-05
+446,GAR_000446,464,Caution personnelle,209908.47,2024-03-16
+447,GAR_000447,466,Caution personnelle,905526.85,2024-04-07
+448,GAR_000448,468,Garantie Tamwilcom,4450398.17,2024-05-15
+449,GAR_000449,472,Garantie Tamwilcom,331084.86,2024-10-21
+450,GAR_000450,473,Nantissement,3938507.71,2021-07-29
+451,GAR_000451,474,Garantie sur matériel,6565698.55,2024-08-15
+452,GAR_000452,475,Caution personnelle,54178.13,2024-11-03
+453,GAR_000453,477,Caution personnelle,193391.18,2024-09-06
+454,GAR_000454,478,Nantissement,1383106.54,2024-12-02
+455,GAR_000455,478,Hypothèque,1626694.91,2024-12-08
+456,GAR_000456,479,Nantissement,26148.34,2024-11-30
+457,GAR_000457,480,Garantie Tamwilcom,184782.5,2024-09-12
+458,GAR_000458,481,Caution personnelle,752685.07,2024-04-11
+459,GAR_000459,482,Garantie Tamwilcom,144188.77,2024-04-07
+460,GAR_000460,484,Garantie sur matériel,1013490.47,2022-11-11
+461,GAR_000461,484,Caution bancaire,1081482.67,2022-11-14
+462,GAR_000462,486,Garantie Tamwilcom,32240.32,2024-07-07
+463,GAR_000463,487,Caution bancaire,10915051.11,2022-05-11
+464,GAR_000464,488,Garantie sur matériel,7080335.81,2024-08-22
+465,GAR_000465,490,Caution bancaire,326344.95,2024-10-21
+466,GAR_000466,492,Garantie Tamwilcom,52777.22,2024-09-12
+467,GAR_000467,494,Garantie Tamwilcom,387721.41,2024-12-07
+468,GAR_000468,494,Garantie sur matériel,263135.81,2024-12-07
+469,GAR_000469,495,Garantie sur matériel,706359.03,2024-12-10
+470,GAR_000470,496,Garantie sur fonds de commerce,5481769.39,2024-10-10
+471,GAR_000471,496,Nantissement,5543397.05,2024-10-12
+472,GAR_000472,496,Hypothèque,5202942.67,2024-10-09
+473,GAR_000473,497,Garantie Tamwilcom,2512345.39,2024-10-26
+474,GAR_000474,500,Caution personnelle,217584.92,2024-05-22
+475,GAR_000475,502,Garantie sur fonds de commerce,4612788.72,2023-12-09
+476,GAR_000476,502,Garantie de l'État,3030968.56,2023-12-16
+477,GAR_000477,503,Caution personnelle,174977.4,2024-10-09
+478,GAR_000478,504,Garantie sur matériel,684714.7,2024-08-27
+479,GAR_000479,505,Caution bancaire,651969.11,2024-04-19
+480,GAR_000480,505,Garantie sur matériel,620854.01,2024-04-21
+481,GAR_000481,506,Aval,6104677.69,2024-05-12
+482,GAR_000482,506,Garantie sur fonds de commerce,9947130.09,2024-05-16
+483,GAR_000483,508,Garantie sur matériel,9587666.82,2021-03-05
+484,GAR_000484,509,Garantie Tamwilcom,1585261.75,2024-10-23
+485,GAR_000485,509,Nantissement,2109471.04,2024-10-24
+486,GAR_000486,512,Garantie Tamwilcom,74441.16,2024-11-29
+487,GAR_000487,513,Garantie Tamwilcom,761171.4,2024-06-28
+488,GAR_000488,514,Caution personnelle,397780.45,2024-08-10
+489,GAR_000489,516,Garantie Tamwilcom,255125.18,2024-08-07
+490,GAR_000490,517,Caution bancaire,1376703.02,2024-07-09
+491,GAR_000491,518,Nantissement,8746714.93,2023-10-12
+492,GAR_000492,519,Hypothèque,1534990.09,2021-02-16
+493,GAR_000493,520,Garantie sur matériel,3857335.38,2024-10-22
+494,GAR_000494,521,Garantie Tamwilcom,46098.28,2023-03-15
+495,GAR_000495,522,Hypothèque,14574962.07,2023-03-09
+496,GAR_000496,525,Nantissement,6479928.21,2021-06-09
+497,GAR_000497,526,Garantie Tamwilcom,123622.42,2024-09-19
+498,GAR_000498,527,Garantie Tamwilcom,405078.83,2024-11-22
+499,GAR_000499,529,Garantie de l'État,2026377.81,2024-12-14
+500,GAR_000500,530,Hypothèque,18929354.35,2022-08-14
+501,GAR_000501,532,Nantissement,7090221.57,2024-03-09
+502,GAR_000502,532,Hypothèque,6362257.08,2024-03-11
+503,GAR_000503,533,Hypothèque,15345313.62,2019-03-06
+504,GAR_000504,534,Garantie Tamwilcom,46577.01,2024-10-13
+505,GAR_000505,536,Caution bancaire,1704657.86,2023-02-07
+506,GAR_000506,536,Garantie sur matériel,2095055.05,2023-02-14
+507,GAR_000507,537,Aval,8263575.26,2020-05-22
+508,GAR_000508,537,Garantie sur créances,7884498.1,2020-05-21
+509,GAR_000509,537,Garantie sur fonds de commerce,14312048.22,2020-05-18
+510,GAR_000510,539,Nantissement,18521159.53,2018-08-20
+511,GAR_000511,539,Garantie sur créances,9493859.19,2018-08-18
+512,GAR_000512,541,Garantie Tamwilcom,1841108.94,2024-08-16
+513,GAR_000513,542,Hypothèque,980527.38,2024-08-11
+514,GAR_000514,542,Garantie sur matériel,843987.55,2024-08-15
+515,GAR_000515,544,Hypothèque,5241218.8,2021-12-11
+516,GAR_000516,544,Garantie sur matériel,2817319.54,2021-12-12
+517,GAR_000517,545,Caution personnelle,127854.86,2024-09-06
+518,GAR_000518,546,Garantie Tamwilcom,475815.13,2023-12-06
+519,GAR_000519,547,Nantissement,3532468.28,2024-09-30
+520,GAR_000520,548,Hypothèque,10419399.14,2017-10-28
+521,GAR_000521,549,Garantie sur fonds de commerce,9405484.04,2024-08-11
+522,GAR_000522,550,Nantissement,38802658.45,2020-07-14
+523,GAR_000523,552,Garantie Tamwilcom,765673.01,2024-01-04
+524,GAR_000524,552,Hypothèque,1272832.05,2023-12-30
+525,GAR_000525,553,Caution bancaire,6608600.84,2020-08-01
+526,GAR_000526,554,Nantissement,16206507.28,2024-08-10
+527,GAR_000527,558,Garantie Tamwilcom,244013.88,2024-06-16
+528,GAR_000528,560,Garantie Tamwilcom,406279.72,2022-04-27
+529,GAR_000529,561,Garantie Tamwilcom,89446.39,2024-09-05
+530,GAR_000530,562,Nantissement,12121641.28,2020-11-28
+531,GAR_000531,563,Hypothèque,6633220.87,2024-07-22
+532,GAR_000532,563,Nantissement,8012832.02,2024-07-17
+533,GAR_000533,564,Garantie sur matériel,2994020.39,2024-10-20
+534,GAR_000534,565,Nantissement,3124845.28,2024-12-17
+535,GAR_000535,565,Caution bancaire,2323254.03,2024-12-15
+536,GAR_000536,567,Caution personnelle,359234.67,2024-04-11
+537,GAR_000537,568,Garantie sur matériel,4705880.78,2020-01-22
+538,GAR_000538,570,Caution bancaire,9500280.57,2020-09-22
+539,GAR_000539,571,Hypothèque,742775.27,2021-11-04
+540,GAR_000540,572,Aval,27730824.67,2024-11-29
+541,GAR_000541,573,Garantie Tamwilcom,284842.66,2024-11-16
+542,GAR_000542,574,Garantie Tamwilcom,7610776.23,2023-11-06
+543,GAR_000543,575,Hypothèque,8963716.3,2024-09-23
+544,GAR_000544,576,Garantie Tamwilcom,13384824.41,2024-01-13
+545,GAR_000545,578,Garantie Tamwilcom,273990.04,2024-08-26
+546,GAR_000546,579,Caution bancaire,753401.99,2024-12-09
+547,GAR_000547,580,Garantie Tamwilcom,45413.13,2024-12-12
+548,GAR_000548,581,Hypothèque,272174.59,2024-12-18
+549,GAR_000549,582,Garantie sur matériel,987101.98,2024-05-20
+550,GAR_000550,584,Caution bancaire,5891512.27,2023-04-15
+551,GAR_000551,586,Caution personnelle,669727.36,2024-12-26
+552,GAR_000552,587,Caution bancaire,3592785.37,2019-12-14
+553,GAR_000553,587,Nantissement,5329072.01,2019-12-12
+554,GAR_000554,588,Garantie sur matériel,366543.86,2024-03-19
+555,GAR_000555,589,Caution bancaire,4429024.4,2024-06-12
+556,GAR_000556,590,Nantissement,18888836.14,2017-12-28
+557,GAR_000557,591,Garantie sur matériel,7566545.28,2025-01-02
+558,GAR_000558,592,Caution personnelle,516142.39,2024-06-19
+559,GAR_000559,593,Caution personnelle,74889.64,2024-09-05
+560,GAR_000560,594,Caution bancaire,1341265.16,2024-12-20
+561,GAR_000561,595,Caution bancaire,1060239.79,2024-09-22
+562,GAR_000562,596,Caution personnelle,20257.72,2024-11-04
+563,GAR_000563,597,Hypothèque,471062.03,2024-08-07
+564,GAR_000564,598,Caution personnelle,328469.14,2024-10-07
+565,GAR_000565,599,Garantie Tamwilcom,836403.88,2022-11-12
+566,GAR_000566,600,Caution personnelle,241295.68,2024-11-25
+567,GAR_000567,601,Nantissement,5816342.01,2024-08-28
+568,GAR_000568,602,Hypothèque,1454542.99,2024-03-26
+569,GAR_000569,604,Caution bancaire,1306704.41,2024-10-29
+570,GAR_000570,605,Aval,16347549.57,2022-06-10
+571,GAR_000571,607,Caution bancaire,199664.61,2024-12-14
+572,GAR_000572,607,Hypothèque,293572.12,2024-12-09
+573,GAR_000573,608,Garantie sur fonds de commerce,4106164.74,2024-10-29
+574,GAR_000574,611,Hypothèque,3382887.53,2024-11-19
+575,GAR_000575,612,Garantie Tamwilcom,2371740.24,2021-04-02
+576,GAR_000576,614,Caution personnelle,396025.0,2024-10-08
+577,GAR_000577,615,Garantie Tamwilcom,1480945.45,2023-08-26
+578,GAR_000578,615,Nantissement,2341347.91,2023-08-26
+579,GAR_000579,616,Hypothèque,1196833.5,2024-03-10
+580,GAR_000580,618,Garantie Tamwilcom,222268.14,2024-12-13
+581,GAR_000581,619,Caution bancaire,1927984.03,2024-10-16
+582,GAR_000582,621,Garantie Tamwilcom,85604.96,2024-04-10
+583,GAR_000583,623,Garantie Tamwilcom,129451.37,2024-08-14
+584,GAR_000584,626,Garantie Tamwilcom,593059.98,2023-08-02
+585,GAR_000585,627,Garantie sur fonds de commerce,10251767.5,2023-08-07
+586,GAR_000586,628,Garantie Tamwilcom,763942.08,2024-11-08
+587,GAR_000587,630,Nantissement,878689.44,2024-07-28
+588,GAR_000588,631,Caution bancaire,2945321.27,2024-07-26
+589,GAR_000589,631,Garantie sur matériel,2820511.58,2024-07-22
+590,GAR_000590,632,Garantie Tamwilcom,300532.63,2024-09-26
+591,GAR_000591,633,Garantie sur créances,263591.92,2024-08-15
+592,GAR_000592,633,Hypothèque,430339.46,2024-08-13
+593,GAR_000593,634,Caution personnelle,694186.25,2024-06-11
+594,GAR_000594,635,Caution bancaire,2379361.53,2024-10-10
+595,GAR_000595,635,Garantie Tamwilcom,2733811.55,2024-10-12
+596,GAR_000596,637,Garantie Tamwilcom,685943.64,2024-11-04
+597,GAR_000597,638,Garantie Tamwilcom,643631.33,2024-11-06
+598,GAR_000598,639,Garantie sur matériel,666431.68,2024-05-08
+599,GAR_000599,640,Caution personnelle,131289.64,2024-09-26
+600,GAR_000600,641,Hypothèque,560592.42,2024-12-11
+601,GAR_000601,643,Nantissement,1990957.22,2023-05-03
+602,GAR_000602,644,Caution bancaire,11799636.88,2023-02-03
+603,GAR_000603,645,Caution personnelle,194313.22,2024-02-11
+604,GAR_000604,646,Garantie Tamwilcom,226810.19,2024-10-06
+605,GAR_000605,649,Caution bancaire,1756796.84,2020-06-24
+606,GAR_000606,650,Nantissement,713729.94,2024-06-17
+607,GAR_000607,651,Garantie Tamwilcom,7587755.77,2024-03-03
+608,GAR_000608,652,Garantie Tamwilcom,3011525.67,2017-08-27
+609,GAR_000609,653,Caution bancaire,13532995.04,2023-01-08
+610,GAR_000610,654,Garantie sur matériel,3208176.17,2022-09-16
+611,GAR_000611,655,Garantie Tamwilcom,104693.01,2023-10-22
+612,GAR_000612,656,Caution bancaire,9279236.32,2018-01-10
+613,GAR_000613,657,Garantie sur créances,379538.02,2024-04-28
+614,GAR_000614,658,Nantissement,809365.13,2024-10-02
+615,GAR_000615,658,Aval,633628.99,2024-09-30
+616,GAR_000616,659,Garantie sur matériel,6810109.39,2022-12-26
+617,GAR_000617,660,Caution personnelle,537173.51,2024-03-19
+618,GAR_000618,661,Caution personnelle,312878.97,2023-07-26
+619,GAR_000619,663,Caution personnelle,281753.02,2024-11-11
+620,GAR_000620,665,Garantie Tamwilcom,363053.92,2024-08-04
+621,GAR_000621,666,Caution personnelle,714787.92,2024-07-12
+622,GAR_000622,670,Garantie Tamwilcom,307033.47,2024-05-27
+623,GAR_000623,671,Nantissement,2107596.58,2016-06-21
+624,GAR_000624,671,Nantissement,2527245.36,2016-06-16
+625,GAR_000625,672,Garantie Tamwilcom,479081.33,2023-09-12
+626,GAR_000626,673,Garantie Tamwilcom,334196.41,2024-07-19
+627,GAR_000627,675,Garantie Tamwilcom,157699.63,2024-08-03
+628,GAR_000628,676,Caution bancaire,2659471.22,2023-03-01
+629,GAR_000629,676,Hypothèque,4655147.64,2023-03-01
+630,GAR_000630,677,Caution bancaire,883456.9,2024-06-18
+631,GAR_000631,679,Caution bancaire,1403446.98,2023-05-29
+632,GAR_000632,681,Nantissement,8593765.02,2018-08-09
+633,GAR_000633,682,Garantie sur matériel,11078475.46,2021-05-22
+634,GAR_000634,684,Caution bancaire,10042796.03,2024-11-20
+635,GAR_000635,686,Garantie sur créances,251450.8,2019-12-19
+636,GAR_000636,686,Garantie sur fonds de commerce,400056.82,2019-12-19
+637,GAR_000637,686,Garantie sur créances,239699.05,2019-12-20
+638,GAR_000638,687,Garantie Tamwilcom,10992484.96,2018-05-31
+639,GAR_000639,688,Garantie Tamwilcom,118860.73,2024-09-07
+640,GAR_000640,690,Garantie Tamwilcom,9379228.31,2024-06-14
+641,GAR_000641,691,Caution personnelle,200693.16,2024-10-11
+642,GAR_000642,692,Hypothèque,2442705.53,2024-05-30
+643,GAR_000643,693,Garantie Tamwilcom,131784.33,2024-07-26
+644,GAR_000644,695,Garantie Tamwilcom,173128.81,2023-10-16
+645,GAR_000645,696,Garantie Tamwilcom,358393.58,2024-08-05
+646,GAR_000646,697,Garantie Tamwilcom,1277704.33,2024-11-10
+647,GAR_000647,698,Caution bancaire,8607444.94,2023-12-29
+648,GAR_000648,700,Hypothèque,14925472.77,2024-12-30
+649,GAR_000649,702,Garantie Tamwilcom,6795000.5,2024-08-30
+650,GAR_000650,703,Caution personnelle,321313.22,2023-09-10
+651,GAR_000651,704,Hypothèque,1372283.06,2022-03-02
+652,GAR_000652,704,Hypothèque,1270879.14,2022-03-02
+653,GAR_000653,705,Hypothèque,1380630.56,2024-05-25
+654,GAR_000654,705,Garantie sur matériel,686720.4,2024-05-30
+655,GAR_000655,706,Garantie Tamwilcom,364849.93,2024-09-26
+656,GAR_000656,707,Garantie Tamwilcom,228571.21,2024-08-31
+657,GAR_000657,708,Garantie sur créances,11693954.51,2024-11-10
+658,GAR_000658,708,Garantie de l'État,15656758.45,2024-11-08
+659,GAR_000659,708,Hypothèque,19431011.71,2024-11-07
+660,GAR_000660,709,Garantie Tamwilcom,75802.13,2024-11-25
+661,GAR_000661,709,Hypothèque,145486.65,2024-11-29
+662,GAR_000662,710,Garantie Tamwilcom,355261.07,2024-09-20
+663,GAR_000663,711,Garantie sur matériel,8581977.49,2024-09-17
+664,GAR_000664,712,Hypothèque,9306046.85,2023-01-20
+665,GAR_000665,714,Garantie Tamwilcom,8460429.63,2024-11-14
+666,GAR_000666,715,Garantie Tamwilcom,15162.02,2024-12-22
+667,GAR_000667,716,Garantie Tamwilcom,7241841.26,2024-11-26
+668,GAR_000668,717,Nantissement,2898162.89,2018-07-07
+669,GAR_000669,718,Nantissement,7798542.54,2024-10-09
+670,GAR_000670,718,Garantie de l'État,4859304.65,2024-10-10
+671,GAR_000671,718,Garantie de l'État,4557082.96,2024-10-13
+672,GAR_000672,719,Garantie Tamwilcom,8403610.56,2023-02-12
+673,GAR_000673,721,Nantissement,8913229.49,2024-10-03
+674,GAR_000674,722,Nantissement,9908780.38,2024-05-27
+675,GAR_000675,722,Garantie sur fonds de commerce,11064961.75,2024-06-02
+676,GAR_000676,722,Aval,8887392.96,2024-05-28
+677,GAR_000677,723,Aval,3340952.45,2020-01-07
+678,GAR_000678,724,Garantie sur matériel,3226742.11,2021-07-09
+679,GAR_000679,725,Caution bancaire,178055.77,2024-11-25
+680,GAR_000680,725,Caution bancaire,208239.67,2024-11-21
+681,GAR_000681,726,Nantissement,16452073.85,2024-12-12
+682,GAR_000682,727,Garantie sur fonds de commerce,36961465.74,2024-05-13
+683,GAR_000683,730,Caution personnelle,506026.27,2024-11-13
+684,GAR_000684,731,Caution personnelle,73601.11,2024-11-10
+685,GAR_000685,732,Garantie sur matériel,11168352.59,2023-09-22
+686,GAR_000686,733,Garantie sur matériel,2905450.41,2024-05-19
+687,GAR_000687,734,Hypothèque,32206462.46,2022-08-16
+688,GAR_000688,735,Garantie Tamwilcom,9080604.68,2021-07-31
+689,GAR_000689,736,Garantie Tamwilcom,238137.58,2022-11-13
+690,GAR_000690,737,Aval,6005724.58,2024-09-15
+691,GAR_000691,737,Hypothèque,9924246.56,2024-09-19
+692,GAR_000692,738,Hypothèque,734265.14,2022-09-26
+693,GAR_000693,739,Garantie Tamwilcom,442612.28,2024-05-06
+694,GAR_000694,740,Aval,15484679.69,2024-04-21
+695,GAR_000695,741,Hypothèque,1479905.58,2022-10-20
+696,GAR_000696,742,Garantie sur matériel,276167.63,2024-11-28
+697,GAR_000697,743,Garantie Tamwilcom,49535.38,2024-11-06
+698,GAR_000698,744,Caution bancaire,3253133.83,2024-10-13
+699,GAR_000699,744,Garantie Tamwilcom,3813701.66,2024-10-08
+700,GAR_000700,746,Garantie Tamwilcom,305632.94,2024-08-25
+701,GAR_000701,747,Caution personnelle,139593.17,2024-09-22
+702,GAR_000702,748,Caution personnelle,97836.99,2024-09-27
+703,GAR_000703,749,Garantie Tamwilcom,80721.35,2024-03-25
+704,GAR_000704,751,Garantie Tamwilcom,1008426.42,2024-11-24
+705,GAR_000705,751,Caution bancaire,885464.84,2024-11-24
+706,GAR_000706,752,Caution bancaire,13279459.55,2017-03-30
+707,GAR_000707,753,Garantie sur matériel,3201391.01,2021-08-11
+708,GAR_000708,754,Garantie sur matériel,2077626.26,2024-02-08
+709,GAR_000709,755,Garantie Tamwilcom,2546738.48,2024-11-29
+710,GAR_000710,755,Garantie sur matériel,2879363.37,2024-12-01
+711,GAR_000711,756,Caution personnelle,17206.33,2024-12-10
+712,GAR_000712,758,Garantie sur matériel,46550.79,2024-10-08
+713,GAR_000713,758,Garantie Tamwilcom,39610.44,2024-10-11
+714,GAR_000714,759,Nantissement,601555.82,2024-10-06
+715,GAR_000715,759,Hypothèque,628571.38,2024-10-01
+716,GAR_000716,760,Hypothèque,535976.96,2024-06-12
+717,GAR_000717,760,Hypothèque,548575.51,2024-06-15
+718,GAR_000718,761,Garantie Tamwilcom,87053.58,2024-11-21
+719,GAR_000719,762,Caution personnelle,50208.49,2024-12-19
+720,GAR_000720,764,Nantissement,22431441.58,2023-04-11
+721,GAR_000721,766,Hypothèque,2079971.01,2024-08-23
+722,GAR_000722,768,Nantissement,12188092.55,2018-10-08
+723,GAR_000723,770,Garantie sur matériel,1612377.94,2024-10-24
+724,GAR_000724,771,Nantissement,4274124.88,2024-12-17
+725,GAR_000725,771,Garantie de l'État,3325059.85,2024-12-16
+726,GAR_000726,772,Nantissement,3370358.22,2024-02-24
+727,GAR_000727,774,Caution personnelle,274691.71,2024-11-20
+728,GAR_000728,776,Hypothèque,34640573.46,2024-11-24
+729,GAR_000729,777,Nantissement,11627109.17,2021-09-06
+730,GAR_000730,779,Caution personnelle,17222.69,2024-06-01
+731,GAR_000731,780,Caution personnelle,129139.29,2024-11-28
+732,GAR_000732,781,Garantie sur fonds de commerce,62653747.58,2020-04-18
+733,GAR_000733,782,Caution personnelle,209000.7,2024-04-20
+734,GAR_000734,783,Garantie Tamwilcom,220728.26,2024-08-30
+735,GAR_000735,784,Garantie Tamwilcom,118844.99,2024-11-10
+736,GAR_000736,785,Nantissement,733003.76,2024-11-18
+737,GAR_000737,785,Caution bancaire,566645.21,2024-11-18
+738,GAR_000738,786,Garantie sur matériel,5339831.09,2024-02-20
+739,GAR_000739,786,Garantie sur matériel,7115483.99,2024-02-20
+740,GAR_000740,787,Garantie Tamwilcom,1834520.07,2023-03-17
+741,GAR_000741,787,Caution bancaire,1546522.43,2023-03-17
+742,GAR_000742,788,Caution personnelle,102148.31,2024-11-19
+743,GAR_000743,789,Nantissement,16351019.49,2021-08-08
+744,GAR_000744,790,Nantissement,13187130.41,2021-08-21
+745,GAR_000745,791,Hypothèque,3299069.1,2024-03-19
+746,GAR_000746,791,Hypothèque,4222967.76,2024-03-17
+747,GAR_000747,792,Hypothèque,2782565.02,2024-12-29
+748,GAR_000748,794,Caution personnelle,60141.01,2024-11-22
+749,GAR_000749,796,Garantie de l'État,23019436.27,2024-10-17
+750,GAR_000750,798,Caution bancaire,1898974.1,2024-11-29
+751,GAR_000751,798,Nantissement,2829776.46,2024-11-30
+752,GAR_000752,800,Nantissement,754611.76,2019-12-06
+753,GAR_000753,800,Hypothèque,960705.68,2019-12-11
+754,GAR_000754,801,Nantissement,7182326.71,2023-10-12
+755,GAR_000755,801,Garantie Tamwilcom,5110076.83,2023-10-10
+756,GAR_000756,802,Garantie Tamwilcom,6509904.11,2022-05-22
+757,GAR_000757,803,Hypothèque,7844093.16,2024-07-15
+758,GAR_000758,804,Caution bancaire,448683.96,2024-12-03
+759,GAR_000759,805,Caution personnelle,158057.47,2024-08-23
+760,GAR_000760,806,Caution personnelle,273206.98,2023-11-11
+761,GAR_000761,807,Garantie Tamwilcom,316425.62,2024-12-04
+762,GAR_000762,808,Nantissement,10222963.03,2023-07-18
+763,GAR_000763,809,Caution personnelle,234783.25,2024-07-27
+764,GAR_000764,813,Hypothèque,32117.09,2024-07-07
+765,GAR_000765,813,Nantissement,28758.8,2024-07-12
+766,GAR_000766,814,Garantie Tamwilcom,9562326.12,2019-09-28
+767,GAR_000767,815,Garantie Tamwilcom,2405494.4,2022-02-12
+768,GAR_000768,816,Garantie Tamwilcom,3829984.85,2023-05-14
+769,GAR_000769,818,Nantissement,732688.37,2024-09-19
+770,GAR_000770,818,Garantie sur créances,402637.96,2024-09-12
+771,GAR_000771,819,Hypothèque,5366572.19,2024-09-11
+772,GAR_000772,819,Garantie sur matériel,3193278.34,2024-09-12
+773,GAR_000773,821,Garantie sur créances,12039371.12,2018-05-24
+774,GAR_000774,822,Nantissement,5311237.59,2021-08-07
+775,GAR_000775,823,Nantissement,1249260.54,2024-05-07
+776,GAR_000776,823,Hypothèque,1390437.15,2024-05-04
+777,GAR_000777,823,Nantissement,1155363.4,2024-05-08
+778,GAR_000778,826,Garantie Tamwilcom,79994.14,2024-10-12
+779,GAR_000779,827,Garantie Tamwilcom,321300.39,2024-08-13
+780,GAR_000780,828,Aval,13032381.47,2020-08-30
+781,GAR_000781,828,Hypothèque,16170574.7,2020-08-31
+782,GAR_000782,829,Caution personnelle,277124.98,2024-10-21
+783,GAR_000783,832,Garantie sur matériel,1267622.64,2024-08-28
+784,GAR_000784,833,Garantie Tamwilcom,248881.56,2023-10-13
+785,GAR_000785,835,Garantie sur matériel,1181534.1,2024-10-26
+786,GAR_000786,837,Caution bancaire,13044340.86,2024-04-18
+787,GAR_000787,838,Garantie Tamwilcom,1267904.1,2023-12-18
+788,GAR_000788,840,Caution personnelle,21956.58,2024-09-09
+789,GAR_000789,841,Garantie Tamwilcom,13984.62,2023-12-25
+790,GAR_000790,842,Nantissement,4024157.44,2024-10-06
+791,GAR_000791,843,Caution personnelle,181042.38,2024-12-17
+792,GAR_000792,844,Garantie Tamwilcom,123740.99,2024-12-18
+793,GAR_000793,845,Garantie sur matériel,712581.5,2024-11-11
+794,GAR_000794,845,Nantissement,1104798.99,2024-11-13
+795,GAR_000795,846,Aval,5941792.94,2022-09-25
+796,GAR_000796,846,Aval,5198845.79,2022-09-24
+797,GAR_000797,846,Aval,5469723.09,2022-09-25
+798,GAR_000798,847,Caution personnelle,107459.79,2024-12-05
+799,GAR_000799,848,Garantie Tamwilcom,803015.03,2024-11-24
+800,GAR_000800,850,Caution bancaire,9221430.31,2024-10-04
+801,GAR_000801,851,Garantie de l'État,12634584.51,2024-02-12
+802,GAR_000802,852,Caution bancaire,4019479.99,2023-05-03
+803,GAR_000803,852,Garantie sur matériel,3218728.6,2023-05-08
+804,GAR_000804,855,Caution personnelle,59224.36,2024-12-26
+805,GAR_000805,857,Garantie Tamwilcom,398239.98,2024-06-21
+806,GAR_000806,858,Caution bancaire,4006402.06,2024-06-25
+807,GAR_000807,858,Hypothèque,6031574.97,2024-06-24
+808,GAR_000808,859,Garantie sur matériel,5368644.77,2024-11-29
+809,GAR_000809,860,Garantie de l'État,4737822.37,2020-06-01
+810,GAR_000810,860,Aval,3950606.12,2020-06-03

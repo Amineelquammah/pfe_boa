@@ -35,13 +35,17 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 *   **Utilisation DWH** : Dimension (**Dim_Agence**)
 *   **Volume cible** : 10 agences
 *   **Schéma relationnel** :
-    *   `agences (id_agence [PK], nom_agence, ville, id_region [FK -> regions])`
+    *   `agences (id_agence [PK], code_agence, nom_agence, adresse, ville, date_ouverture, statut, id_region [FK -> regions])`
 
 | Colonne Physique | Rôle technique | Type de données | Nullable | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `id_agence` | Primary Key | `SERIAL` | Non | - | Identifiant unique de l'agence |
+| `code_agence` | Attribut | `VARCHAR(20)` | Non | UNIQUE | Code technique de l'agence |
 | `nom_agence` | Attribut | `VARCHAR(50)` | Non | UNIQUE | Nom distinctif de l'agence |
+| `adresse` | Attribut | `VARCHAR(200)` | Oui | - | Adresse physique de l'agence |
 | `ville` | Attribut | `VARCHAR(50)` | Non | - | Ville d'implantation de l'agence |
+| `date_ouverture` | Attribut | `DATE` | Non | - | Date d'ouverture de l'agence |
+| `statut` | Attribut | `VARCHAR(20)` | Non | - | Statut de l'agence (ACTIF, FERME) |
 | `id_region` | Foreign Key | `INTEGER` | Non | FK sur `regions.id_region` | ID de la région de rattachement |
 
 ---
@@ -72,7 +76,7 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 *   **Utilisation DWH** : Dimension (**Dim_Entreprise**)
 *   **Volume cible** : ~2 000 entreprises
 *   **Schéma relationnel** :
-    *   `entreprises (id_entreprise [PK], ice, raison_sociale, secteur_activite, forme_juridique, date_creation, ville, id_region [FK -> regions], id_agence [FK -> agences], id_conseiller [FK -> employes], chiffre_affaires_annuel, nombre_employes, segment)`
+    *   `entreprises (id_entreprise [PK], ice, raison_sociale, secteur_activite, forme_juridique, date_creation, ville, id_agence [FK -> agences], id_conseiller [FK -> employes], chiffre_affaires, nombre_employes, segment)`
 
 | Colonne Physique | Rôle technique | Type de données | Nullable | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -83,10 +87,9 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 | `forme_juridique` | Attribut | `VARCHAR(20)` | Non | CHECK (formes) | Forme légale (SARL, SA, SNC, EURL) |
 | `date_creation` | Attribut | `DATE` | Non | - | Date de création administrative officielle |
 | `ville` | Attribut | `VARCHAR(50)` | Non | - | Ville de siège de l'entreprise |
-| `id_region` | Foreign Key | `INTEGER` | Non | FK sur `regions.id_region` | Région administrative de domiciliation |
 | `id_agence` | Foreign Key | `INTEGER` | Non | FK sur `agences.id_agence` | Agence physique de rattachement |
 | `id_conseiller` | Foreign Key | `INTEGER` | Non | FK sur `employes.id_employe`| Conseiller entreprise gérant le portefeuille |
-| `chiffre_affaires_annuel`| Attribut| `NUMERIC(15,2)`| Non | CHECK (CA >= 0) | Chiffre d'affaires annuel de l'entreprise en MAD |
+| `chiffre_affaires`| Attribut| `NUMERIC(15,2)`| Non | CHECK (CA >= 0) | Chiffre d'affaires annuel de l'entreprise en MAD |
 | `nombre_employes` | Attribut | `INTEGER` | Non | CHECK (nbr > 0) | Effectif de l'entreprise |
 | `segment` | Attribut | `VARCHAR(20)` | Non | CHECK (segment) | Classement commercial : TPE, PME, Grande Entreprise |
 
@@ -102,7 +105,7 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 *   **Utilisation DWH** : Dimension (**Dim_Produit_Depot**) + Fait (**Fait_Depots**) pour les soldes
 *   **Volume cible** : ~2 500 comptes
 *   **Schéma relationnel** :
-    *   `comptes (id_compte [PK], rib, id_entreprise [FK -> entreprises], type_compte, date_ouverture, solde_actuel, statut, id_compte_courant_parent [FK -> comptes])`
+    *   `comptes (id_compte [PK], rib, id_entreprise [FK -> entreprises], type_compte, date_ouverture, solde_actuel, date_dernier_mouvement, classification, statut, id_compte_courant_parent [FK -> comptes])`
 
 | Colonne Physique | Rôle technique | Type de données | Nullable | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -112,6 +115,8 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 | `type_compte` | Attribut | `VARCHAR(10)` | Non | CHECK (type) | Type : COURANT, DAT |
 | `date_ouverture` | Attribut | `DATE` | Non | - | Date d'ouverture contractuelle du compte |
 | `solde_actuel` | Attribut | `NUMERIC(15,2)` | Non | DEFAULT 0.00 | Solde disponible actuel en MAD |
+| `date_dernier_mouvement` | Attribut | `DATE` | Oui | - | Date du dernier mouvement financier |
+| `classification` | Attribut | `VARCHAR(20)` | Non | - | Classification analytique du compte |
 | `statut` | Attribut | `VARCHAR(10)` | Non | DEFAULT 'ACTIF' | Statut du compte (ACTIF, INACTIF) |
 | `id_compte_courant_parent`| Foreign Key| `INTEGER` | Oui | FK sur `comptes.id_compte`| Compte courant pivot associé (requis pour les DAT) |
 
@@ -125,18 +130,25 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 *   **Utilisation DWH** : Fait (**Fait_Transactions**)
 *   **Volume cible** : ~150 000 transactions
 *   **Schéma relationnel** :
-    *   `transactions (id_transaction [PK], reference_unique, id_compte [FK -> comptes], date_heure_transaction, type_transaction, sens, montant, canal)`
+    *   `transactions (id_transaction [PK], reference_transaction, id_compte [FK -> comptes], id_entreprise [FK -> entreprises], id_agence [FK -> agences], id_conseiller [FK -> employes], date_transaction, heure_transaction, type_transaction, canal, sens, montant, solde_avant, solde_apres, statut)`
 
 | Colonne Physique | Rôle technique | Type de données | Nullable | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `id_transaction` | Primary Key | `SERIAL` | Non | - | Identifiant interne unique de transaction |
-| `reference_unique` | Attribut | `VARCHAR(50)` | Non | UNIQUE | Référence opérationnelle unique BOA |
-| `id_compte` | Foreign Key | `INTEGER` | Non | FK sur `comptes.id_compte` | Compte courant impacté |
-| `date_heure_transaction`| Attribut| `TIMESTAMP` | Non | - | Date et heure précises de validation |
-| `type_transaction`| Attribut | `VARCHAR(20)` | Non | CHECK (type) | VIREMENT, VERSEMENT, RETRAIT, PRELEVEMENT |
+| `id_transaction` | Primary Key | `BIGSERIAL` | Non | - | Identifiant interne unique de transaction |
+| `reference_transaction` | Attribut | `VARCHAR(50)` | Non | UNIQUE | Référence opérationnelle unique BOA |
+| `id_compte` | Foreign Key | `INTEGER` | Non | FK sur `comptes.id_compte` | Compte courant ou DAT impacté |
+| `id_entreprise` | Foreign Key | `INTEGER` | Non | FK sur `entreprises.id_entreprise`| ID de l'entreprise associée |
+| `id_agence` | Foreign Key | `INTEGER` | Non | FK sur `agences.id_agence` | ID de l'agence associée |
+| `id_conseiller` | Foreign Key | `INTEGER` | Non | FK sur `employes.id_employe`| ID du conseiller associé |
+| `date_transaction` | Attribut | `DATE` | Non | - | Date de validation de la transaction |
+| `heure_transaction` | Attribut | `VARCHAR(8)` | Non | - | Heure de validation (format HH:MM:SS) |
+| `type_transaction`| Attribut | `VARCHAR(50)` | Non | - | Type d'opération (Virement, Retrait, etc.) |
+| `canal` | Attribut | `VARCHAR(50)` | Non | - | Canal d'exécution (ATM/GAB, Agence, Business Online...) |
 | `sens` | Attribut | `VARCHAR(6)` | Non | CHECK (sens) | Impact comptable : DEBIT, CREDIT |
 | `montant` | Attribut | `NUMERIC(15,2)` | Non | CHECK (montant > 0) | Montant financier de la transaction en MAD |
-| `canal` | Attribut | `VARCHAR(10)` | Non | CHECK (canal) | Canal d'exécution (PHYSIQUE, DIGITAL) |
+| `solde_avant` | Attribut | `NUMERIC(15,2)` | Non | - | Solde du compte avant l'opération |
+| `solde_apres` | Attribut | `NUMERIC(15,2)` | Non | - | Solde du compte après l'opération |
+| `statut` | Attribut | `VARCHAR(20)` | Non | - | Statut de la transaction (VALIDE, REJETE...) |
 
 ---
 
@@ -190,27 +202,27 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 *   **Utilisation DWH** : Dimension (**Dim_Produit_Credit**) (pour le produit) + Fait (**Fait_Credits**) pour les encours
 *   **Volume cible** : ~1 000 contrats
 *   **Schéma relationnel** :
-    *   `contrats_credits (id_contrat [PK], reference_contrat, id_entreprise [FK -> entreprises], id_produit [FK -> produits_credits], montant_accorde, encours_restant_du, date_octroi, date_echeance, taux_interet, statut_credit, id_conseiller [FK -> employes], id_agence [FK -> agences])`
+    *   `contrats_credits (id_contrat [PK], reference_contrat, id_entreprise [FK -> entreprises], id_produit [FK -> produits_credits], montant_principal, encours_restant, date_octroi, date_echeance, taux_interet, statut, id_conseiller [FK -> employes], id_agence [FK -> agences])`
 
 | Colonne Physique | Rôle technique | Type de données | Nullable | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `id_contrat` | Primary Key | `SERIAL` | Non | - | Identifiant unique du contrat crédit |
-| `reference_contrat` | Attribut | `VARCHAR(50)` | Non | UNIQUE | Référence de dossier de financement unique BOA |
+| `reference_contrat` | Attribut | `VARCHAR(20)` | Non | UNIQUE | Référence de dossier de financement unique BOA |
 | `id_entreprise` | Foreign Key | `INTEGER` | Non | FK sur `entreprises.id_entreprise`| Entreprise emprunteuse détentrice |
 | `id_produit` | Foreign Key | `INTEGER` | Non | FK sur `produits_credits.id_produit`| Produit de crédit souscrit |
-| `montant_accorde` | Attribut | `NUMERIC(15,2)` | Non | CHECK (montant > 0) | Capital total débloqué initialement en MAD |
-| `encours_restant_du`| Attribut| `NUMERIC(15,2)` | Non | CHECK (encours >= 0)| Capital restant dû à ce jour en MAD |
+| `montant_principal` | Attribut | `NUMERIC(15,2)` | Non | CHECK (montant > 0) | Capital total débloqué initialement en MAD |
+| `encours_restant`| Attribut| `NUMERIC(15,2)` | Non | CHECK (encours >= 0)| Capital restant dû à ce jour en MAD |
 | `date_octroi` | Attribut | `DATE` | Non | - | Date officielle de signature et décaissement |
 | `date_echeance` | Attribut | `DATE` | Non | CHECK (date) | Date de fin de remboursement |
 | `taux_interet` | Attribut | `NUMERIC(5,2)` | Non | CHECK (taux >= 0) | Taux d'intérêt annuel appliqué contractuellement |
-| `statut_credit` | Attribut | `VARCHAR(15)` | Non | CHECK (statut) | Statut du dossier : ACTIF, REMBOURSE, NPL |
+| `statut` | Attribut | `VARCHAR(20)` | Non | CHECK (statut) | Statut du dossier : SAIN, SURVEILLANCE, NPL |
 | `id_conseiller` | Foreign Key | `INTEGER` | Non | FK sur `employes.id_employe`| Conseiller en charge (hérité de l'entreprise) |
 | `id_agence` | Foreign Key | `INTEGER` | Non | FK sur `agences.id_agence` | Agence d'affectation (héritée de l'entreprise) |
 
 *Contraintes CHECK additionnelles* :
-*   `statut_credit IN ('ACTIF', 'REMBOURSE', 'NPL')`
+*   `statut IN ('SAIN', 'SURVEILLANCE', 'NPL')`
 *   `CHECK (date_echeance > date_octroi)`
-*   `CHECK (encours_restant_du <= montant_accorde)`
+*   `CHECK (encours_restant <= montant_principal)`
 
 ---
 
@@ -239,13 +251,15 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 *   **Utilisation DWH** : Dimension (**Dim_Solution_Digitale**)
 *   **Volume cible** : 5 solutions
 *   **Schéma relationnel** :
-    *   `solutions_digitales (id_solution [PK], nom_solution, type_canal)`
+    *   `solutions_digitales (id_solution [PK], nom_solution, description, canal, statut)`
 
 | Colonne Physique | Rôle technique | Type de données | Nullable | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `id_solution` | Primary Key | `SERIAL` | Non | - | Identifiant unique du service digital |
+| `id_solution` | Primary Key | `SMALLSERIAL` | Non | - | Identifiant unique du service digital |
 | `nom_solution` | Attribut | `VARCHAR(50)` | Non | UNIQUE | DabaPay Pro, BusinessOnline.ma, WhatsApp Business, etc. |
-| `type_canal` | Attribut | `VARCHAR(20)` | Non | - | Canal de support (WEB, MOBILE, ASSISTANT) |
+| `description` | Attribut | `VARCHAR(500)` | Oui | - | Description de la solution |
+| `canal` | Attribut | `VARCHAR(50)` | Non | - | Canal de support (WEB, MOBILE, ASSISTANT) |
+| `statut` | Attribut | `VARCHAR(20)` | Non | - | Statut de l'application (ACTIF, INACTIF) |
 
 ---
 
@@ -253,15 +267,16 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 *   **Utilisation DWH** : Dimension (**Dim_Solution_Digitale**) + Fait (**Fait_Digital**)
 *   **Volume cible** : ~1 500 souscriptions
 *   **Schéma relationnel** :
-    *   `souscriptions_digitales (id_souscription [PK], id_entreprise [FK -> entreprises], id_solution [FK -> solutions_digitales], date_souscription, statut)`
+    *   `souscriptions_digitales (id_souscription [PK], id_entreprise [FK -> entreprises], id_solution [FK -> solutions_digitales], date_souscription, statut, niveau_utilisation)`
 
 | Colonne Physique | Rôle technique | Type de données | Nullable | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `id_souscription` | Primary Key | `SERIAL` | Non | - | Identifiant unique de la souscription pivot |
 | `id_entreprise` | Foreign Key | `INTEGER` | Non | FK sur `entreprises.id_entreprise`| Entreprise souscriptrice |
-| `id_solution` | Foreign Key | `INTEGER` | Non | FK sur `solutions_digitales.id_solution`| Service digital souscrit |
+| `id_solution` | Foreign Key | `SMALLINT` | Non | FK sur `solutions_digitales.id_solution`| Service digital souscrit |
 | `date_souscription`| Attribut | `DATE` | Non | - | Date d'activation de la souscription |
-| `statut` | Attribut | `VARCHAR(10)` | Non | DEFAULT 'ACTIF' | Statut de l'abonnement (ACTIF, RESILIE) |
+| `statut` | Attribut | `VARCHAR(20)` | Non | DEFAULT 'ACTIF' | Statut de l'abonnement (ACTIF, RESILIE) |
+| `niveau_utilisation`| Attribut | `VARCHAR(20)`| Non | DEFAULT 'MOYEN' | Niveau d'usage estimé |
 
 *Contrainte CHECK sur statut* : `statut IN ('ACTIF', 'RESILIE')`
 *Contrainte d'unicité* : UNIQUE (`id_entreprise`, `id_solution`) (une entreprise souscrit au plus une fois à un service digital donné)
@@ -272,16 +287,22 @@ Ce Modèle Logique de Données (MLD) est la traduction directe du MCD Merise sel
 *   **Utilisation DWH** : Fait (**Fait_Digital**)
 *   **Volume cible** : ~100 000 connexions
 *   **Schéma relationnel** :
-    *   `connexions_digitales (id_connexion [PK], id_souscription [FK -> souscriptions_digitales], date_heure_connexion, nombre_operations)`
+    *   `connexions_digitales (id_connexion [PK], id_entreprise [FK -> entreprises], id_solution [FK -> solutions_digitales], date_connexion, heure_connexion, duree_session, adresse_ip, navigateur, systeme, appareil, action_realisee, statut)`
 
 | Colonne Physique | Rôle technique | Type de données | Nullable | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `id_connexion` | Primary Key | `SERIAL` | Non | - | Identifiant unique de log de connexion |
-| `id_souscription` | Foreign Key | `INTEGER` | Non | FK sur `souscriptions_digitales.id_souscription`| Contrat de souscription utilisé |
-| `date_heure_connexion`| Attribut | `TIMESTAMP`| Non | - | Date et heure de connexion |
-| `nombre_operations`| Attribut | `INTEGER` | Non | DEFAULT 0 | Volume de transactions ou requêtes dans la session |
-
-*Contrainte CHECK sur operations* : `CHECK (nombre_operations >= 0)`
+| `id_connexion` | Primary Key | `BIGSERIAL` | Non | - | Identifiant unique de log de connexion |
+| `id_entreprise` | Foreign Key | `INTEGER` | Non | FK sur `entreprises.id_entreprise`| ID de l'entreprise connectée |
+| `id_solution` | Foreign Key | `SMALLINT` | Non | FK sur `solutions_digitales.id_solution`| ID de la solution utilisée |
+| `date_connexion` | Attribut | `DATE` | Non | - | Date de la session de connexion |
+| `heure_connexion` | Attribut | `VARCHAR(8)` | Non | - | Heure de début de la session |
+| `duree_session` | Attribut | `INTEGER` | Non | - | Durée de la session en secondes |
+| `adresse_ip` | Attribut | `VARCHAR(45)` | Non | - | Adresse IP de l'utilisateur |
+| `navigateur` | Attribut | `VARCHAR(50)` | Non | - | Navigateur web ou applicatif utilisé |
+| `systeme` | Attribut | `VARCHAR(50)` | Non | - | Système d'exploitation du terminal |
+| `appareil` | Attribut | `VARCHAR(50)` | Non | - | Type de terminal (Mobile, PC...) |
+| `action_realisee`| Attribut | `VARCHAR(100)`| Non | - | Principale action utilisateur |
+| `statut` | Attribut | `VARCHAR(20)` | Non | - | Statut de la connexion (SUCCES, ECHEC) |
 
 ---
 

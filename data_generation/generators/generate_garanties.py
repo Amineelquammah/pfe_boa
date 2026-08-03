@@ -35,11 +35,11 @@ def generate_garanties() -> pd.DataFrame:
     for _, contrat in df_contrats.iterrows():
         contrat_id = int(contrat["id_contrat"])
         ent_id = int(contrat["id_entreprise"])
-        montant_accorde = float(contrat["montant_accorde"])
+        montant_accorde = float(contrat["montant_principal"])
         encours_restant = float(contrat["encours_restant"])
         date_octroi = datetime.strptime(str(contrat["date_octroi"]), "%Y-%m-%d")
-        date_fin = datetime.strptime(str(contrat["date_fin"]), "%Y-%m-%d")
-        statut_credit = contrat["statut_credit"]
+        date_fin = datetime.strptime(str(contrat["date_echeance"]), "%Y-%m-%d")
+        statut_val = contrat["statut"]
         
         ent_meta = ent_dict[ent_id]
         segment = ent_meta["segment"]
@@ -115,7 +115,7 @@ def generate_garanties() -> pd.DataFrame:
             # 5. Détermination du statut de la garantie
             if encours_restant == 0:
                 statut = random.choice(["Libérée", "Expirée"])
-            elif statut_credit == "NPL":
+            elif statut_val == "NPL":
                 statut = "En cours de réalisation" if random.random() < 0.30 else "Active"
             else:
                 statut = "Active"
@@ -126,14 +126,12 @@ def generate_garanties() -> pd.DataFrame:
                 "id_garantie": current_id,
                 "numero_garantie": f"GAR_{current_id:06d}",
                 "id_contrat": contrat_id,
-                "contrat_credit_id": contrat_id,  # Alias
                 "type_garantie": type_gar,
-                "valeur": valeur_actuelle,  # Alias DDL
+                "valeur": valeur_actuelle,
                 "valeur_initiale": valeur_initiale,
                 "valeur_actuelle": valeur_actuelle,
                 "taux_couverture": taux_couverture,
-                "date_affectation": date_affectation.strftime("%Y-%m-%d"),  # Alias DDL
-                "date_mise_en_place": date_affectation.strftime("%Y-%m-%d"),
+                "date_affectation": date_affectation.strftime("%Y-%m-%d"),
                 "date_expiration": date_expiration.strftime("%Y-%m-%d"),
                 "statut": statut,
                 "organisme_garant": organisme_garant,

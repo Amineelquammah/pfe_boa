@@ -71,10 +71,10 @@ def validate_transactions(df_txns: pd.DataFrame, df_comptes: pd.DataFrame) -> bo
     logger.info("Vérification de la chaîne de soldes pour chaque compte...")
     
     # Échantillonnage de 100 comptes aléatoires pour optimiser le temps d'exécution des tests
-    sample_compte_ids = df_txns["compte_id"].unique()[:100]
+    sample_compte_ids = df_txns["id_compte"].unique()[:100]
     
     for cpt_id in sample_compte_ids:
-        c_txns = df_txns[df_txns["compte_id"] == cpt_id].copy()
+        c_txns = df_txns[df_txns["id_compte"] == cpt_id].copy()
         c_txns["datetime"] = pd.to_datetime(c_txns["date_transaction"] + " " + c_txns["heure_transaction"])
         
         # Vérification du tri chronologique

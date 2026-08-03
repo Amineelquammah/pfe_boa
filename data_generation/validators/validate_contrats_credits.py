@@ -51,10 +51,10 @@ def validate_contrats_credits(df_contrats: pd.DataFrame) -> bool:
 
     # 3. Vérification de la cohérence de l'affectation commerciale (héritage agence/conseiller de l'entreprise)
     for _, row in df_contrats.iterrows():
-        ent_id = row["entreprise_id"]
+        ent_id = row["id_entreprise"]
         if ent_id in ent_dict:
             ent_meta = ent_dict[ent_id]
-            if row["agence_id"] != ent_meta["id_agence"] or row["conseiller_id"] != ent_meta["id_conseiller"]:
+            if row["id_agence"] != ent_meta["id_agence"] or row["id_conseiller"] != ent_meta["id_conseiller"]:
                 logger.error(f"[ERR_CON_03] Le contrat {row['id_contrat']} possède un rattachement agence/conseiller incohérent avec l'entreprise {ent_id}.")
                 errors += 1
                 
@@ -62,27 +62,27 @@ def validate_contrats_credits(df_contrats: pd.DataFrame) -> bool:
         logger.info("Vérification cohérence héritage agence/conseiller ok.")
 
     # 4. Vérification de la validité du conseiller_id
-    invalid_ce = df_contrats[~df_contrats["conseiller_id"].isin(valid_ce_ids)]
+    invalid_ce = df_contrats[~df_contrats["id_conseiller"].isin(valid_ce_ids)]
     if not invalid_ce.empty:
-        logger.error(f"[ERR_CON_04] conseiller_id invalides (non conseillers d'entreprise) : {invalid_ce['conseiller_id'].unique().tolist()}.")
+        logger.error(f"[ERR_CON_04] id_conseiller invalides (non conseillers d'entreprise) : {invalid_ce['id_conseiller'].unique().tolist()}.")
         errors += 1
     else:
         logger.info("Vérification validité des conseillers ok.")
 
     # 5. Bornes du produit (Montant, Taux, Durée)
     for _, row in df_contrats.iterrows():
-        prod_id = row["produit_credit_id"]
+        prod_id = row["id_produit"]
         if prod_id in prod_dict:
             prod_meta = prod_dict[prod_id]
             
             # Montant
-            if not (float(prod_meta["montant_min"]) <= row["montant_accorde"] <= float(prod_meta["montant_max"])):
-                logger.error(f"[ERR_CON_05] Contrat {row['id_contrat']} hors bornes montant du produit {prod_id} ({row['montant_accorde']} MAD vs [{prod_meta['montant_min']}, {prod_meta['montant_max']}]).")
+            if not (float(prod_meta["montant_min"]) <= row["montant_principal"] <= float(prod_meta["montant_max"])):
+                logger.error(f"[ERR_CON_05] Contrat {row['id_contrat']} hors bornes montant du produit {prod_id} ({row['montant_principal']} MAD vs [{prod_meta['montant_min']}, {prod_meta['montant_max']}]).")
                 errors += 1
                 
             # Taux
-            if not (float(prod_meta["taux_min"]) <= row["taux"] <= float(prod_meta["taux_max"])):
-                logger.error(f"[ERR_CON_06] Contrat {row['id_contrat']} hors bornes taux du produit {prod_id} ({row['taux']}% vs [{prod_meta['taux_min']}, {prod_meta['taux_max']}]).")
+            if not (float(prod_meta["taux_min"]) <= row["taux_interet"] <= float(prod_meta["taux_max"])):
+                logger.error(f"[ERR_CON_06] Contrat {row['id_contrat']} hors bornes taux du produit {prod_id} ({row['taux_interet']}% vs [{prod_meta['taux_min']}, {prod_meta['taux_max']}]).")
                 errors += 1
                 
             # Durée
@@ -94,11 +94,11 @@ def validate_contrats_credits(df_contrats: pd.DataFrame) -> bool:
         logger.info("Vérification conformité aux caractéristiques produits ok.")
 
     # 6. Cohérence de l'encours restant et du capital remboursé
-    # capital_rembourse + encours_restant = montant_accorde (avec tolérance aux arrondis de 1 MAD)
+    # capital_rembourse + encours_restant = montant_principal (avec tolérance aux arrondis de 1 MAD)
     for _, row in df_contrats.iterrows():
-        diff = abs((row["capital_rembourse"] + row["encours_restant"]) - row["montant_accorde"])
+        diff = abs((row["capital_rembourse"] + row["encours_restant"]) - row["montant_principal"])
         if diff > 1.0:
-            logger.error(f"[ERR_CON_08] Incohérence amortissement capital pour contrat {row['id_contrat']} (remboursé: {row['capital_rembourse']}, encours: {row['encours_restant']}, accordé: {row['montant_accorde']}).")
+            logger.error(f"[ERR_CON_08] Incohérence amortissement capital pour contrat {row['id_contrat']} (remboursé: {row['capital_rembourse']}, encours: {row['encours_restant']}, accordé: {row['montant_principal']}).")
             errors += 1
 
     if errors == 0:
@@ -106,10 +106,10 @@ def validate_contrats_credits(df_contrats: pd.DataFrame) -> bool:
 
     # 7. Cohérence indicateur NPL et statut
     for _, row in df_contrats.iterrows():
-        # NPL si et seulement si jours_retard >= 90 et statut_credit == 'NPL'
-        is_npl = row["indicateur_NPL"]
+        # NPL si et seulement si jours_retard >= 90 et statut == 'NPL'
+        is_npl = row["indicateur_npl"]
         jours = row["jours_retard"]
-        statut = row["statut_credit"]
+        statut = row["statut"]
         
         if is_npl:
             if jours < 90 or statut != "NPL":

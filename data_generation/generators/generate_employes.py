@@ -65,9 +65,7 @@ def generate_employes() -> pd.DataFrame:
         "telephone": f"06{random.randint(10000000, 99999999):08d}",
         "statut": "Actif",
         "id_agence": None,
-        "agence_id": None,
         "id_region": None,
-        "region_id": None,
         "manager_id": None
     }
     employes.append(dg)
@@ -99,9 +97,7 @@ def generate_employes() -> pd.DataFrame:
             "telephone": f"06{random.randint(10000000, 99999999):08d}",
             "statut": "Actif",
             "id_agence": None,
-            "agence_id": None,
             "id_region": region_idx,
-            "region_id": region_idx,
             "manager_id": dg_id
         }
         employes.append(dr)
@@ -147,9 +143,7 @@ def generate_employes() -> pd.DataFrame:
             "telephone": f"06{random.randint(10000000, 99999999):08d}",
             "statut": "Actif",
             "id_agence": agence_idx,
-            "agence_id": agence_idx,
             "id_region": region_idx,
-            "region_id": region_idx,
             "manager_id": dr_manager_id
         }
         employes.append(da)
@@ -176,9 +170,7 @@ def generate_employes() -> pd.DataFrame:
                 "telephone": f"06{random.randint(10000000, 99999999):08d}",
                 "statut": "Actif",
                 "id_agence": agence_idx,
-                "agence_id": agence_idx,
                 "id_region": region_idx,
-                "region_id": region_idx,
                 "manager_id": da_id
             }
             employes.append(ce)
@@ -204,9 +196,7 @@ def generate_employes() -> pd.DataFrame:
             "telephone": f"06{random.randint(10000000, 99999999):08d}",
             "statut": "Actif",
             "id_agence": agence_idx,
-            "agence_id": agence_idx,
             "id_region": region_idx,
-            "region_id": region_idx,
             "manager_id": da_id
         }
         employes.append(cc)
@@ -224,6 +214,6 @@ if __name__ == "__main__":
     print("\n--- EFFECTIFS PAR FONCTION ---")
     print(df["fonction"].value_counts())
     print("\n--- EFFECTIFS PAR REGION ---")
-    print(df["region_id"].value_counts(dropna=False))
+    print(df["id_region"].value_counts(dropna=False))
     print("\n--- EFFECTIFS PAR AGENCE ---")
-    print(df["agence_id"].value_counts(dropna=False))
+    print(df["id_agence"].value_counts(dropna=False))

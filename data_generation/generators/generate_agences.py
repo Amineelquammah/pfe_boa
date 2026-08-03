@@ -58,8 +58,6 @@ def generate_agences() -> pd.DataFrame:
         day = random.randint(1, 28)
         agence["date_ouverture"] = f"{year:04d}-{month:02d}-{day:02d}"
         agence["statut"] = "Active"
-        # Ajout de l'alias region_id pour la compatibilité demandée
-        agence["region_id"] = agence["id_region"]
         
     df_agences = pd.DataFrame(agences_data)
     

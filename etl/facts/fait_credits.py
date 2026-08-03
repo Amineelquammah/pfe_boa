@@ -125,7 +125,7 @@ def load_fait_credits() -> bool:
                     "interets_payes": interets_payes,
                     "mensualite": mensualite,
                     "jours_retard": jours_retard,
-                    "indicateur_NPL": 1 if statut_trim == "NPL" else 0,
+                    "indicateur_npl": 1 if statut_trim == "NPL" else 0,
                     "taux_interet": taux_interet
                 })
                 
@@ -148,7 +148,7 @@ def load_fait_credits() -> bool:
         final_cols = [
             "temps_sk", "entreprise_sk", "produit_credit_sk", "agence_sk", "region_sk", "employe_sk",
             "montant_octroye", "encours_restant", "capital_rembourse", "interets_payes",
-            "mensualite", "jours_retard", "indicateur_NPL", "taux_interet"
+            "mensualite", "jours_retard", "indicateur_npl", "taux_interet"
         ]
         df_final = df_fact[final_cols].copy()
         

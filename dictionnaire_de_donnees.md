@@ -36,8 +36,12 @@
 | Nom logique | Nom physique | Type PostgreSQL | Nullable | Défaut | PK | FK | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ID de l'agence | `id_agence` | `SERIAL` | Non | - | Oui | Non | UNIQUE | Identifiant unique de l'agence |
+| Code de l'agence | `code_agence` | `VARCHAR(20)` | Non | - | Non | Non | UNIQUE | Code technique de l'agence BOA |
 | Nom de l'agence | `nom_agence` | `VARCHAR(50)` | Non | - | Non | Non | UNIQUE | Nom distinct de l'agence BOA |
+| Adresse | `adresse` | `VARCHAR(200)` | Oui | NULL | Non | Non | - | Adresse physique de l'agence |
 | Ville | `ville` | `VARCHAR(50)` | Non | - | Non | Non | - | Ville d'implantation de l'agence |
+| Date d'ouverture | `date_ouverture` | `DATE` | Non | - | Non | Non | - | Date d'ouverture de l'agence |
+| Statut | `statut` | `VARCHAR(20)` | Non | 'ACTIF' | Non | Non | CHECK (statut) | Statut de l'agence (ACTIF, FERME) |
 | ID de la région | `id_region` | `INTEGER` | Non | - | Non | Oui | FK sur `REGIONS` | Clé de rattachement de la région |
 
 ---
@@ -71,7 +75,7 @@
 #### 4. Table `ENTREPRISES`
 *   **Rôle métier** : Stocker l'ensemble des informations d'identité, financières et de segmentation commerciale des entreprises clientes (TPE, PME, Grandes Entreprises).
 *   **Principaux acteurs** : Conseiller Entreprises (gestionnaire principal), Directeur d'Agence, Analyste Risques.
-*   **Futurs liens** : Liée à `REGIONS` (N à 1), `AGENCES` (N à 1), `EMPLOYES` (N à 1 - Conseiller), `COMPTES` (1 à N) et `CONTRATS_CREDITS` (1 à N).
+*   **Futurs liens** : Liée à `AGENCES` (N à 1), `EMPLOYES` (N à 1 - Conseiller), `COMPTES` (1 à N) et `CONTRATS_CREDITS` (1 à N).
 *   **Utilisation DWH** : Source de la dimension **Dim_Entreprise**.
 *   **Volume estimé** : ~2 000 entreprises.
 
@@ -79,7 +83,7 @@
 *   Une entreprise appartient à une seule agence et possède un seul conseiller attitré.
 *   L'ICE (Identifiant Commun de l'Entreprise) est unique et obligatoire.
 *   Le segment de l'entreprise doit être obligatoirement : 'TPE', 'PME' ou 'Grande Entreprise'.
-*   La ville de l'entreprise doit correspondre à sa région d'implantation.
+*   La ville de l'entreprise doit correspondre à sa région d'implantation (déduite via l'agence).
 
 | Nom logique | Nom physique | Type PostgreSQL | Nullable | Défaut | PK | FK | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -90,7 +94,6 @@
 | Forme juridique | `forme_juridique` | `VARCHAR(20)` | Non | - | Non | Non | CHECK (formes) | SARL, SA, SNC, EURL, etc. |
 | Date de création | `date_creation` | `DATE` | Non | - | Non | Non | - | Date officielle de création administrative |
 | Ville | `ville` | `VARCHAR(50)` | Non | - | Non | Non | - | Ville de domiciliation de l'entreprise |
-| ID de la région | `id_region` | `INTEGER` | Non | - | Non | Oui | FK sur `REGIONS` | Région administrative associée |
 | ID de l'agence | `id_agence` | `INTEGER` | Non | - | Non | Oui | FK sur `AGENCES` | Agence de rattachement |
 | ID Conseiller | `id_conseiller` | `INTEGER` | Non | - | Non | Oui | FK sur `EMPLOYES` | Conseiller gérant le portefeuille client |
 | Chiffre d'affaires| `chiffre_affaires`| `NUMERIC(15,2)` | Non | - | Non | Non | CHECK (CA >= 0) | Chiffre d'affaires annuel en Dirhams (MAD) |
@@ -122,6 +125,8 @@
 | Type de compte | `type_compte` | `VARCHAR(10)` | Non | - | Non | Non | CHECK (type) | Type : COURANT, DAT |
 | Date d'ouverture | `date_ouverture` | `DATE` | Non | - | Non | Non | - | Date d'ouverture administrative du compte |
 | Solde actuel | `solde_actuel` | `NUMERIC(15,2)` | Non | 0.00 | Non | Non | - | Solde comptable actuel du compte |
+| Date de dernier mouvement | `date_dernier_mouvement` | `DATE` | Oui | NULL | Non | Non | - | Date du dernier mouvement financier |
+| Classification | `classification` | `VARCHAR(20)` | Non | 'STANDARD' | Non | Non | - | Classification analytique du compte |
 | Statut | `statut` | `VARCHAR(10)` | Non | 'ACTIF' | Non | Non | CHECK (statut) | Statut : ACTIF, INACTIF |
 | ID Compte parent | `id_compte_courant_parent` | `INTEGER` | Oui | NULL | Non | Oui | FK sur `COMPTES` | Compte courant support pour un DAT |
 
@@ -143,14 +148,21 @@
 
 | Nom logique | Nom physique | Type PostgreSQL | Nullable | Défaut | PK | FK | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ID Transaction | `id_transaction` | `SERIAL` | Non | - | Oui | Non | UNIQUE | Identifiant unique |
-| Référence unique | `reference_unique` | `VARCHAR(50)` | Non | - | Non | Non | UNIQUE | Numéro de transaction unique BOA |
-| ID Compte | `id_compte` | `INTEGER` | Non | - | Non | Oui | FK sur `COMPTES` | Compte courant impacté |
-| Date & Heure | `date_heure_transaction` | `TIMESTAMP` | Non | - | Non | Non | - | Horodatage précis de la transaction |
-| Type transaction | `type_transaction` | `VARCHAR(20)` | Non | - | Non | Non | CHECK (type) | VIREMENT, VERSEMENT, RETRAIT, PRELEVEMENT |
-| Sens | `sens` | `VARCHAR(6)` | Non | - | Non | Non | CHECK (DEBIT/CREDIT)| Impact comptable (Débit ou Crédit) |
+| ID Transaction | `id_transaction` | `BIGSERIAL` | Non | - | Oui | Non | UNIQUE | Identifiant unique de transaction |
+| Référence transaction | `reference_transaction` | `VARCHAR(50)` | Non | - | Non | Non | UNIQUE | Numéro de transaction unique BOA |
+| ID Compte | `id_compte` | `INTEGER` | Non | - | Non | Oui | FK sur `COMPTES` | Compte courant ou DAT impacté |
+| ID Entreprise | `id_entreprise` | `INTEGER` | Non | - | Non | Oui | FK sur `ENTREPRISES` | ID de l'entreprise associée |
+| ID Agence | `id_agence` | `INTEGER` | Non | - | Non | Oui | FK sur `AGENCES` | ID de l'agence associée |
+| ID Conseiller | `id_conseiller` | `INTEGER` | Non | - | Non | Oui | FK sur `EMPLOYES` | ID du conseiller associé |
+| Date de transaction | `date_transaction` | `DATE` | Non | - | Non | Non | - | Date de validation de la transaction |
+| Heure de transaction | `heure_transaction` | `VARCHAR(8)` | Non | - | Non | Non | - | Heure de validation (format HH:MM:SS) |
+| Type transaction | `type_transaction` | `VARCHAR(50)` | Non | - | Non | Non | - | Virement entrant, Virement sortant, Retrait, Versement, etc. |
+| Canal | `canal` | `VARCHAR(50)` | Non | - | Non | Non | - | Canal d'initiation (ATM/GAB, Agence, Business Online...) |
+| Sens | `sens` | `VARCHAR(6)` | Non | - | Non | Non | CHECK (sens) | Impact comptable (DEBIT/CREDIT) |
 | Montant | `montant` | `NUMERIC(15,2)` | Non | - | Non | Non | CHECK (montant > 0) | Montant unitaire de l'opération en MAD |
-| Canal | `canal` | `VARCHAR(10)` | Non | - | Non | Non | CHECK (canal) | Canal d'initiation (PHYSIQUE / DIGITAL) |
+| Solde avant | `solde_avant` | `NUMERIC(15,2)` | Non | - | Non | Non | - | Solde du compte avant l'opération |
+| Solde après | `solde_apres` | `NUMERIC(15,2)` | Non | - | Non | Non | - | Solde du compte après l'opération |
+| Statut | `statut` | `VARCHAR(20)` | Non | - | Non | Non | - | Statut de la transaction (VALIDE, REJETE...) |
 
 ---
 
@@ -223,12 +235,12 @@
 | Référence contrat| `reference_contrat`| `VARCHAR(50)` | Non | - | Non | Non | UNIQUE | Référence unique de dossier BOA |
 | ID Entreprise | `id_entreprise` | `INTEGER` | Non | - | Non | Oui | FK sur `ENTREPRISES` | Entreprise bénéficiaire |
 | ID Produit | `id_produit` | `INTEGER` | Non | - | Non | Oui | FK sur `PRODUITS_CREDITS`| Produit de crédit souscrit |
-| Montant accordé | `montant_accorde` | `NUMERIC(15,2)` | Non | - | Non | Non | CHECK (montant > 0)| Capital débloqué initial en MAD |
-| Encours restant dû| `encours_restant_du`| `NUMERIC(15,2)`| Non | - | Non | Non | CHECK (encours >= 0) | Capital restant à rembourser en MAD |
+| Montant principal | `montant_principal` | `NUMERIC(15,2)` | Non | - | Non | Non | CHECK (montant > 0)| Capital débloqué initial en MAD |
+| Encours restant | `encours_restant`| `NUMERIC(15,2)`| Non | 0.00 | Non | Non | CHECK (encours >= 0) | Capital restant à rembourser en MAD |
 | Date d'octroi | `date_octroi` | `DATE` | Non | - | Non | Non | - | Date de signature et déblocage |
 | Date d'échéance | `date_echeance` | `DATE` | Non | - | Non | Non | CHECK (date) | Date de fin de remboursement contractuelle |
 | Taux d'intérêt | `taux_interet` | `NUMERIC(5,2)` | Non | - | Non | Non | CHECK (taux >= 0) | Taux d'intérêt annuel appliqué |
-| Statut du crédit | `statut_credit` | `VARCHAR(15)` | Non | 'ACTIF' | Non | Non | CHECK (statut) | Statut : ACTIF, REMBOURSE, NPL |
+| Statut du crédit | `statut` | `VARCHAR(20)` | Non | - | Non | Non | CHECK (statut) | Statut : SAIN, SURVEILLANCE, NPL |
 | ID Conseiller | `id_conseiller` | `INTEGER` | Non | - | Non | Oui | FK sur `EMPLOYES` | Conseiller affecté (hérité) |
 | ID de l'agence | `id_agence` | `INTEGER` | Non | - | Non | Oui | FK sur `AGENCES` | Agence de l'octroi (héritée) |
 
@@ -268,16 +280,18 @@
 
 | Nom logique | Nom physique | Type PostgreSQL | Nullable | Défaut | PK | FK | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ID Solution | `id_solution` | `SERIAL` | Non | - | Oui | Non | UNIQUE | Identifiant unique |
+| ID Solution | `id_solution` | `SMALLSERIAL` | Non | - | Oui | Non | UNIQUE | Identifiant unique de la solution |
 | Nom de la solution| `nom_solution` | `VARCHAR(50)` | Non | - | Non | Non | UNIQUE | Nom de la solution (DabaPay Pro, etc.) |
-| Type de canal | `type_canal` | `VARCHAR(20)` | Non | - | Non | Non | - | Nature du canal (WEB, MOBILE, ASSISTANT) |
+| Description | `description` | `VARCHAR(500)` | Oui | NULL | Non | Non | - | Description fonctionnelle de la solution |
+| Canal | `canal` | `VARCHAR(50)` | Non | - | Non | Non | - | Canal de support (WEB, MOBILE, ASSISTANT, etc.) |
+| Statut | `statut` | `VARCHAR(20)` | Non | 'ACTIF' | Non | Non | - | Statut de la solution (ACTIF, INACTIF) |
 
 ---
 
 #### 13. Table `SOUSCRIPTIONS_DIGITALES`
 *   **Rôle métier** : Suivre l'abonnement/l'adhésion des entreprises clientes aux différentes solutions digitales de la banque.
 *   **Principaux acteurs** : Conseiller Entreprises, Entreprise.
-*   **Futurs liens** : Liée à `ENTREPRISES` (N à 1), `SOLUTIONS_DIGITALES` (N à 1) et `CONNEXIONS_DIGITALES` (1 à N).
+*   **Futurs liens** : Liée à `ENTREPRISES` (N à 1) et `SOLUTIONS_DIGITALES` (N à 1).
 *   **Utilisation DWH** : Rôle d'axe d'analyse et de fait pour l'équipement digital.
 *   **Volume estimé** : ~1 500 souscriptions.
 
@@ -289,29 +303,37 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ID Souscription | `id_souscription` | `SERIAL` | Non | - | Oui | Non | UNIQUE | Identifiant unique |
 | ID Entreprise | `id_entreprise` | `INTEGER` | Non | - | Non | Oui | FK sur `ENTREPRISES` | Entreprise ayant souscrit |
-| ID Solution | `id_solution` | `INTEGER` | Non | - | Non | Oui | FK sur `SOLUTIONS_DIGITALES`| Service digital souscrit |
+| ID Solution | `id_solution` | `SMALLINT` | Non | - | Non | Oui | FK sur `SOLUTIONS_DIGITALES`| Service digital souscrit |
 | Date souscription| `date_souscription`| `DATE` | Non | - | Non | Non | - | Date de signature du contrat d'adhésion |
-| Statut | `statut` | `VARCHAR(10)` | Non | 'ACTIF' | Non | Non | CHECK (statut) | Statut de l'accès (ACTIF, RESILIE) |
+| Statut | `statut` | `VARCHAR(20)` | Non | 'ACTIF' | Non | Non | CHECK (statut) | Statut de l'accès (ACTIF, RESILIE) |
+| Niveau d'utilisation| `niveau_utilisation`| `VARCHAR(20)`| Non | 'MOYEN' | Non | Non | - | Intensité d'usage de la solution |
 
 ---
 
 #### 14. Table `CONNEXIONS_DIGITALES`
 *   **Rôle métier** : Enregistrer l'activité et l'historique d'utilisation (logs) des solutions digitales par les entreprises souscriptrices.
 *   **Principaux acteurs** : Entreprise (acteur direct), Analyste BI (pour le reporting d'adoption).
-*   **Futurs liens** : Liée à `SOUSCRIPTIONS_DIGITALES` (N à 1).
+*   **Futurs liens** : Liée à `ENTREPRISES` (N à 1) et `SOLUTIONS_DIGITALES` (N à 1).
 *   **Utilisation DWH** : Source de la table de faits **Fait_Digital**.
 *   **Volume estimé** : ~100 000 connexions.
 
 **Règles métier associées :**
-*   Chaque connexion est associée à une souscription valide.
-*   Le nombre d'opérations effectuées lors de la session doit être supérieur ou égal à zéro.
+*   Chaque connexion est associée à une entreprise et une solution active.
 
 | Nom logique | Nom physique | Type PostgreSQL | Nullable | Défaut | PK | FK | Contraintes | Description métier |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ID Connexion | `id_connexion` | `SERIAL` | Non | - | Oui | Non | UNIQUE | Identifiant de log unique |
-| ID Souscription | `id_souscription` | `INTEGER` | Non | - | Non | Oui | FK sur `SOUSCRIPTIONS_DIGITALES`| Accès digital utilisé |
-| Date & Heure | `date_heure_connexion`| `TIMESTAMP` | Non | - | Non | Non | - | Horodatage de connexion de l'utilisateur |
-| Nbr Opérations | `nombre_operations`| `INTEGER` | Non | 0 | Non | Non | CHECK (Ops >= 0) | Nombre de transactions passées sur la session |
+| ID Connexion | `id_connexion` | `BIGSERIAL` | Non | - | Oui | Non | UNIQUE | Identifiant de log unique |
+| ID Entreprise | `id_entreprise` | `INTEGER` | Non | - | Non | Oui | FK sur `ENTREPRISES` | ID de l'entreprise qui s'est connectée |
+| ID Solution | `id_solution` | `SMALLINT` | Non | - | Non | Oui | FK sur `SOLUTIONS_DIGITALES`| ID de la solution utilisée |
+| Date de connexion | `date_connexion` | `DATE` | Non | - | Non | Non | - | Date de connexion |
+| Heure de connexion | `heure_connexion` | `VARCHAR(8)` | Non | - | Non | Non | - | Heure de connexion (format HH:MM:SS) |
+| Durée de session | `duree_session` | `INTEGER` | Non | - | Non | Non | - | Durée de la session en secondes |
+| Adresse IP | `adresse_ip` | `VARCHAR(45)` | Non | - | Non | Non | - | Adresse IP de connexion de l'utilisateur |
+| Navigateur | `navigateur` | `VARCHAR(50)` | Non | - | Non | Non | - | Navigateur utilisé (Chrome, Firefox, Safari...) |
+| Système d'exploitation| `systeme` | `VARCHAR(50)` | Non | - | Non | Non | - | OS de l'appareil (Windows, macOS, Linux, iOS...) |
+| Appareil | `appareil` | `VARCHAR(50)` | Non | - | Non | Non | - | Type d'appareil (PC, Mobile, Tablette...) |
+| Action réalisée | `action_realisee` | `VARCHAR(100)`| Non | - | Non | Non | - | Principale action réalisée pendant la session |
+| Statut | `statut` | `VARCHAR(20)` | Non | - | Non | Non | - | Statut de la connexion (SUCCES, ECHEC) |
 
 ---
 

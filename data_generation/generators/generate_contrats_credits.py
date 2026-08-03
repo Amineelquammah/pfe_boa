@@ -6,6 +6,7 @@ Description     : Générateur des contrats de crédits accordés aux entreprise
 
 import pandas as pd
 import random
+import math
 from typing import List, Dict, Any
 from datetime import datetime, timedelta
 from data_generation.utils.logger import logger
@@ -100,24 +101,76 @@ def generate_contrats_credits() -> pd.DataFrame:
             taux = round(random.uniform(float(prod["taux_min"]), float(prod["taux_max"])), 2)
             
             # 3. Dates
-            # Date octroi : entre la création de l'entreprise et fin 2024
-            days_since_creation = (sim_end_date - date_creation_ent).days
-            if days_since_creation > 30:
-                date_octroi = date_creation_ent + timedelta(days=random.randint(30, min(days_since_creation, 1000)))
+            # Taux d'intérêt périodique r
+            r = taux / (100.0 * 12.0)
+            
+            # Déterminer la cible de remboursement P et calculer months_passed
+            u = random.random()
+            if u < 0.10:
+                # 10% totalement remboursés (encours < 10 MAD)
+                months_passed_extra = random.randint(0, 12)
+                total_months_ago = duree + months_passed_extra
+            elif u < 0.30:
+                # 20% : entre 70% et 80% du capital remboursé
+                p_target = random.uniform(0.70, 0.80)
+                if r > 0:
+                    val_inside = 1.0 + p_target * ((1.0 + r) ** duree - 1.0)
+                    m_float = math.log(val_inside) / math.log(1.0 + r)
+                    months_passed = int(round(m_float))
+                else:
+                    months_passed = int(round(p_target * duree))
+                months_passed = max(0, min(months_passed, duree - 1))
+                total_months_ago = months_passed
+            elif u < 0.70:
+                # 40% : entre 30% et 70% du capital remboursé
+                p_target = random.uniform(0.30, 0.70)
+                if r > 0:
+                    val_inside = 1.0 + p_target * ((1.0 + r) ** duree - 1.0)
+                    m_float = math.log(val_inside) / math.log(1.0 + r)
+                    months_passed = int(round(m_float))
+                else:
+                    months_passed = int(round(p_target * duree))
+                months_passed = max(0, min(months_passed, duree - 1))
+                total_months_ago = months_passed
             else:
-                date_octroi = date_creation_ent + timedelta(days=random.randint(1, 30))
+                # 30% : moins de 30% du capital remboursé
+                p_target = random.uniform(0.01, 0.30)
+                if r > 0:
+                    val_inside = 1.0 + p_target * ((1.0 + r) ** duree - 1.0)
+                    m_float = math.log(val_inside) / math.log(1.0 + r)
+                    months_passed = int(round(m_float))
+                else:
+                    months_passed = int(round(p_target * duree))
+                months_passed = max(0, min(months_passed, duree - 1))
+                total_months_ago = months_passed
+            
+            # Reculer de total_months_ago mois par rapport à sim_end_date
+            year_offset = total_months_ago // 12
+            month_offset = total_months_ago % 12
+            
+            octroi_year = sim_end_date.year - year_offset
+            octroi_month = sim_end_date.month - month_offset
+            
+            if octroi_month <= 0:
+                octroi_month += 12
+                octroi_year -= 1
                 
-            # S'assurer que la date d'octroi ne dépasse pas fin 2024
-            if date_octroi > sim_end_date:
-                date_octroi = sim_end_date - timedelta(days=random.randint(10, 90))
-                
+            day_octroi = random.randint(1, 28)
+            date_octroi = datetime(octroi_year, octroi_month, day_octroi)
+            
+            # S'assurer que le crédit n'a pas été octroyé avant la création de l'entreprise
+            if date_octroi < date_creation_ent + timedelta(days=30):
+                date_octroi = date_creation_ent + timedelta(days=random.randint(30, 90))
+                # Ajuster si cela dépasse la date de fin de simulation
+                if date_octroi >= sim_end_date:
+                    date_octroi = sim_end_date - timedelta(days=random.randint(1, 10))
+            
             date_demande = date_octroi - timedelta(days=random.randint(10, 45))
             date_1ere_ech = date_octroi + timedelta(days=30)
             date_fin = date_octroi + timedelta(days=int(duree * 30.4))
             
             # 4. Calcul de la Mensualité (formule d'amortissement constante)
             # Pour les garanties / cautions (taux faible d'engagement), c'est une commission linéaire
-            r = taux / (100.0 * 12.0)
             if r > 0:
                 mensualite = (montant_accorde * r) / (1.0 - (1.0 + r) ** -duree)
             else:
@@ -157,9 +210,9 @@ def generate_contrats_credits() -> pd.DataFrame:
             # 6. Gestion du Risque et Retard (au 31/12/2024)
             # 0 = Sain, 1-89 = Surveillance, 90+ = NPL
             jours_retard = 0
-            statut_credit = "SAIN"
+            statut_val = "SAIN"
             statut_risque = "SAIN"
-            indicateur_NPL = False
+            indicateur_npl = False
             
             # Ne simuler des retards que si le prêt est en cours (encours > 0) et qu'au moins 1 mois est passé
             if encours_restant > 0 and months_passed > 0:
@@ -171,9 +224,9 @@ def generate_contrats_credits() -> pd.DataFrame:
                 if risk_rand < npl_threshold:
                     # NPL (90 jours et plus de retard)
                     jours_retard = random.randint(90, 270)
-                    statut_credit = "NPL"
+                    statut_val = "NPL"
                     statut_risque = "NPL"
-                    indicateur_NPL = True
+                    indicateur_npl = True
                     # Ajuster l'encours pour simuler des mensualités impayées (encours restant plus élevé)
                     missed_months = min(months_passed, int(jours_retard / 30))
                     # On rajoute la part en retard dans l'encours (approximation)
@@ -183,47 +236,38 @@ def generate_contrats_credits() -> pd.DataFrame:
                 elif risk_rand < surv_threshold:
                     # Surveillance (1 à 89 jours de retard)
                     jours_retard = random.randint(5, 80)
-                    statut_credit = "SURVEILLANCE"
+                    statut_val = "SURVEILLANCE"
                     statut_risque = "SURVEILLANCE"
                     
             # Si le prêt est complètement remboursé
             if encours_restant == 0.0:
-                statut_credit = "SAIN"
+                statut_val = "SAIN"
                 statut_risque = "SAIN"
                 
             cont = {
                 "id_contrat": current_id,
                 "numero_contrat": f"CON_{current_id:06d}",
                 "id_entreprise": ent_id,
-                "entreprise_id": ent_id,  # Alias
                 "id_agence": ag_id,
-                "agence_id": ag_id,  # Alias
                 "id_conseiller": cons_id,
-                "conseiller_id": cons_id,  # Alias
                 "id_produit": prod_id,
-                "produit_credit_id": prod_id,  # Alias
                 "date_demande": date_demande.strftime("%Y-%m-%d"),
                 "date_octroi": date_octroi.strftime("%Y-%m-%d"),
                 "date_premiere_echeance": date_1ere_ech.strftime("%Y-%m-%d"),
-                "date_fin": date_fin.strftime("%Y-%m-%d"),
-                "date_echeance": date_fin.strftime("%Y-%m-%d"),  # Alias
+                "date_echeance": date_fin.strftime("%Y-%m-%d"),
                 "montant_demande": montant_demande,
-                "montant_accorde": montant_accorde,
-                "montant_principal": montant_accorde,  # Alias DDL
+                "montant_principal": montant_accorde,
                 "duree": duree,
-                "taux": taux,
-                "taux_interet": taux,  # Alias DDL
+                "taux_interet": taux,
                 "mensualite": mensualite,
                 "encours_restant": encours_restant,
                 "montant_rembourse": montant_rembourse,
                 "capital_rembourse": capital_rembourse,
                 "interets_payes": interets_payes,
                 "jours_retard": jours_retard,
-                "statut": statut_credit,  # Alias DDL
-                "statut_credit": statut_credit,
+                "statut": statut_val,
                 "statut_risque": statut_risque,
-                "indicateur_npl": indicateur_NPL,
-                "indicateur_NPL": indicateur_NPL  # Alias
+                "indicateur_npl": indicateur_npl
             }
             contrats.append(cont)
             current_id += 1
@@ -247,11 +291,11 @@ if __name__ == "__main__":
     print(len(df))
     
     print("\n--- REPARTITION DES STATUTS DE RISQUE ---")
-    print(df["statut_credit"].value_counts())
+    print(df["statut"].value_counts())
     
     print("\n--- TAUX DE NPL GLOBAL ---")
-    npl_rate = df["indicateur_NPL"].mean() * 100
+    npl_rate = df["indicateur_npl"].mean() * 100
     print(f"{npl_rate:.2f} %")
     
     print("\n--- MONTANT TOTAL OCTROYE ---")
-    print(f"{df['montant_accorde'].sum():,.2f} MAD")
+    print(f"{df['montant_principal'].sum():,.2f} MAD")

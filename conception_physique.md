@@ -55,7 +55,7 @@ L'exécution des scripts DDL doit respecter un ordre strict en raison des dépen
 3.  employes (Dépend de agences)
       │
       ▼
-4.  entreprises (Dépend de regions, agences, employes)
+4.  entreprises (Dépend de agences, employes)
       │
       ├───► 5. comptes (Dépend de entreprises et d'elle-même pour la hiérarchie DAT/Courant)
       │           │
@@ -101,7 +101,7 @@ L'exécution des scripts DDL doit respecter un ordre strict en raison des dépen
 *   **`BOOLEAN`** : Indicateurs booléens (True/False).
 
 #### B. Règles de Nomenclature
-*   **Noms physiques** : Écrits intégralement en minuscules au format `snake_case` (ex: `raison_sociale`, `chiffre_affaires_annuel`).
+*   **Noms physiques** : Écrits intégralement en minuscules au format `snake_case` (ex: `raison_sociale`, `chiffre_affaires`).
 *   **Clés Primaires (PK)** : Nommées systématiquement au format `id_[nom_singulier_table]` (ex: `id_entreprise`).
 *   **Clés Étrangères (FK)** : Reprennent exactement le même nom physique que la clé primaire de la table de référence parent (ex: `id_entreprise` dans `comptes` pointe sur `entreprises.id_entreprise`).
 
@@ -115,9 +115,9 @@ Le déploiement des scripts SQL respectera l'implémentation physique des contra
     *   *Règle physique de suppression* : Par défaut, application de la clause `ON DELETE RESTRICT` sur les relations parent-enfant d'organisation (ex: interdire la suppression d'une agence s'il y a des entreprises ou des employés rattachés) afin de prévenir les ruptures d'intégrité en base.
 *   **`UNIQUE`** : Imposée sur les identifiants uniques métiers pour éviter les doublons accidentels (`ice` dans `entreprises`, `rib` dans `comptes`, `reference_unique` dans `transactions`, `reference_contrat` dans `contrats_credits`, `reference_garantie` dans `garanties`, `matricule` dans `employes`).
 *   **`CHECK`** : Établie au niveau physique PostgreSQL pour bloquer les valeurs erronées au moment de l'écriture en base :
-    *   `chiffre_affaires_annuel >= 0` et `nombre_employes > 0`
+    *   `chiffre_affaires >= 0` et `nombre_employes > 0`
     *   `solde_actuel >= -facilite_caisse` (le cas échéant)
-    *   `montant_accorde > 0` and `encours_restant_du >= 0` and `encours_restant_du <= montant_accorde`
+    *   `montant_principal > 0` et `encours_restant >= 0` et `encours_restant <= montant_principal`
     *   `date_echeance > date_octroi`
     *   `role IN ('Directeur d''agence', 'Conseiller Entreprises', 'Chargé de caisse')`
     *   `secteur_activite IN ('Commerce', 'BTP', 'Services', 'Industrie', 'Agriculture', 'Technologies')`

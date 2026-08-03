@@ -53,24 +53,24 @@ def validate_entreprises(df_entreprises: pd.DataFrame) -> bool:
     else:
         logger.info("Vérification unicité téléphone ok.")
 
-    # 5. Vérification de la validité de l'agence_id (1 à 10)
-    invalid_agences = df_entreprises[~df_entreprises["agence_id"].between(1, 10)]
+    # 5. Vérification de la validité de l'id_agence (1 à 10)
+    invalid_agences = df_entreprises[~df_entreprises["id_agence"].between(1, 10)]
     if not invalid_agences.empty:
-        logger.error(f"[ERR_ENT_05] agence_id invalides détectés : {invalid_agences['agence_id'].unique().tolist()}.")
+        logger.error(f"[ERR_ENT_05] id_agence invalides détectés : {invalid_agences['id_agence'].unique().tolist()}.")
         errors += 1
     else:
-        logger.info("Vérification validité agence_id ok.")
+        logger.info("Vérification validité id_agence ok.")
 
-    # 6. Vérification de la validité du conseiller_id (doit être un conseiller de l'agence commerciale)
+    # 6. Vérification de la validité du id_conseiller (doit être un conseiller de l'agence commerciale)
     df_employes = generate_employes()
     valid_conseillers_ids = set(df_employes[df_employes["fonction"] == "Conseiller Entreprises"]["id_employe"])
-    invalid_conseillers = df_entreprises[~df_entreprises["conseiller_id"].isin(valid_conseillers_ids)]
+    invalid_conseillers = df_entreprises[~df_entreprises["id_conseiller"].isin(valid_conseillers_ids)]
     
     if not invalid_conseillers.empty:
-        logger.error(f"[ERR_ENT_06] conseiller_id invalides détectés (employés inexistants ou non conseillers) : {invalid_conseillers['conseiller_id'].unique().tolist()}.")
+        logger.error(f"[ERR_ENT_06] id_conseiller invalides détectés (employés inexistants ou non conseillers) : {invalid_conseillers['id_conseiller'].unique().tolist()}.")
         errors += 1
     else:
-        logger.info("Vérification validité conseiller_id ok.")
+        logger.info("Vérification validité id_conseiller ok.")
 
     # 7. Vérification de la cohérence CA vs Segment
     # TPE: CA [100 000, 5 000 000]

@@ -96,22 +96,16 @@ def generate_comptes() -> pd.DataFrame:
             "id_compte": compte_courant_id,
             "numero_compte": num_compte_courant,
             "rib": rib_courant,
-            "RIB": rib_courant, # Alias
             "iban": iban_courant,
-            "IBAN": iban_courant, # Alias
             "type_compte": "COURANT",
             "devise": "MAD",
             "date_ouverture": date_ouv_courant.strftime("%Y-%m-%d"),
             "statut": statut,
             "solde_actuel": solde_courant,
             "id_entreprise": ent_id,
-            "entreprise_id": ent_id, # Alias
             "id_agence": ag_id,
-            "agence_id": ag_id, # Alias
             "id_conseiller": cons_id,
-            "conseiller_id": cons_id, # Alias
             "id_compte_courant_parent": None,
-            "compte_parent_id": None, # Alias
             "date_dernier_mouvement": date_mvt_courant.strftime("%Y-%m-%d"),
             "solde_moyen_trimestriel": solde_moyen,
             "classification": classification
@@ -139,22 +133,16 @@ def generate_comptes() -> pd.DataFrame:
                 "id_compte": current_id,
                 "numero_compte": num_compte_dat,
                 "rib": rib_dat,
-                "RIB": rib_dat, # Alias
                 "iban": iban_dat,
-                "IBAN": iban_dat, # Alias
                 "type_compte": "DAT",
                 "devise": "MAD",
                 "date_ouverture": date_ouv_dat.strftime("%Y-%m-%d"),
                 "statut": "ACTIF",
                 "solde_actuel": solde_dat,
                 "id_entreprise": ent_id,
-                "entreprise_id": ent_id, # Alias
                 "id_agence": ag_id,
-                "agence_id": ag_id, # Alias
                 "id_conseiller": cons_id,
-                "conseiller_id": cons_id, # Alias
                 "id_compte_courant_parent": compte_courant_id,
-                "compte_parent_id": compte_courant_id, # Alias
                 "date_dernier_mouvement": date_ouv_dat.strftime("%Y-%m-%d"),
                 "solde_moyen_trimestriel": solde_moyen_dat,
                 "classification": "Actif"

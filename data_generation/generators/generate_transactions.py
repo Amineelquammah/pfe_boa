@@ -40,7 +40,7 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
     # Organiser les contrats par entreprise
     contrats_by_ent = {}
     for _, row in df_contrats.iterrows():
-        contrats_by_ent.setdefault(int(row["entreprise_id"]), []).append(row.to_dict())
+        contrats_by_ent.setdefault(int(row["id_entreprise"]), []).append(row.to_dict())
         
     all_txns: List[Dict[str, Any]] = []
     current_txn_id = 1
@@ -195,13 +195,9 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
             txn = {
                 "id_transaction": current_txn_id,
                 "reference_transaction": f"TXN_{current_txn_id:08d}",
-                "compte_id": compte_id,
                 "id_compte": compte_id,
-                "entreprise_id": ent_id,
                 "id_entreprise": ent_id,
-                "agence_id": ag_id,
                 "id_agence": ag_id,
-                "conseiller_id": cons_id,
                 "id_conseiller": cons_id,
                 "date_transaction": dt.strftime("%Y-%m-%d"),
                 "heure_transaction": time_str,
@@ -244,10 +240,10 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
             
             txn_placement_cc = {
                 "id_transaction": current_txn_id, "reference_transaction": f"TXN_{current_txn_id:08d}",
-                "compte_id": parent_id, "id_compte": parent_id,
-                "entreprise_id": c["id_entreprise"], "id_entreprise": c["id_entreprise"],
-                "agence_id": c["id_agence"], "id_agence": c["id_agence"],
-                "conseiller_id": c["id_conseiller"], "id_conseiller": c["id_conseiller"],
+                "id_compte": parent_id,
+                "id_entreprise": c["id_entreprise"],
+                "id_agence": c["id_agence"],
+                "id_conseiller": c["id_conseiller"],
                 "date_transaction": date_ouv_dat.strftime("%Y-%m-%d"), "heure_transaction": "11:00:00",
                 "type_transaction": "Placement DAT", "canal": "Agence", "sens": "DEBIT", "montant": solde_dat,
                 "solde_avant": parent_bal_avant, "solde_apres": parent_c["_temp_running_bal"],
@@ -259,10 +255,10 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
             # 2. Transaction sur le DAT
             txn_placement_dat = {
                 "id_transaction": current_txn_id, "reference_transaction": f"TXN_{current_txn_id:08d}",
-                "compte_id": c["id_compte"], "id_compte": c["id_compte"],
-                "entreprise_id": c["id_entreprise"], "id_entreprise": c["id_entreprise"],
-                "agence_id": c["id_agence"], "id_agence": c["id_agence"],
-                "conseiller_id": c["id_conseiller"], "id_conseiller": c["id_conseiller"],
+                "id_compte": c["id_compte"],
+                "id_entreprise": c["id_entreprise"],
+                "id_agence": c["id_agence"],
+                "id_conseiller": c["id_conseiller"],
                 "date_transaction": date_ouv_dat.strftime("%Y-%m-%d"), "heure_transaction": "11:05:00",
                 "type_transaction": "Placement DAT", "canal": "Agence", "sens": "CREDIT", "montant": solde_dat,
                 "solde_avant": 0.0, "solde_apres": solde_dat,
@@ -280,10 +276,10 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
             # Débit du DAT
             txn_cloture_dat = {
                 "id_transaction": current_txn_id, "reference_transaction": f"TXN_{current_txn_id:08d}",
-                "compte_id": c["id_compte"], "id_compte": c["id_compte"],
-                "entreprise_id": c["id_entreprise"], "id_entreprise": c["id_entreprise"],
-                "agence_id": c["id_agence"], "id_agence": c["id_agence"],
-                "conseiller_id": c["id_conseiller"], "id_conseiller": c["id_conseiller"],
+                "id_compte": c["id_compte"],
+                "id_entreprise": c["id_entreprise"],
+                "id_agence": c["id_agence"],
+                "id_conseiller": c["id_conseiller"],
                 "date_transaction": date_mat_dat.strftime("%Y-%m-%d"), "heure_transaction": "15:00:00",
                 "type_transaction": "Clôture DAT", "canal": "Agence", "sens": "DEBIT", "montant": solde_dat,
                 "solde_avant": solde_dat, "solde_apres": 0.0,
@@ -298,10 +294,10 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
             
             txn_cloture_cc = {
                 "id_transaction": current_txn_id, "reference_transaction": f"TXN_{current_txn_id:08d}",
-                "compte_id": parent_id, "id_compte": parent_id,
-                "entreprise_id": c["id_entreprise"], "id_entreprise": c["id_entreprise"],
-                "agence_id": c["id_agence"], "id_agence": c["id_agence"],
-                "conseiller_id": c["id_conseiller"], "id_conseiller": c["id_conseiller"],
+                "id_compte": parent_id,
+                "id_entreprise": c["id_entreprise"],
+                "id_agence": c["id_agence"],
+                "id_conseiller": c["id_conseiller"],
                 "date_transaction": date_mat_dat.strftime("%Y-%m-%d"), "heure_transaction": "15:10:00",
                 "type_transaction": "Clôture DAT", "canal": "Agence", "sens": "CREDIT", "montant": solde_total_retour,
                 "solde_avant": parent_bal_avant, "solde_apres": parent_c["_temp_running_bal"],
@@ -312,7 +308,7 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
 
     # B. Décaissements & Remboursements de Crédits
     for _, contrat in df_contrats.iterrows():
-        ent_id = int(contrat["entreprise_id"])
+        ent_id = int(contrat["id_entreprise"])
         if ent_id not in comptes_by_ent:
             continue
             
@@ -323,7 +319,7 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
         cc = cc_accounts[0]
         cc_id = cc["id_compte"]
         
-        montant_accorde = float(contrat["montant_accorde"])
+        montant_accorde = float(contrat["montant_principal"])
         mensualite = float(contrat["mensualite"])
         date_octroi = datetime.strptime(str(contrat["date_octroi"]), "%Y-%m-%d")
         date_1ere_ech = datetime.strptime(str(contrat["date_premiere_echeance"]), "%Y-%m-%d")
@@ -336,10 +332,10 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
             
             txn_decaissement = {
                 "id_transaction": current_txn_id, "reference_transaction": f"TXN_{current_txn_id:08d}",
-                "compte_id": cc_id, "id_compte": cc_id,
-                "entreprise_id": ent_id, "id_entreprise": ent_id,
-                "agence_id": cc["id_agence"], "id_agence": cc["id_agence"],
-                "conseiller_id": cc["id_conseiller"], "id_conseiller": cc["id_conseiller"],
+                "id_compte": cc_id,
+                "id_entreprise": ent_id,
+                "id_agence": cc["id_agence"],
+                "id_conseiller": cc["id_conseiller"],
                 "date_transaction": date_octroi.strftime("%Y-%m-%d"), "heure_transaction": "09:30:00",
                 "type_transaction": "Virement entrant", "canal": "API Entreprise", "sens": "CREDIT", "montant": montant_accorde,
                 "solde_avant": parent_bal_avant, "solde_apres": cc["_temp_running_bal"],
@@ -358,7 +354,7 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
                 
             # Si le crédit est NPL, certains mois ne sont pas remboursés
             # (simulé par rapport aux jours de retard)
-            if contrat["statut_credit"] == "NPL" and m >= (duree - int(contrat["jours_retard"] / 30)):
+            if contrat["statut"] == "NPL" and m >= (duree - int(contrat["jours_retard"] / 30)):
                 # Client en défaut, ne paie plus les mensualités
                 continue
                 
@@ -367,10 +363,10 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
             
             txn_echeance = {
                 "id_transaction": current_txn_id, "reference_transaction": f"TXN_{current_txn_id:08d}",
-                "compte_id": cc_id, "id_compte": cc_id,
-                "entreprise_id": ent_id, "id_entreprise": ent_id,
-                "agence_id": cc["id_agence"], "id_agence": cc["id_agence"],
-                "conseiller_id": cc["id_conseiller"], "id_conseiller": cc["id_conseiller"],
+                "id_compte": cc_id,
+                "id_entreprise": ent_id,
+                "id_agence": cc["id_agence"],
+                "id_conseiller": cc["id_conseiller"],
                 "date_transaction": date_ech.strftime("%Y-%m-%d"), "heure_transaction": "00:05:00",
                 "type_transaction": "Paiement échéance crédit", "canal": "API Entreprise", "sens": "DEBIT", "montant": mensualite,
                 "solde_avant": parent_bal_avant, "solde_apres": cc["_temp_running_bal"],
@@ -386,7 +382,7 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
     df_txns = pd.DataFrame(all_txns)
     
     # Tri par compte et par date/heure
-    df_txns.sort_values(by=["compte_id", "date_transaction", "heure_transaction"], inplace=True)
+    df_txns.sort_values(by=["id_compte", "date_transaction", "heure_transaction"], inplace=True)
     df_txns.reset_index(drop=True, inplace=True)
     
     # Recalculer les identifiants et les références pour qu'ils soient ordonnés chronologiquement au global
@@ -401,7 +397,7 @@ def generate_transactions(df_comptes_in: pd.DataFrame = None) -> Tuple[pd.DataFr
     comptes_final_soldes = {}
     
     # Groupement des transactions par compte pour recalculer la chaîne de soldes
-    for cpt_id, group in df_txns.groupby("compte_id"):
+    for cpt_id, group in df_txns.groupby("id_compte"):
         group_indices = group.index.tolist()
         
         # On va chercher le solde cible de départ ou on initialise

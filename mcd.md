@@ -18,8 +18,12 @@ erDiagram
     }
     AGENCE {
         int id_agence
+        varchar code_agence
         varchar nom_agence
+        varchar adresse
         varchar ville
+        date date_ouverture
+        varchar statut
     }
     EMPLOYE {
         int id_employe
@@ -54,15 +58,21 @@ erDiagram
         varchar type_compte
         date date_ouverture
         numeric solde_actuel
+        date date_dernier_mouvement
+        varchar classification
         varchar statut
     }
     TRANSACTION {
-        int id_transaction
-        varchar reference_unique
-        timestamp date_heure_transaction
+        bigint id_transaction
+        varchar reference_transaction
+        date date_transaction
+        varchar heure_transaction
         varchar type_transaction
         varchar sens
         numeric montant
+        numeric solde_avant
+        numeric solde_apres
+        varchar statut
         varchar canal
     }
 
@@ -93,12 +103,12 @@ erDiagram
     CONTRAT_CREDIT {
         int id_contrat
         varchar reference_contrat
-        numeric montant_accorde
-        numeric encours_restant_du
+        numeric montant_principal
+        numeric encours_restant
         date date_octroi
         date date_echeance
         numeric taux_interet
-        varchar statut_credit
+        varchar statut
     }
     GARANTIE {
         int id_garantie
@@ -123,17 +133,27 @@ erDiagram
     SOLUTION_DIGITALE {
         int id_solution
         varchar nom_solution
-        varchar type_canal
+        varchar description
+        varchar canal
+        varchar statut
     }
     SOUSCRIPTION_DIGITALE {
         int id_souscription
         date date_souscription
         varchar statut
+        varchar niveau_utilisation
     }
     CONNEXION_DIGITALE {
-        int id_connexion
-        timestamp date_heure_connexion
-        int nombre_operations
+        bigint id_connexion
+        date date_connexion
+        varchar heure_connexion
+        int duree_session
+        varchar adresse_ip
+        varchar navigateur
+        varchar systeme
+        varchar appareil
+        varchar action_realisee
+        varchar statut
     }
 
     ENTREPRISE ||--|{ SOUSCRIPTION_DIGITALE : "Souscrire (1,N)"
@@ -149,7 +169,7 @@ erDiagram
 *   **REGION** : Territoire administratif de la banque.
     *   *Attributs* : `id_region` (Identifiant unique), `nom_region` (Nom de la direction régionale).
 *   **AGENCE** : Point de vente commercial.
-    *   *Attributs* : `id_agence` (Identifiant unique), `nom_agence` (Nom de l'agence), `ville` (Ville d'implantation).
+    *   *Attributs* : `id_agence` (Identifiant unique), `code_agence` (Code technique unique), `nom_agence` (Nom de l'agence), `adresse`, `ville` (Ville d'implantation), `date_ouverture`, `statut` (Actif, Fermé).
 *   **EMPLOYE** : Collaborateur physique exerçant au sein d'une agence.
     *   *Attributs* : `id_employe` (Identifiant unique), `matricule` (Matricule unique RH), `nom`, `prenom`, `role` (Directeur d'agence, Conseiller, Chargé de caisse), `date_recrutement`.
 
@@ -157,9 +177,9 @@ erDiagram
 *   **ENTREPRISE** : Client moral Business Banking de la banque.
     *   *Attributs* : `id_entreprise` (Identifiant unique), `ice` (Identifiant fiscal marocain), `raison_sociale`, `secteur_activite`, `forme_juridique`, `date_creation`, `ville`, `chiffre_affaires`, `nombre_employes`, `segment` (TPE, PME, GE).
 *   **COMPTE** : Compte de dépôt (Courant ou DAT).
-    *   *Attributs* : `id_compte` (Identifiant unique), `rib` (RIB à 24 chiffres), `type_compte` (Courant, DAT), `date_ouverture`, `solde_actuel`, `statut` (Actif, Inactif).
+    *   *Attributs* : `id_compte` (Identifiant unique), `rib` (RIB à 24 chiffres), `type_compte` (Courant, DAT), `date_ouverture`, `solde_actuel`, `date_dernier_mouvement`, `classification`, `statut` (Actif, Inactif).
 *   **TRANSACTION** : Écriture comptable passée sur un compte courant.
-    *   *Attributs* : `id_transaction` (Identifiant unique), `reference_unique`, `date_heure_transaction`, `type_transaction` (Virement, Versement, Retrait, Prélèvement), `sens` (Débit, Crédit), `montant`, `canal` (Physique, Digital).
+    *   *Attributs* : `id_transaction` (Identifiant unique), `reference_transaction` (Référence unique BOA), `date_transaction`, `heure_transaction`, `type_transaction` (Virement, Retrait, Versement, etc.), `sens` (Débit, Crédit), `montant`, `solde_avant`, `solde_apres`, `statut`, `canal`.
 
 #### C. Bloc 3 : Domaine Crédits
 *   **FAMILLE_CREDIT** : Macro-catégorie de crédit (ex: Trésorerie, Investissement, Commerce International).
@@ -169,17 +189,17 @@ erDiagram
 *   **PRODUIT_CREDIT** : Produit commercial distribuable (ex: Crédit Spot, CAP Energie, Crédit documentaire Import).
     *   *Attributs* : `id_produit` (Identifiant unique), `code_produit`, `nom_produit`.
 *   **CONTRAT_CREDIT** : Contrat de prêt unitaire signé avec une entreprise.
-    *   *Attributs* : `id_contrat` (Identifiant unique), `reference_contrat`, `montant_accorde`, `encours_restant_du`, `date_octroi`, `date_echeance`, `taux_interet`, `statut_credit` (Actif, Remboursé, NPL).
+    *   *Attributs* : `id_contrat` (Identifiant unique), `reference_contrat`, `montant_principal`, `encours_restant`, `date_octroi`, `date_echeance`, `taux_interet`, `statut` (SAIN, SURVEILLANCE, NPL).
 *   **GARANTIE** : Sûreté liée à un contrat de crédit.
     *   *Attributs* : `id_garantie` (Identifiant unique), `reference_garantie`, `type_garantie` (Aval, Caution, Garantie bancaire), `montant_garanti`, `date_constitution`.
 
 #### D. Bloc 4 : Domaine Digital
 *   **SOLUTION_DIGITALE** : Produit digital proposé par la banque (ex: BusinessOnline.ma).
-    *   *Attributs* : `id_solution` (Identifiant unique), `nom_solution`, `type_canal`.
+    *   *Attributs* : `id_solution` (Identifiant unique), `nom_solution`, `description`, `canal`, `statut`.
 *   **SOUSCRIPTION_DIGITALE** : Entité associative d'adhésion d'une entreprise à un produit digital.
-    *   *Attributs* : `id_souscription` (Identifiant unique), `date_souscription`, `statut` (Actif, Résilié).
-*   **CONNEXION_DIGITALE** : Session d'utilisation des canaux digitaux par l'entreprise souscriptrice.
-    *   *Attributs* : `id_connexion` (Identifiant unique), `date_heure_connexion`, `nombre_operations`.
+    *   *Attributs* : `id_souscription` (Identifiant unique), `date_souscription`, `statut` (Actif, Résilié), `niveau_utilisation`.
+*   **CONNEXION_DIGITALE** : Session d'utilisation des canaux digitaux par l'entreprise.
+    *   *Attributs* : `id_connexion` (Identifiant unique), `date_connexion`, `heure_connexion`, `duree_session`, `adresse_ip`, `navigateur`, `systeme`, `appareil`, `action_realisee`, `statut`.
 
 ---
 

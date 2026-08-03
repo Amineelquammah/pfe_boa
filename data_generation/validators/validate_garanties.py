@@ -52,13 +52,13 @@ def validate_garanties(df_garanties: pd.DataFrame) -> bool:
     else:
         logger.info("Vérification unicité numero_garantie ok.")
 
-    # 3. Vérification de la validité de contrat_credit_id
-    invalid_contracts = df_garanties[~df_garanties["contrat_credit_id"].isin(contracts_dict.keys())]
+    # 3. Vérification de la validité de id_contrat
+    invalid_contracts = df_garanties[~df_garanties["id_contrat"].isin(contracts_dict.keys())]
     if not invalid_contracts.empty:
         logger.error(f"[ERR_GAR_03] garanties liées à des contrats de crédit inexistants : {invalid_contracts['id_garantie'].tolist()}.")
         errors += 1
     else:
-        logger.info("Vérification intégrité référentielle contrat_credit_id ok.")
+        logger.info("Vérification intégrité référentielle id_contrat ok.")
 
     # 4. Vérification des montants (valeur positive)
     invalid_values = df_garanties[(df_garanties["valeur_initiale"] <= 0) | (df_garanties["valeur_actuelle"] <= 0)]
@@ -70,7 +70,7 @@ def validate_garanties(df_garanties: pd.DataFrame) -> bool:
 
     # 5. Cohérence temporelle (affectation >= octroi crédit et expiration > affectation)
     for _, row in df_garanties.iterrows():
-        contrat_id = row["contrat_credit_id"]
+        contrat_id = row["id_contrat"]
         if contrat_id in contracts_dict:
             contrat_meta = contracts_dict[contrat_id]
             date_octroi = datetime.strptime(contrat_meta["date_octroi"], "%Y-%m-%d")
@@ -105,7 +105,7 @@ def validate_garanties(df_garanties: pd.DataFrame) -> bool:
 
     # 8. Cohérence du taux de couverture par rapport à l'encours
     for _, row in df_garanties.iterrows():
-        contrat_id = row["contrat_credit_id"]
+        contrat_id = row["id_contrat"]
         if contrat_id in contracts_dict:
             contrat_meta = contracts_dict[contrat_id]
             encours = float(contrat_meta["encours_restant"])

@@ -163,9 +163,7 @@ def generate_connexions() -> pd.DataFrame:
             conn = {
                 "id_connexion": current_id,
                 "id_entreprise": ent_id,
-                "entreprise_id": ent_id,  # Alias
                 "id_solution": sol_id,
-                "solution_id": sol_id,  # Alias
                 "date_connexion": dt.strftime("%Y-%m-%d"),
                 "heure_connexion": f"{hour:02d}:{minute:02d}:{second:02d}",
                 "duree_session": duree_sec,

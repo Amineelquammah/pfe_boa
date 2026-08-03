@@ -67,9 +67,7 @@ def generate_souscriptions() -> pd.DataFrame:
                 sub = {
                     "id_souscription": current_id,
                     "id_entreprise": ent_id,
-                    "entreprise_id": ent_id,  # Alias
                     "id_solution": sol_id,
-                    "solution_id": sol_id,  # Alias
                     "date_souscription": date_sous.strftime("%Y-%m-%d"),
                     "statut": statut,
                     "niveau_utilisation": niveau

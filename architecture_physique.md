@@ -63,11 +63,11 @@ Le choix des types physiques sous PostgreSQL répond à un objectif double de ju
 | **`SERIAL`** | Auto-incrément standard sur 4 octets (valeurs jusqu'à 2,1 milliards). Idéal pour les clés primaires de la majorité des tables. | `agences.id_agence`, `entreprises.id_entreprise`, `comptes.id_compte` |
 | **`BIGSERIAL`** | Auto-incrément sur 8 octets pour les tables à volumétrie exponentielle, évitant tout risque de saturation d'identifiant. | `transactions.id_transaction`, `connexions_digitales.id_connexion` |
 | **`INTEGER`** | Entier standard sur 4 octets pour stocker les clés étrangères (FK) pointant vers des colonnes `SERIAL` et les quantités. | `comptes.id_entreprise`, `entreprises.nombre_employes` |
-| **`NUMERIC(15,2)`** | Type à virgule fixe exact (15 chiffres significatifs, 2 décimales). Indispensable pour la monnaie (MAD) afin d'éviter les erreurs d'arrondis des types flottants. | `entreprises.chiffre_affaires_annuel`, `transactions.montant` |
+| **`NUMERIC(15,2)`** | Type à virgule fixe exact (15 chiffres significatifs, 2 décimales). Indispensable pour la monnaie (MAD) afin d'éviter les erreurs d'arrondis des types flottants. | `entreprises.chiffre_affaires`, `transactions.montant` |
 | **`VARCHAR(N)`** | Chaîne de caractères de longueur variable avec limite matérielle, protégeant la base contre les dépassements d'espace. | `entreprises.ice` (`VARCHAR(15)`), `comptes.rib` (`VARCHAR(24)`) |
-| **`DATE`** | Stockage pur de date (sans heure) pour les dates contractuelles et administratives. | `entreprises.date_creation`, `contrats_credits.date_octroi` |
-| **`TIMESTAMP`** | Horodatage précis (date + heure + secondes) pour l'historisation des événements transactionnels ou applicatifs. | `transactions.date_heure_transaction`, `connexions_digitales.date_heure_connexion` |
-| **`BOOLEAN`** | Booléen simple (True/False) pour les drapeaux d'état. | `comptes.est_actif` (si applicable) |
+| **`DATE`** | Stockage pur de date (sans heure) pour les dates contractuelles et administratives. | `entreprises.date_creation`, `contrats_credits.date_octroi`, `transactions.date_transaction`, `connexions_digitales.date_connexion` |
+| **`TIMESTAMP`** | Horodatage précis (date + heure + secondes) pour l'historisation des événements transactionnels ou applicatifs. | `date_echeance` (si applicable) |
+| **`BOOLEAN`** | Booléen simple (True/False) pour les drapeaux d'état. | - |
 
 ---
 
@@ -83,7 +83,7 @@ Le choix des types physiques sous PostgreSQL répond à un objectif double de ju
 *   **`FOREIGN KEY`** : Maintient l'intégrité référentielle. Les suppressions parentes seront gérées par la contrainte `ON DELETE RESTRICT` par défaut pour empêcher la suppression accidentelle de données d'organisation (ex: interdire la suppression d'une agence si des employés y sont rattachés).
 *   **`NOT NULL`** : Appliquée sur tous les attributs obligatoires (noms, montants, dates d'octroi) pour empêcher l'insertion de lignes incomplètes.
 *   **`UNIQUE`** : Force l'unicité fonctionnelle (ex: `ice` unique pour `entreprises`, `rib` unique pour `comptes`, `reference_contrat` unique pour `contrats_credits`).
-*   **`CHECK`** : Valide la cohérence des valeurs au moment de l'écriture en base (ex: `chiffre_affaires_annuel >= 0`, `role` parmi la liste RH définie, `statut_credit` parmi le catalogue).
+*   **`CHECK`** : Valide la cohérence des valeurs au moment de l'écriture en base (ex: `chiffre_affaires >= 0`, `role` parmi la liste RH définie, `statut` parmi le catalogue).
 
 ---
 
@@ -97,9 +97,9 @@ PostgreSQL crée automatiquement des index B-Tree sur les colonnes déclarées `
     *   `entreprises.ice` : Utilisée pour l'identification unique et l'intégration des flux.
     *   `employes.matricule` : Utilisée pour le rapprochement RH.
 *   **Les Colonnes Temporelles d'Analyse** :
-    *   `transactions.date_heure_transaction` : Clé d'extraction incrémentale pour l'ETL et pivot des analyses temporelles.
+    *   `transactions.date_transaction` : Clé d'extraction incrémentale pour l'ETL et pivot des analyses temporelles.
     *   `contrats_credits.date_octroi` / `date_echeance` : Suivi des échéanciers de remboursement.
-    *   `connexions_digitales.date_heure_connexion` : Analyse d'activité temporelle digitale.
+    *   `connexions_digitales.date_connexion` : Analyse d'activité temporelle digitale.
 
 ---
 
@@ -109,7 +109,7 @@ PostgreSQL crée automatiquement des index B-Tree sur les colonnes déclarées `
 *   **Vues Matérialisées (Materialized Views)** : Utilisées au niveau du schéma `datamarts` pour pré-calculer et stocker physiquement les agrégations complexes et chronophages (ex: somme mensuelle des encours de dépôts par agence). Ces vues seront rafraîchies quotidiennement à la fin du traitement batch de l'ETL (`REFRESH MATERIALIZED VIEW`).
 *   **Optimisation ETL** :
     *   Lors du chargement initial massif (Initial Load), les contraintes de clés étrangères et les index pourront être temporairement désactivés ou créés après l'insertion pour accélérer le débit d'écriture de Python.
-    *   Pour le chargement quotidien incrémental (Incremental Load), l'utilisation d'index sur la colonne `date_heure_transaction` permettra à l'ETL de n'extraire que les transactions créées depuis la veille.
+    *   Pour le chargement quotidien incrémental (Incremental Load), l'utilisation d'index sur la colonne `date_transaction` permettra à l'ETL de n'extraire que les transactions créées depuis la veille.
 
 ---
 

@@ -108,8 +108,12 @@ erDiagram
     }
     dim_agence {
         int key_agence PK
+        varchar code_agence
         varchar nom_agence
+        varchar adresse
         varchar ville
+        date date_ouverture
+        varchar statut
     }
     dim_region {
         int key_region PK
@@ -158,7 +162,7 @@ Les dimensions du Data Warehouse contiennent les attributs textuels et descripti
 *   **Rôle métier** : Fournir l'ensemble des axes d'analyse des clients professionnels (TPE/PME/GE).
 *   **Source OLTP** : `oltp.entreprises`
 *   **Clé substitut (PK)** : `key_entreprise` (`INTEGER / SERIAL`)
-*   **Attributs principaux** : `ice`, `raison_sociale`, `forme_juridique`, `date_creation`, `ville`, `chiffre_affaires_annuel`, `nombre_employes`, `segment`, `id_cluster_ia` (réinjecté par le ML).
+*   **Attributs principaux** : `ice`, `raison_sociale`, `forme_juridique`, `date_creation`, `ville`, `chiffre_affaires`, `nombre_employes`, `segment`, `id_cluster_ia` (réinjecté par le ML).
 
 #### 2. `dim_employe`
 *   **Rôle métier** : Analyser l'activité commerciale portée par les employés des agences (conseillers, directeurs).
@@ -170,7 +174,7 @@ Les dimensions du Data Warehouse contiennent les attributs textuels et descripti
 *   **Rôle métier** : Axe d'analyse géographique et organisationnel des 10 points de vente.
 *   **Source OLTP** : `oltp.agences`
 *   **Clé substitut (PK)** : `key_agence` (`INTEGER / SERIAL`)
-*   **Attributs principaux** : `nom_agence`, `ville`.
+*   **Attributs principaux** : `code_agence`, `nom_agence`, `adresse`, `ville`, `date_ouverture`, `statut`.
 
 #### 4. `dim_region`
 *   **Rôle métier** : Axe d'analyse macro-territoriale (les 7 directions régionales BOA).
